@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open-Source License Compliance — A Legal Guide for Indian Companies | SecuNexa</title>
+    <meta name="description" content="Comprehensive guide to open-source license types, obligations, GPL contamination risks, license conflicts, and forensic detection for Indian enterprises.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../../index.html" class="logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><ul class="nav-links"><li><a href="../platform.html">Platform</a></li><li class="dropdown"><a href="#">Products <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></li><li class="dropdown"><a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../solutions/banking.html">Banking &amp; Finance</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/healthcare.html">Healthcare</a></li><li><a href="../solutions/insurance.html">Insurance</a></li><li><a href="../solutions/telecom.html">Telecom</a></li></ul></li><li class="dropdown"><a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li><li><a href="../compliance/iso27001.html">ISO 27001</a></li><li><a href="../compliance/pci-dss.html">PCI DSS</a></li></ul></li><li class="dropdown"><a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li></ul></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul><a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a><button class="mobile-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></nav></div></header>
+
+    <section class="breadcrumb-section"><div class="container"><nav class="breadcrumb"><a href="../../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="index.html">Blog</a><i class="fa-solid fa-chevron-right"></i><span>Open-Source License Compliance — A Legal Guide for Indian Companies</span></nav></div></section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-layout">
+                <article class="blog-article">
+                    <div class="blog-article-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> March 12, 2026</span>
+                    </div>
+                    <h1>Open-Source License Compliance &mdash; A Legal Guide for Indian Companies</h1>
+                    <div class="blog-author"><i class="fa-solid fa-user-shield"></i><span>SecuNexa Security Research Team</span></div>
+                    <div class="blog-share"><span>Share:</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://twitter.com/intent/tweet?url=&text=" class="share-btn share-twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a><button class="share-btn share-copy" aria-label="Copy link" onclick="navigator.clipboard.writeText(window.location.href)"><i class="fa-solid fa-link"></i></button></div>
+
+                    <div class="blog-content">
+                        <p>Indian software companies are among the largest consumers of open-source software in the world. From startups building products on open-source frameworks to large enterprises running critical infrastructure on open-source platforms, the Indian technology ecosystem depends heavily on community-developed software. Yet the legal obligations that accompany open-source usage remain poorly understood across much of the industry.</p>
+
+                        <p>Open-source licenses are not simply permissions to use code freely. They are legally binding agreements that impose specific obligations on the users and distributors of the licensed software. Failure to comply with these obligations can result in license termination (losing the right to use the software), copyright infringement litigation, forced disclosure of proprietary source code, and financial penalties. For Indian companies preparing for IPO, undergoing due diligence for acquisition, or bidding on government contracts, license compliance gaps can derail business-critical transactions.</p>
+
+                        <h2>Understanding License Categories</h2>
+
+                        <p>Open-source licenses fall into two broad categories: permissive licenses and copyleft licenses. The distinction between these categories determines the obligations that flow to your organization when you use the licensed software.</p>
+
+                        <p>Permissive licenses such as MIT, Apache 2.0, BSD (2-clause and 3-clause), and ISC impose minimal obligations. Generally, they require attribution (keeping the copyright notice and license text with the software) and include a warranty disclaimer. Permissive licenses allow you to use the licensed code in proprietary products, modify it without disclosing your changes, and distribute the combined work under any license you choose. The Apache 2.0 license adds explicit patent grants and a patent retaliation clause, making it somewhat more protective for both licensors and licensees.</p>
+
+                        <p>Copyleft licenses such as GPL (versions 2 and 3), LGPL, AGPL, MPL, and EPL impose reciprocal obligations. The core concept of copyleft is that derivative works must be distributed under the same license as the original. This means if you modify GPL-licensed code and distribute the modified version, you must make your modifications available under the GPL. The strength of the copyleft obligation varies by license. Strong copyleft licenses like GPL v3 and AGPL extend the obligation broadly to the combined work. Weak copyleft licenses like LGPL and MPL limit the obligation to the modified files of the original library while allowing the larger work to remain proprietary.</p>
+
+                        <p>The AGPL (Affero General Public License) deserves special attention because it extends copyleft obligations to network interaction. If you modify AGPL-licensed software and make it available as a service over a network (SaaS), users must be able to obtain the modified source code. This is particularly relevant for Indian SaaS companies and cloud service providers who may be incorporating AGPL-licensed components without realizing the disclosure obligations.</p>
+
+                        <h2>GPL Contamination and Its Implications</h2>
+
+                        <p>GPL contamination occurs when GPL-licensed code is incorporated into a proprietary application in a way that triggers the copyleft obligation, potentially requiring the entire application to be released under the GPL. This is not merely a theoretical risk. It has been the basis for numerous enforcement actions by copyright holders and organizations like the Software Freedom Conservancy.</p>
+
+                        <p>The mechanism of contamination depends on how the GPL code is integrated. Static linking of a GPL library with proprietary code almost certainly creates a derivative work, triggering the copyleft obligation across the combined binary. Dynamic linking is more ambiguous but generally considered to create a combined work under GPL v2, and explicitly addressed in GPL v3. Copying GPL-licensed source files into a proprietary codebase clearly triggers the obligation. Even using GPL-licensed header files can create obligations depending on the substantiality of the copied content.</p>
+
+                        <p>For Indian companies, GPL contamination often occurs inadvertently. A developer copies a utility function from a GPL-licensed project. A dependency resolution pulls in a GPL-licensed transitive dependency. A vendor delivers code that includes GPL components without disclosing this to the purchasing organization. In each case, the company inherits obligations it may not be aware of until a legal review or due diligence process uncovers the issue.</p>
+
+                        <p>The consequences are severe. If GPL contamination is discovered during due diligence for an acquisition, it can reduce the company valuation or kill the deal entirely. If discovered by the copyright holder, it can result in litigation demanding either GPL compliance (releasing your proprietary code) or removal of the infringing code (which may require significant re-engineering).</p>
+
+                        <h2>License Conflicts and Incompatibilities</h2>
+
+                        <p>License conflicts arise when an application includes components under licenses with incompatible terms. The most common conflict occurs between Apache 2.0 and GPL v2. Apache 2.0 includes a patent retaliation clause that GPL v2 does not recognize, making the licenses incompatible in one direction: you cannot distribute Apache 2.0-licensed code under GPL v2 terms. This conflict was resolved in GPL v3, which is compatible with Apache 2.0.</p>
+
+                        <p>Other common conflicts include combining code under different copyleft licenses (GPL v2 and MPL, for example), combining licenses with conflicting attribution requirements, and including code under licenses with incompatible patent provisions. When conflicts exist, there is no valid license under which the combined work can be distributed, potentially blocking distribution of your product.</p>
+
+                        <p>Indian enterprises often discover license conflicts late in the development cycle because dependency trees in modern applications are deep and complex. A Java application might directly depend on 50 libraries, but the transitive dependency tree can easily include 500 or more components, each with its own license. Manually reviewing every license in this tree is impractical, making automated license analysis essential.</p>
+
+                        <h2>The Problem with Declared License Metadata</h2>
+
+                        <p>A critical challenge in license compliance is the unreliability of declared license metadata. Package managers like npm, Maven, and PyPI allow package authors to declare a license in their package manifest. However, these declarations are frequently inaccurate. Common issues include packages that declare no license at all (making them technically "all rights reserved"), packages that declare one license in metadata but include a different license in the actual license file, packages that contain code from multiple sources under different licenses but declare only one, and forked packages that change the declared license without having the legal right to do so.</p>
+
+                        <p>Research has shown that license metadata discrepancies affect a significant percentage of packages in major ecosystems. Relying solely on declared metadata for compliance decisions creates material legal risk because the actual license obligations are determined by the license text included with the code, not by metadata in a manifest file.</p>
+
+                        <h2>Forensic License Detection</h2>
+
+                        <p>Forensic license detection addresses the metadata reliability problem by examining the actual source code for license evidence. Instead of trusting what a package claims its license is, forensic detection analyzes the source files for license headers, copyright notices, license text files, and code patterns that match known licensed components.</p>
+
+                        <p>This approach catches discrepancies that metadata-only analysis misses. When a package declares an MIT license but contains files with GPL license headers, forensic detection flags the conflict. When vendored code includes copyright notices from a different project under a different license, forensic detection identifies the true obligations. When code has been copied from a licensed source without proper attribution, forensic detection recognizes the matching patterns.</p>
+
+                        <p>For Indian companies undergoing M&A due diligence, pursuing IPO, or responding to license compliance audits, forensic evidence carries significantly more legal weight than metadata declarations. It demonstrates that the organization has conducted thorough analysis rather than accepting surface-level claims at face value.</p>
+
+                        <h2>Building a License Compliance Program</h2>
+
+                        <p>Effective license compliance requires a systematic program that combines policy, tooling, and process. Start by establishing an approved license policy that categorizes licenses into three tiers: approved for unrestricted use (typically permissive licenses), approved with conditions (weak copyleft licenses with specific usage guidelines), and prohibited (strong copyleft licenses or licenses incompatible with your business model). This policy should be reviewed by legal counsel familiar with Indian IP law and international open-source license jurisprudence.</p>
+
+                        <p>Integrate automated license scanning into your CI/CD pipeline using an SCA tool with forensic detection capabilities. Every build should produce a license analysis report identifying all components, their licenses, any conflicts, and any policy violations. Block builds that introduce prohibited licenses or unresolved conflicts from progressing to production.</p>
+
+                        <p>Maintain an exception process for cases where business requirements necessitate using components under restricted licenses. Each exception should be reviewed by legal and engineering leadership, documented with a risk assessment, and tracked for ongoing monitoring. Exceptions should have expiration dates and be re-reviewed periodically.</p>
+
+                        <p>SecuLens provides forensic license detection that examines actual source code rather than relying on package metadata. It identifies license conflicts, copyleft contamination risks, and attribution gaps across the complete dependency tree. Combined with automated CI/CD integration and compliance reporting, SecuLens gives Indian enterprises the tooling they need to build a defensible license compliance program.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <h3>Protect Your IP with Forensic License Detection</h3>
+                        <p>See how SecuLens identifies license risks that metadata-only tools miss.</p>
+                        <a href="../contact.html" class="btn btn-primary">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Related Articles</h3>
+                        <ul class="related-posts">
+                            <li><a href="forensic-license-detection.html">What is Forensic License Detection and Why Does It Matter?</a></li>
+                            <li><a href="what-is-sbom-certin.html">What is SBOM and Why Does CERT-In Require It?</a></li>
+                            <li><a href="opensource-vulnerability-cost-india.html">The True Cost of Open-Source Vulnerabilities</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>License Compliance Checklist</h3>
+                        <p>Download our checklist for building an open-source license compliance program.</p>
+                        <a href="../resources/whitepapers.html" class="btn btn-outline">Download Checklist</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><a href="../../index.html" class="footer-logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p><div class="footer-social"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div><div class="footer-col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></div><div class="footer-col"><h4>Solutions</h4><ul><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../platform.html">Platform Overview</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li></ul></div><div class="footer-col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p><div class="footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></div></div></div></footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

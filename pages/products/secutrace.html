@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuTrace SAST — Static Application Security Testing | SecuNexa</title>
+    <meta name="description" content="SecuTrace SAST finds vulnerabilities in your source code before attackers do. Deep static analysis with 50,000+ security rules across 10+ languages.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace <span class="badge">SAST</span></a></li>
+                            <li><a href="seculens.html">SecuLens <span class="badge">SCA</span></a></li>
+                            <li><a href="secustrike.html">SecuStrike <span class="badge">DAST</span></a></li>
+                            <li><a href="secushield.html">SecuShield <span class="badge">API Security</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI</a></li>
+                            <li><a href="../compliance/rbi.html">RBI</a></li>
+                            <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                            <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                            <li><a href="../compliance/iso.html">ISO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../resources/blog.html">Blog</a></li>
+                            <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-nav">Request Demo</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero secutrace-hero">
+        <div class="container">
+            <div class="product-hero-content">
+                <div class="product-badge">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <span>SecuTrace SAST</span>
+                </div>
+                <h1>Find Vulnerabilities in Your Code <span class="gradient-text">Before Attackers Do</span></h1>
+                <p class="product-hero-description">Deep static application security testing that analyzes your source code at the semantic level. Identify SQL injections, XSS, buffer overflows, and thousands more vulnerability patterns across 10+ programming languages with industry-leading accuracy.</p>
+                <div class="product-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50,000+</span>
+                        <span class="stat-label">Security Rules</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt;5%</span>
+                        <span class="stat-label">False Positive Rate</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">On-Premise</span>
+                    </div>
+                </div>
+                <div class="product-hero-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#how-it-works" class="btn btn-outline btn-lg">See How It Works</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Does -->
+    <section class="section" id="what-it-does">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What SecuTrace Does</span>
+                <h2>Deep Static Analysis That Goes Beyond Pattern Matching</h2>
+                <p>SecuTrace performs multi-layered analysis of your source code to uncover vulnerabilities that simple pattern-matching tools miss entirely.</p>
+            </div>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3>Data Flow Analysis</h3>
+                    <p>Tracks how data moves through your application from sources (user inputs, file reads, network calls) to sinks (database queries, system commands, file writes). Identifies tainted data paths that could lead to injection vulnerabilities, even across multiple function calls and class boundaries.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <h3>Control Flow Analysis</h3>
+                    <p>Maps every possible execution path through your code, including conditional branches, loops, exception handlers, and early returns. Detects issues like unreachable code, missing null checks, race conditions, and authentication bypass paths that only manifest under specific conditions.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-virus-slash"></i>
+                    </div>
+                    <h3>Taint Analysis</h3>
+                    <p>Marks all external inputs as potentially malicious and traces them through transformations, assignments, and function calls. Determines whether proper sanitization, validation, or encoding is applied before tainted data reaches security-sensitive operations like SQL queries or HTML rendering.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3>Semantic Analysis</h3>
+                    <p>Understands the meaning and intent of your code beyond syntax. Resolves variable types, tracks object state across method calls, evaluates constant expressions, and models framework-specific behaviors to detect vulnerabilities in how your code actually executes at runtime.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Inter-Procedural Analysis</h3>
+                    <p>Follows data and control flow across function boundaries, class hierarchies, and even module imports. Builds a complete call graph of your application to detect vulnerabilities that span multiple files, libraries, and architectural layers.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-gears"></i>
+                    </div>
+                    <h3>Configuration Analysis</h3>
+                    <p>Scans configuration files, property files, YAML manifests, Dockerfiles, and infrastructure-as-code templates for security misconfigurations. Detects hardcoded credentials, insecure defaults, overly permissive settings, and missing security headers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2>Enterprise-Grade SAST Built for Real-World Codebases</h2>
+                <p>SecuTrace is designed to handle the complexity and scale of modern enterprise applications.</p>
+            </div>
+
+            <!-- Feature 1: Multi-Language Support -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-language"></i>
+                    </div>
+                    <div>
+                        <h3>Multi-Language Support</h3>
+                        <p>Analyze polyglot codebases with a single tool. SecuTrace supports all major programming languages and their ecosystems.</p>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Language</th>
+                                <th>Versions Supported</th>
+                                <th>Frameworks</th>
+                                <th>Security Rules</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Java</strong></td>
+                                <td>Java 8 through Java 21</td>
+                                <td>Spring, Spring Boot, Jakarta EE, Hibernate, Struts, JSF</td>
+                                <td>8,500+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Python</strong></td>
+                                <td>Python 3.6 through 3.12</td>
+                                <td>Django, Flask, FastAPI, SQLAlchemy, Jinja2</td>
+                                <td>6,200+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>JavaScript</strong></td>
+                                <td>ES6 through ES2024</td>
+                                <td>React, Angular, Vue.js, Express, Next.js, Node.js</td>
+                                <td>7,100+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>TypeScript</strong></td>
+                                <td>TypeScript 4.x and 5.x</td>
+                                <td>Angular, NestJS, Deno, React with TypeScript</td>
+                                <td>5,800+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C#</strong></td>
+                                <td>C# 8.0 through 12.0</td>
+                                <td>.NET 6/7/8, ASP.NET Core, Entity Framework, Blazor</td>
+                                <td>5,400+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C/C++</strong></td>
+                                <td>C11, C17, C++14/17/20</td>
+                                <td>STL, Boost, Qt, POSIX, Win32 API</td>
+                                <td>6,800+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Go</strong></td>
+                                <td>Go 1.18 through 1.22</td>
+                                <td>Gin, Echo, Fiber, GORM, net/http</td>
+                                <td>3,200+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PHP</strong></td>
+                                <td>PHP 7.4 through 8.3</td>
+                                <td>Laravel, Symfony, WordPress, CodeIgniter, Drupal</td>
+                                <td>4,600+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ruby</strong></td>
+                                <td>Ruby 2.7 through 3.3</td>
+                                <td>Rails 6/7, Sinatra, Grape, ActiveRecord</td>
+                                <td>2,800+</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Kotlin</strong></td>
+                                <td>Kotlin 1.6 through 2.0</td>
+                                <td>Ktor, Spring Boot, Android SDK, Exposed</td>
+                                <td>2,400+</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Feature 2: Security Rules -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-list-check"></i>
+                    </div>
+                    <div>
+                        <h3>50,000+ Security Rules</h3>
+                        <p>The most comprehensive rule set in the industry, covering OWASP Top 10, CWE Top 25, SANS Top 25, CERT standards, and regulatory requirements specific to Indian compliance frameworks.</p>
+                    </div>
+                </div>
+                <div class="rules-grid">
+                    <div class="rule-category-card">
+                        <h4><i class="fa-solid fa-syringe"></i> Injection Flaws</h4>
+                        <ul>
+                            <li>SQL Injection (all variants)</li>
+                            <li>NoSQL Injection</li>
+                            <li>LDAP Injection</li>
+                            <li>OS Command Injection</li>
+                            <li>XPath Injection</li>
+                            <li>Expression Language Injection</li>
+                            <li>Template Injection (SSTI)</li>
+                            <li>Header Injection</li>
+                        </ul>
+                    </div>
+                    <div class="rule-category-card">
+                        <h4><i class="fa-solid fa-lock-open"></i> Authentication & Access</h4>
+                        <ul>
+                            <li>Broken Authentication</li>
+                            <li>Session Fixation</li>
+                            <li>Privilege Escalation</li>
+                            <li>Insecure Direct Object Reference</li>
+                            <li>Missing Function-Level Access Control</li>
+                            <li>JWT Vulnerabilities</li>
+                            <li>OAuth/OIDC Misconfigurations</li>
+                            <li>CORS Misconfigurations</li>
+                        </ul>
+                    </div>
+                    <div class="rule-category-card">
+                        <h4><i class="fa-solid fa-shield-virus"></i> Data Protection</h4>
+                        <ul>
+                            <li>Cross-Site Scripting (XSS)</li>
+                            <li>Sensitive Data Exposure</li>
+                            <li>Insecure Cryptography</li>
+                            <li>Hardcoded Secrets</li>
+                            <li>Information Leakage</li>
+                            <li>Insecure Deserialization</li>
+                            <li>XML External Entity (XXE)</li>
+                            <li>Path Traversal</li>
+                        </ul>
+                    </div>
+                    <div class="rule-category-card">
+                        <h4><i class="fa-solid fa-server"></i> Infrastructure</h4>
+                        <ul>
+                            <li>Security Misconfiguration</li>
+                            <li>Insecure Default Settings</li>
+                            <li>Missing Security Headers</li>
+                            <li>Debug Mode Enabled</li>
+                            <li>Insecure TLS Configuration</li>
+                            <li>Container Security Issues</li>
+                            <li>IaC Misconfigurations</li>
+                            <li>Cloud Security Posture</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Low False Positive Rate -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <div>
+                        <h3>Industry-Leading Low False Positive Rate</h3>
+                        <p>Our multi-layered analysis engine achieves less than 5% false positive rate, saving your team hundreds of hours on manual triage. Every finding includes evidence and a confidence score.</p>
+                    </div>
+                </div>
+                <div class="accuracy-metrics">
+                    <div class="metric-card">
+                        <div class="metric-circle">
+                            <span class="metric-value">&lt;5%</span>
+                        </div>
+                        <h4>False Positive Rate</h4>
+                        <p>Industry average is 30-60%. Our semantic understanding eliminates noise.</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-circle">
+                            <span class="metric-value">95%+</span>
+                        </div>
+                        <h4>True Positive Rate</h4>
+                        <p>High detection accuracy means fewer vulnerabilities slip through to production.</p>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-circle">
+                            <span class="metric-value">92%</span>
+                        </div>
+                        <h4>Actionable Findings</h4>
+                        <p>Every finding includes fix recommendations and code-level remediation guidance.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Developer-Friendly Output -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <h3>Developer-Friendly Output</h3>
+                        <p>Findings are presented with complete context: the vulnerable code, the data flow path, the severity rating, CWE classification, and step-by-step remediation guidance that developers can act on immediately.</p>
+                    </div>
+                </div>
+                <div class="output-features-grid">
+                    <div class="output-feature">
+                        <i class="fa-solid fa-route"></i>
+                        <h4>Full Data Flow Traces</h4>
+                        <p>See exactly how tainted data flows from source to sink, with every intermediate step highlighted in your code.</p>
+                    </div>
+                    <div class="output-feature">
+                        <i class="fa-solid fa-wrench"></i>
+                        <h4>Fix Recommendations</h4>
+                        <p>Language-specific and framework-specific remediation code snippets that developers can copy and apply directly.</p>
+                    </div>
+                    <div class="output-feature">
+                        <i class="fa-solid fa-ranking-star"></i>
+                        <h4>Priority Scoring</h4>
+                        <p>Risk-based prioritization considering exploitability, impact, data sensitivity, and exposure to help teams fix what matters first.</p>
+                    </div>
+                    <div class="output-feature">
+                        <i class="fa-solid fa-book"></i>
+                        <h4>CWE/CVE References</h4>
+                        <p>Every finding maps to CWE identifiers, OWASP categories, and relevant CVEs with links to detailed vulnerability descriptions.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: IDE Integration -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-plug"></i>
+                    </div>
+                    <div>
+                        <h3>IDE Integration</h3>
+                        <p>Shift security left by catching vulnerabilities as developers write code. SecuTrace integrates directly into your development environment for real-time feedback.</p>
+                    </div>
+                </div>
+                <div class="ide-grid">
+                    <div class="ide-card">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h4>VS Code Extension</h4>
+                        <p>Real-time scanning, inline annotations, quick-fix suggestions, and vulnerability highlighting as you type.</p>
+                    </div>
+                    <div class="ide-card">
+                        <i class="fa-solid fa-j"></i>
+                        <h4>IntelliJ IDEA Plugin</h4>
+                        <p>Deep integration with JetBrains IDEs including IntelliJ, PyCharm, WebStorm, and GoLand.</p>
+                    </div>
+                    <div class="ide-card">
+                        <i class="fa-solid fa-window-maximize"></i>
+                        <h4>Visual Studio Extension</h4>
+                        <p>Native Visual Studio integration for C#, C++, and .NET development workflows.</p>
+                    </div>
+                    <div class="ide-card">
+                        <i class="fa-solid fa-terminal"></i>
+                        <h4>CLI Tool</h4>
+                        <p>Command-line scanner for CI/CD pipelines, build servers, and automated security gates.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 6: Air-Gapped Operation -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h3>Air-Gapped Operation</h3>
+                        <p>Your source code never leaves your network. SecuTrace operates entirely on-premise with no cloud dependencies, making it suitable for classified environments, defense organizations, and strict data sovereignty requirements.</p>
+                    </div>
+                </div>
+                <div class="airgap-features">
+                    <div class="airgap-item">
+                        <i class="fa-solid fa-building-shield"></i>
+                        <h4>100% On-Premise</h4>
+                        <p>Install on your own servers. No data ever transmitted externally. Complete control over your scanning infrastructure.</p>
+                    </div>
+                    <div class="airgap-item">
+                        <i class="fa-solid fa-database"></i>
+                        <h4>Offline Rule Updates</h4>
+                        <p>Security rules delivered via encrypted packages for manual import. No internet connection required for operation.</p>
+                    </div>
+                    <div class="airgap-item">
+                        <i class="fa-solid fa-key"></i>
+                        <h4>License Server</h4>
+                        <p>On-premise license server for air-gapped environments. No phone-home requirements or external license validation.</p>
+                    </div>
+                    <div class="airgap-item">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <h4>RBAC & Audit Logs</h4>
+                        <p>Role-based access control with comprehensive audit logging for compliance and accountability.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>From Code to Actionable Security Insights in 4 Steps</h2>
+                <p>Getting started with SecuTrace is straightforward. Point it at your code, and let the engine do the rest.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-folder-open"></i>
+                    </div>
+                    <h3>Point to Your Code</h3>
+                    <p>Connect SecuTrace to your source code repository — Git, SVN, TFS, or a local directory. Configure project settings including target branches, exclusion patterns, and scan schedules. SecuTrace supports monorepos, microservices architectures, and multi-module projects out of the box.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h3>Auto-Detect Languages</h3>
+                    <p>SecuTrace automatically detects programming languages, frameworks, and build systems in your project. It identifies Java Spring Boot services, Python Django apps, React frontends, and more — then loads the appropriate analyzers, rule sets, and framework-specific security models.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <h3>Deep Analysis</h3>
+                    <p>The engine builds an Abstract Syntax Tree, constructs data flow graphs, performs taint propagation analysis, resolves inter-procedural call chains, and evaluates 50,000+ security rules against your codebase. Analysis runs in parallel across multiple cores for maximum throughput.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-chart-column"></i>
+                    </div>
+                    <h3>Actionable Results</h3>
+                    <p>Review findings in an interactive HTML report, export to PDF, Excel, CSV, or JSON. Integrate results into your CI/CD pipeline with quality gates that can block builds when critical vulnerabilities are detected. Track remediation progress over time with trend dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Report Mockup -->
+    <section class="section section-alt" id="sample-report">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sample Report</span>
+                <h2>See What a SecuTrace Report Looks Like</h2>
+                <p>Every scan produces a comprehensive, interactive report that security teams and developers can use immediately.</p>
+            </div>
+            <div class="report-mockup">
+                <div class="report-window">
+                    <div class="report-titlebar">
+                        <div class="report-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="report-title">SecuTrace SAST Report — E-Commerce Platform v3.2.1</span>
+                    </div>
+                    <div class="report-content">
+                        <!-- Executive Summary -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-chart-pie"></i> Executive Summary</h3>
+                            <div class="report-summary-grid">
+                                <div class="report-stat critical">
+                                    <span class="report-stat-number">12</span>
+                                    <span class="report-stat-label">Critical</span>
+                                </div>
+                                <div class="report-stat high">
+                                    <span class="report-stat-number">28</span>
+                                    <span class="report-stat-label">High</span>
+                                </div>
+                                <div class="report-stat medium">
+                                    <span class="report-stat-number">45</span>
+                                    <span class="report-stat-label">Medium</span>
+                                </div>
+                                <div class="report-stat low">
+                                    <span class="report-stat-number">67</span>
+                                    <span class="report-stat-label">Low</span>
+                                </div>
+                                <div class="report-stat info">
+                                    <span class="report-stat-number">23</span>
+                                    <span class="report-stat-label">Info</span>
+                                </div>
+                            </div>
+                            <div class="report-meta">
+                                <div class="report-meta-item">
+                                    <strong>Scan Date:</strong> March 27, 2026 at 14:32 IST
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Files Analyzed:</strong> 1,847
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Lines of Code:</strong> 342,518
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Languages:</strong> Java, JavaScript, TypeScript, SQL
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Scan Duration:</strong> 8 minutes 42 seconds
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Risk Score:</strong> 78/100 (High)
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Findings Overview -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-list"></i> Findings Overview</h3>
+                            <div class="report-findings-overview">
+                                <div class="finding-category">
+                                    <div class="finding-bar">
+                                        <div class="finding-bar-fill" style="width: 32%"></div>
+                                    </div>
+                                    <span class="finding-category-name">Injection Flaws</span>
+                                    <span class="finding-category-count">18 findings</span>
+                                </div>
+                                <div class="finding-category">
+                                    <div class="finding-bar">
+                                        <div class="finding-bar-fill" style="width: 25%"></div>
+                                    </div>
+                                    <span class="finding-category-name">Authentication Issues</span>
+                                    <span class="finding-category-count">14 findings</span>
+                                </div>
+                                <div class="finding-category">
+                                    <div class="finding-bar">
+                                        <div class="finding-bar-fill" style="width: 20%"></div>
+                                    </div>
+                                    <span class="finding-category-name">Data Exposure</span>
+                                    <span class="finding-category-count">11 findings</span>
+                                </div>
+                                <div class="finding-category">
+                                    <div class="finding-bar">
+                                        <div class="finding-bar-fill" style="width: 45%"></div>
+                                    </div>
+                                    <span class="finding-category-name">Security Misconfiguration</span>
+                                    <span class="finding-category-count">25 findings</span>
+                                </div>
+                                <div class="finding-category">
+                                    <div class="finding-bar">
+                                        <div class="finding-bar-fill" style="width: 15%"></div>
+                                    </div>
+                                    <span class="finding-category-name">Cryptographic Failures</span>
+                                    <span class="finding-category-count">8 findings</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Detailed Finding -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-bug"></i> Detailed Finding — SQL Injection</h3>
+                            <div class="report-finding-detail">
+                                <div class="finding-header-bar critical">
+                                    <span class="finding-severity">CRITICAL</span>
+                                    <span class="finding-id">ST-2026-0001</span>
+                                    <span class="finding-cwe">CWE-89</span>
+                                </div>
+                                <div class="finding-info">
+                                    <div class="finding-info-row">
+                                        <strong>Vulnerability:</strong> SQL Injection via String Concatenation
+                                    </div>
+                                    <div class="finding-info-row">
+                                        <strong>File:</strong> src/main/java/com/ecommerce/dao/ProductDAO.java
+                                    </div>
+                                    <div class="finding-info-row">
+                                        <strong>Line:</strong> 47
+                                    </div>
+                                    <div class="finding-info-row">
+                                        <strong>Confidence:</strong> 98%
+                                    </div>
+                                </div>
+                                <div class="finding-code">
+                                    <div class="code-label">Vulnerable Code:</div>
+                                    <pre class="code-block"><code class="language-java"><span class="line-number">45</span>  <span class="code-keyword">public</span> List&lt;Product&gt; <span class="code-function">searchProducts</span>(String userQuery) {
+<span class="line-number">46</span>      String sql = <span class="code-string">"SELECT * FROM products WHERE name LIKE '%"</span>
+<span class="line-number">47</span>          + <span class="code-highlight">userQuery</span> + <span class="code-string">"%'"</span>;  <span class="code-comment">// VULNERABLE: Unsanitized input</span>
+<span class="line-number">48</span>      <span class="code-keyword">return</span> jdbcTemplate.query(sql, <span class="code-keyword">new</span> ProductRowMapper());
+<span class="line-number">49</span>  }</code></pre>
+                                </div>
+                                <div class="finding-dataflow">
+                                    <div class="code-label">Data Flow Trace:</div>
+                                    <div class="dataflow-steps">
+                                        <div class="dataflow-step">
+                                            <span class="dataflow-badge source">SOURCE</span>
+                                            <span>ProductController.java:23 — <code>request.getParameter("q")</code></span>
+                                        </div>
+                                        <div class="dataflow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                                        <div class="dataflow-step">
+                                            <span class="dataflow-badge propagate">PROPAGATE</span>
+                                            <span>ProductService.java:56 — <code>searchProducts(query)</code></span>
+                                        </div>
+                                        <div class="dataflow-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                                        <div class="dataflow-step">
+                                            <span class="dataflow-badge sink">SINK</span>
+                                            <span>ProductDAO.java:47 — <code>String concatenation into SQL query</code></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="finding-code">
+                                    <div class="code-label">Recommended Fix:</div>
+                                    <pre class="code-block"><code class="language-java"><span class="line-number">45</span>  <span class="code-keyword">public</span> List&lt;Product&gt; <span class="code-function">searchProducts</span>(String userQuery) {
+<span class="line-number">46</span>      String sql = <span class="code-string">"SELECT * FROM products WHERE name LIKE ?"</span>;
+<span class="line-number">47</span>      String <span class="code-highlight">safeParam</span> = <span class="code-string">"%"</span> + userQuery + <span class="code-string">"%"</span>;
+<span class="line-number">48</span>      <span class="code-keyword">return</span> jdbcTemplate.query(sql, <span class="code-keyword">new</span> ProductRowMapper(), safeParam);
+<span class="line-number">49</span>  }</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Deep Dive -->
+    <section class="section" id="languages">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Language Ecosystems</span>
+                <h2>Deep Understanding of Every Language Ecosystem</h2>
+                <p>SecuTrace does not just parse syntax. It understands frameworks, libraries, and language-specific idioms to deliver accurate results.</p>
+            </div>
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card">
+                    <div class="ecosystem-header">
+                        <i class="fa-brands fa-java"></i>
+                        <h3>Java Ecosystem</h3>
+                    </div>
+                    <div class="ecosystem-body">
+                        <h4>Build Systems</h4>
+                        <p>Maven, Gradle, Ant, SBT</p>
+                        <h4>Frameworks</h4>
+                        <p>Spring Framework 5/6, Spring Boot 2/3, Spring Security, Spring Data JPA, Jakarta EE 9/10, Hibernate 5/6, Apache Struts 2, JSF 2.3/4.0, Apache Wicket, Vaadin</p>
+                        <h4>Application Servers</h4>
+                        <p>Tomcat, WildFly, WebLogic, WebSphere, Jetty, Undertow</p>
+                        <h4>Security Libraries</h4>
+                        <p>Spring Security, Apache Shiro, OWASP ESAPI, Bouncy Castle, Keycloak</p>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-header">
+                        <i class="fa-brands fa-python"></i>
+                        <h3>Python Ecosystem</h3>
+                    </div>
+                    <div class="ecosystem-body">
+                        <h4>Package Managers</h4>
+                        <p>pip, Poetry, Pipenv, Conda</p>
+                        <h4>Web Frameworks</h4>
+                        <p>Django 4/5, Flask 2/3, FastAPI, Tornado, Pyramid, Bottle, Starlette, Sanic</p>
+                        <h4>ORM/Database</h4>
+                        <p>SQLAlchemy, Django ORM, Peewee, Tortoise ORM, psycopg2, PyMySQL</p>
+                        <h4>Template Engines</h4>
+                        <p>Jinja2, Django Templates, Mako, Chameleon</p>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-header">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript/TypeScript Ecosystem</h3>
+                    </div>
+                    <div class="ecosystem-body">
+                        <h4>Package Managers</h4>
+                        <p>npm, Yarn, pnpm</p>
+                        <h4>Frontend Frameworks</h4>
+                        <p>React 18, Angular 16/17, Vue.js 3, Svelte 4, Next.js 14, Nuxt 3, Astro, Remix</p>
+                        <h4>Backend Frameworks</h4>
+                        <p>Express, NestJS, Fastify, Koa, Hapi, AdonisJS, Deno Fresh</p>
+                        <h4>Security Concerns</h4>
+                        <p>Prototype pollution, DOM-based XSS, unsafe innerHTML, eval injection, dependency confusion, supply chain attacks</p>
+                    </div>
+                </div>
+                <div class="ecosystem-card">
+                    <div class="ecosystem-header">
+                        <i class="fa-solid fa-c"></i>
+                        <h3>C/C++ Ecosystem</h3>
+                    </div>
+                    <div class="ecosystem-body">
+                        <h4>Build Systems</h4>
+                        <p>CMake, Make, Autotools, Meson, Bazel, Ninja</p>
+                        <h4>Libraries</h4>
+                        <p>STL, Boost, Qt 5/6, POCO, OpenSSL, libcurl, zlib, Protobuf, gRPC</p>
+                        <h4>Platforms</h4>
+                        <p>Linux/POSIX, Windows (Win32/WinRT), macOS, Embedded (FreeRTOS, Zephyr)</p>
+                        <h4>Memory Safety</h4>
+                        <p>Buffer overflows, use-after-free, double-free, null pointer dereference, integer overflow, format string vulnerabilities, stack smashing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section section-alt" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparison</span>
+                <h2>How SecuTrace Compares to Other SAST Tools</h2>
+                <p>See how SecuTrace stacks up against the leading SAST solutions in the market.</p>
+            </div>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">SecuTrace</th>
+                            <th>Checkmarx</th>
+                            <th>Fortify</th>
+                            <th>SonarQube</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Languages Supported</td>
+                            <td class="highlight-col"><strong>10+</strong></td>
+                            <td>25+</td>
+                            <td>27+</td>
+                            <td>17+</td>
+                        </tr>
+                        <tr>
+                            <td>Security Rules</td>
+                            <td class="highlight-col"><strong>50,000+</strong></td>
+                            <td>9,000+</td>
+                            <td>25,000+</td>
+                            <td>5,000+</td>
+                        </tr>
+                        <tr>
+                            <td>False Positive Rate</td>
+                            <td class="highlight-col"><strong>&lt;5%</strong></td>
+                            <td>15-25%</td>
+                            <td>20-35%</td>
+                            <td>10-20%</td>
+                        </tr>
+                        <tr>
+                            <td>On-Premise Deployment</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                        </tr>
+                        <tr>
+                            <td>Air-Gapped Operation</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native</td>
+                            <td><i class="fa-solid fa-xmark"></i> Limited</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Indian Compliance (SEBI/RBI)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Built-in</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Data Flow Analysis</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Advanced</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Taint Analysis</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>IDE Integration</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> VS Code, IntelliJ, VS</td>
+                            <td><i class="fa-solid fa-check"></i> Multiple</td>
+                            <td><i class="fa-solid fa-check"></i> Eclipse, VS</td>
+                            <td><i class="fa-solid fa-check"></i> Multiple</td>
+                        </tr>
+                        <tr>
+                            <td>CI/CD Integration</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> All Major</td>
+                            <td><i class="fa-solid fa-check"></i> All Major</td>
+                            <td><i class="fa-solid fa-check"></i> All Major</td>
+                            <td><i class="fa-solid fa-check"></i> All Major</td>
+                        </tr>
+                        <tr>
+                            <td>Interactive HTML Reports</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-check"></i> Dashboard</td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Model</td>
+                            <td class="highlight-col"><strong>Per-project</strong></td>
+                            <td>Per-developer</td>
+                            <td>Per-application</td>
+                            <td>Free/Enterprise</td>
+                        </tr>
+                        <tr>
+                            <td>Data Residency</td>
+                            <td class="highlight-col"><strong>India (On-Prem)</strong></td>
+                            <td>Cloud (Israel/US)</td>
+                            <td>Cloud (US) / On-Prem</td>
+                            <td>Cloud (US) / On-Prem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Start Finding Vulnerabilities Today</h2>
+                <p>Get a personalized demo of SecuTrace tailored to your technology stack and compliance requirements. See how deep static analysis can transform your application security program.</p>
+                <div class="cta-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="../resources/whitepapers.html" class="btn btn-outline btn-lg">Download Datasheet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Related Resources</span>
+                <h2>Learn More About Static Analysis</h2>
+            </div>
+            <div class="resources-grid">
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Blog</span>
+                        <h3>Why SAST Alone Is Not Enough: Building a Complete AppSec Program</h3>
+                        <p>Learn how to combine SAST, SCA, DAST, and API security testing for comprehensive application protection.</p>
+                    </div>
+                </a>
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Technical Guide</span>
+                        <h3>Reducing False Positives in Static Analysis: A Practical Approach</h3>
+                        <p>Discover the techniques SecuTrace uses to achieve less than 5% false positive rate across enterprise codebases.</p>
+                    </div>
+                </a>
+                <a href="../resources/case-studies.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Case Study</span>
+                        <h3>How a Major Indian Bank Secured 200+ Applications with SecuTrace</h3>
+                        <p>See how SecuTrace helped achieve SEBI and RBI compliance while reducing vulnerability remediation time by 60%.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </div>
+                    <p class="footer-description">Enterprise-grade application security platform built for Indian regulatory compliance. Secure your code, dependencies, applications, and APIs.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace SAST</a></li>
+                        <li><a href="seculens.html">SecuLens SCA</a></li>
+                        <li><a href="secustrike.html">SecuStrike DAST</a></li>
+                        <li><a href="secushield.html">SecuShield API Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/banking.html">Banking</a></li>
+                        <li><a href="../solutions/government.html">Government</a></li>
+                        <li><a href="../solutions/insurance.html">Insurance</a></li>
+                        <li><a href="../solutions/automotive.html">Automotive</a></li>
+                        <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                        <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../resources/blog.html">Blog</a></li>
+                        <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                        <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../resources/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI</a></li>
+                        <li><a href="../compliance/rbi.html">RBI</a></li>
+                        <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                        <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                        <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                        <li><a href="../compliance/iso.html">ISO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

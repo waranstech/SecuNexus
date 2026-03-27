@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Security in Air-Gapped Environments — Free Whitepaper | SecuNexa</title>
+    <meta name="description" content="Download our whitepaper on implementing application security testing in air-gapped and isolated networks. Covers SAST, SCA, DAST, and RASP deployment without internet connectivity.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a>
+                <ul class="nav-links">
+                    <li><a href="../platform.html">Platform</a></li>
+                    <li class="dropdown"><a href="#">Products <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></li>
+                    <li class="dropdown"><a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../solutions/banking.html">Banking &amp; Finance</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/healthcare.html">Healthcare</a></li><li><a href="../solutions/insurance.html">Insurance</a></li><li><a href="../solutions/telecom.html">Telecom</a></li></ul></li>
+                    <li class="dropdown"><a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li><li><a href="../compliance/iso27001.html">ISO 27001</a></li><li><a href="../compliance/pci-dss.html">PCI DSS</a></li></ul></li>
+                    <li class="dropdown"><a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../blog/index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li></ul></li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="section section-dark" style="padding-top: 120px;">
+        <div class="container">
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div>
+                    <span class="badge">Free Whitepaper</span>
+                    <h1>Application Security in Air-Gapped Environments</h1>
+                    <p class="lead">How do you run SAST, SCA, DAST, and RASP when your production network has no internet access? This whitepaper provides a complete architecture and operational guide for air-gapped application security.</p>
+
+                    <div class="feature-list" style="margin-top: 2rem;">
+                        <div class="feature-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--accent-primary); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Architecture Blueprints</strong>
+                                <p>Reference architectures for deploying security tooling in fully isolated networks</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--accent-primary); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Offline Vulnerability Database Management</strong>
+                                <p>How to maintain up-to-date CVE data without direct internet connectivity</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--accent-primary); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>CI/CD Pipeline Integration</strong>
+                                <p>Patterns for embedding security gates in air-gapped build and deployment pipelines</p>
+                            </div>
+                        </div>
+                        <div class="feature-item" style="display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1rem;">
+                            <i class="fa-solid fa-check-circle" style="color: var(--accent-primary); margin-top: 0.25rem;"></i>
+                            <div>
+                                <strong>Compliance Alignment</strong>
+                                <p>Meeting CERT-In, RBI CSF, and SEBI CSCRF requirements in disconnected environments</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="trust-signals" style="margin-top: 2rem; padding: 1rem; background: rgba(255,255,255,0.05); border-radius: 8px; border: 1px solid rgba(255,255,255,0.1);">
+                        <p style="margin: 0; font-size: 0.9rem;"><i class="fa-solid fa-file-pdf" style="color: var(--accent-primary); margin-right: 0.5rem;"></i> <strong>32-Page Technical Whitepaper:</strong> Written by SecuNexa's engineering team with input from defense and banking sector practitioners.</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="card" style="padding: 2rem;">
+                        <h3 style="margin-bottom: 1.5rem; text-align: center;">Download the Free Whitepaper</h3>
+                        <form class="lead-form" action="#" method="POST">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required placeholder="Your full name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email *</label>
+                                <input type="email" id="email" name="email" required placeholder="you@company.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Company Name *</label>
+                                <input type="text" id="company" name="company" required placeholder="Your organization">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Your Role *</label>
+                                <select id="role" name="role" required>
+                                    <option value="">Select your role</option>
+                                    <option value="ciso">CISO / Security Head</option>
+                                    <option value="security-engineer">Security Engineer</option>
+                                    <option value="devops">DevOps / Platform Engineer</option>
+                                    <option value="architect">Solutions Architect</option>
+                                    <option value="it-manager">IT Manager</option>
+                                    <option value="developer">Developer</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="industry">Industry *</label>
+                                <select id="industry" name="industry" required>
+                                    <option value="">Select your industry</option>
+                                    <option value="banking">Banking &amp; Finance</option>
+                                    <option value="government">Government</option>
+                                    <option value="defense">Defense &amp; Aerospace</option>
+                                    <option value="insurance">Insurance</option>
+                                    <option value="healthcare">Healthcare</option>
+                                    <option value="telecom">Telecom</option>
+                                    <option value="energy">Energy &amp; Utilities</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">
+                                Download Free Whitepaper <i class="fa-solid fa-download"></i>
+                            </button>
+                            <p style="font-size: 0.8rem; text-align: center; margin-top: 1rem; opacity: 0.7;">By submitting, you agree to receive communications from SecuNexa. We respect your privacy.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Whitepaper Outline Preview -->
+    <section class="section section-light">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">What's Inside the Whitepaper</h2>
+            <div class="grid grid-2" style="margin-top: 2rem; gap: 2rem;">
+                <div>
+                    <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-1" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> The Air-Gapped Challenge</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Why traditional AppSec tools fail in isolated networks</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Common air-gapped deployment scenarios across industries</li>
+                            <li style="padding: 0.4rem 0;">Regulatory drivers mandating air-gapped security testing</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-2" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> Reference Architecture</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">On-premises deployment topology for SAST, SCA, DAST, RASP</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Secure data diode patterns for vulnerability database updates</li>
+                            <li style="padding: 0.4rem 0;">Hardware sizing and infrastructure requirements</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="padding: 2rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-3" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> Offline Vulnerability Management</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Maintaining CVE databases without internet access</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Signed update packages and tamper verification</li>
+                            <li style="padding: 0.4rem 0;">Update cadence strategies and stale-data risk mitigation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-4" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> CI/CD Pipeline Integration</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Security gates in air-gapped Jenkins, GitLab CI, and Azure DevOps</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Artifact scanning workflows for isolated build servers</li>
+                            <li style="padding: 0.4rem 0;">Policy-as-code enforcement without cloud connectivity</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="padding: 2rem; margin-bottom: 1.5rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-5" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> SBOM &amp; License Management</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Generating and maintaining SBOMs offline</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Forensic license detection in disconnected environments</li>
+                            <li style="padding: 0.4rem 0;">Compliance reporting without cloud dashboards</li>
+                        </ul>
+                    </div>
+                    <div class="card" style="padding: 2rem;">
+                        <h3 style="margin-bottom: 1rem;"><i class="fa-solid fa-6" style="color: var(--accent-primary); margin-right: 0.75rem;"></i> Compliance &amp; Audit Readiness</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Mapping air-gapped controls to CERT-In, RBI CSF, SEBI CSCRF</li>
+                            <li style="padding: 0.4rem 0; border-bottom: 1px solid rgba(255,255,255,0.1);">Audit evidence generation and export procedures</li>
+                            <li style="padding: 0.4rem 0;">Real-world case studies from banking and defense sectors</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <h2 class="section-title" style="text-align: center;">Built for High-Security Industries</h2>
+            <div class="grid grid-4" style="margin-top: 2rem;">
+                <div class="card" style="text-align: center; padding: 1.5rem;">
+                    <div class="card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <h4>Banking &amp; Finance</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 1.5rem;">
+                    <div class="card-icon"><i class="fa-solid fa-jet-fighter"></i></div>
+                    <h4>Defense &amp; Aerospace</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 1.5rem;">
+                    <div class="card-icon"><i class="fa-solid fa-landmark"></i></div>
+                    <h4>Government</h4>
+                </div>
+                <div class="card" style="text-align: center; padding: 1.5rem;">
+                    <div class="card-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h4>Energy &amp; Utilities</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand"><a href="../../index.html" class="footer-logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p><div class="footer-social"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div>
+                <div class="footer-col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></div>
+                <div class="footer-col"><h4>Solutions</h4><ul><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../platform.html">Platform Overview</a></li></ul></div>
+                <div class="footer-col"><h4>Resources</h4><ul><li><a href="../blog/index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li></ul></div>
+                <div class="footer-col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p><div class="footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></div></div>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

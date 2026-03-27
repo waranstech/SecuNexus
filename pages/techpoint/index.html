@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechPoint — Honest Product Comparisons | SecuNexa</title>
+    <meta name="description" content="See how SecuNexa products compare against leading AppSec tools. Data-driven, feature-by-feature analysis of SAST, SCA, DAST, and API Security solutions.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .techpoint-hero {
+            padding: 120px 0 60px;
+            background: linear-gradient(135deg, #0a1628 0%, #1a2a4a 50%, #0f1d35 100%);
+            text-align: center;
+            color: #fff;
+        }
+        .techpoint-hero h1 {
+            font-size: 2.8rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+        }
+        .techpoint-hero h1 span {
+            background: linear-gradient(135deg, #00d4ff, #7b2ff7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .techpoint-hero p {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            max-width: 640px;
+            margin: 0 auto;
+        }
+        .tp-section {
+            padding: 60px 0 30px;
+        }
+        .tp-section__title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        .tp-section__subtitle {
+            color: #64748b;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+        .tp-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.25rem;
+        }
+        .tp-card {
+            background: #fff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .tp-card:hover {
+            border-color: #7b2ff7;
+            box-shadow: 0 8px 30px rgba(123, 47, 247, 0.1);
+            transform: translateY(-3px);
+        }
+        .tp-card__vs {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
+        }
+        .tp-card__vs span {
+            color: #7b2ff7;
+        }
+        .tp-card__tagline {
+            font-size: 0.875rem;
+            color: #64748b;
+            flex: 1;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        .tp-card__link {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: #7b2ff7;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+        }
+        .tp-card__link:hover {
+            color: #6320d0;
+        }
+        .tp-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.75rem;
+        }
+        .tp-badge--platform { background: #ede9fe; color: #7b2ff7; }
+        .tp-badge--sast { background: #dbeafe; color: #2563eb; }
+        .tp-badge--sca { background: #d1fae5; color: #059669; }
+        .tp-badge--dast { background: #fef3c7; color: #d97706; }
+        .tp-badge--api { background: #fce7f3; color: #db2777; }
+        @media (max-width: 768px) {
+            .techpoint-hero h1 { font-size: 2rem; }
+            .tp-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="nav__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav__menu" id="navMenu">
+                    <li class="nav__item"><a href="../platform.html" class="nav__link">Platform</a></li>
+                    <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace — SAST</a></li>
+                            <li><a href="../products/seculens.html">SecuLens — SCA</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike — DAST</a></li>
+                            <li><a href="../products/secushield.html">SecuShield — API Security</a></li>
+                        </ul></li>
+                    <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul></li>
+                    <li class="nav__item"><a href="../blog/index.html" class="nav__link">Resources</a></li>
+                    <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn--primary nav__cta">Request Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="techpoint-hero">
+        <div class="container">
+            <h1><span>TechPoint</span> — Honest Product Comparisons</h1>
+            <p>See how SecuNexa products compare against leading AppSec tools. Data-driven, feature-by-feature analysis.</p>
+        </div>
+    </section>
+
+    <!-- SecuNexus Platform Comparisons -->
+    <section class="tp-section">
+        <div class="container">
+            <h2 class="tp-section__title"><i class="fa-solid fa-layer-group"></i> SecuNexus Platform Comparisons</h2>
+            <p class="tp-section__subtitle">Full-platform head-to-head against integrated AppSec suites</p>
+            <div class="tp-grid">
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Checkmarx One</div>
+                    <p class="tp-card__tagline">Unified air-gapped platform vs cloud-first suite. Compare deployment, compliance, and total coverage.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Checkmarx-One" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Synopsys</div>
+                    <p class="tp-card__tagline">Indian-built platform vs legacy enterprise suite. Evaluate air-gap support and pricing models.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Synopsys" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Veracode</div>
+                    <p class="tp-card__tagline">On-prem sovereign security vs cloud-dependent scanning. Compare compliance and data residency.</p>
+                    <a href="secunexus-vs-veracode.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> HCL AppScan</div>
+                    <p class="tp-card__tagline">Modern architecture vs legacy IBM tooling. Compare developer experience and scan speed.</p>
+                    <a href="../contact.html?ref=techpoint&compare=HCL-AppScan" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Fortify</div>
+                    <p class="tp-card__tagline">Cost-effective air-gapped platform vs premium enterprise suite. Compare TCO and support.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Fortify" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> GitLab Security</div>
+                    <p class="tp-card__tagline">Dedicated AppSec platform vs bundled DevOps features. Compare depth of analysis and coverage.</p>
+                    <a href="../contact.html?ref=techpoint&compare=GitLab-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> GitHub Advanced Security</div>
+                    <p class="tp-card__tagline">Vendor-neutral platform vs GitHub-locked tooling. Compare flexibility and enterprise features.</p>
+                    <a href="../contact.html?ref=techpoint&compare=GitHub-Advanced-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> SonarQube</div>
+                    <p class="tp-card__tagline">Full security platform vs code quality tool. Compare vulnerability detection depth and compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=SonarQube-Platform" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Micro Focus</div>
+                    <p class="tp-card__tagline">Next-gen unified platform vs legacy conglomerate tools. Compare integration and usability.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Micro-Focus" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--platform">Platform</span>
+                    <div class="tp-card__vs">SecuNexus <span>vs</span> Contrast Security</div>
+                    <p class="tp-card__tagline">Agentless air-gapped scanning vs agent-based runtime protection. Compare deployment models.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Contrast-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SecuTrace SAST Comparisons -->
+    <section class="tp-section">
+        <div class="container">
+            <h2 class="tp-section__title"><i class="fa-solid fa-code"></i> SecuTrace SAST Comparisons</h2>
+            <p class="tp-section__subtitle">Static Application Security Testing — source code analysis tools</p>
+            <div class="tp-grid">
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Checkmarx SAST</div>
+                    <p class="tp-card__tagline">Air-gapped SAST with Indian compliance vs cloud-first enterprise scanner. Compare accuracy and pricing.</p>
+                    <a href="secutrace-vs-checkmarx.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Fortify SCA</div>
+                    <p class="tp-card__tagline">Cost-effective air-gapped SAST vs premium Fortify scanning. Compare offline capabilities and TCO.</p>
+                    <a href="secutrace-vs-fortify.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> SonarQube</div>
+                    <p class="tp-card__tagline">Dedicated security SAST vs code quality platform. Compare vulnerability depth and data flow analysis.</p>
+                    <a href="secutrace-vs-sonarqube.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Coverity</div>
+                    <p class="tp-card__tagline">Sovereign SAST vs Synopsys legacy scanner. Compare deployment flexibility and language support.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Coverity" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Semgrep</div>
+                    <p class="tp-card__tagline">Enterprise air-gapped SAST vs open-source pattern matcher. Compare analysis depth and compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Semgrep" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> CodeQL</div>
+                    <p class="tp-card__tagline">Vendor-neutral SAST vs GitHub-only analysis. Compare portability and enterprise readiness.</p>
+                    <a href="../contact.html?ref=techpoint&compare=CodeQL" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Klocwork</div>
+                    <p class="tp-card__tagline">Modern SAST engine vs legacy C/C++ analyzer. Compare multi-language support and CI/CD integration.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Klocwork" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> PVS-Studio</div>
+                    <p class="tp-card__tagline">Full security SAST vs code quality checker. Compare vulnerability categories and reporting.</p>
+                    <a href="../contact.html?ref=techpoint&compare=PVS-Studio" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Snyk Code</div>
+                    <p class="tp-card__tagline">Air-gapped enterprise SAST vs cloud-dependent scanning. Compare data sovereignty and pricing.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Snyk-Code" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sast">SAST</span>
+                    <div class="tp-card__vs">SecuTrace <span>vs</span> Bearer</div>
+                    <p class="tp-card__tagline">Comprehensive SAST platform vs lightweight data flow tool. Compare rule coverage and enterprise features.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Bearer" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SecuLens SCA Comparisons -->
+    <section class="tp-section">
+        <div class="container">
+            <h2 class="tp-section__title"><i class="fa-solid fa-cubes"></i> SecuLens SCA Comparisons</h2>
+            <p class="tp-section__subtitle">Software Composition Analysis — open-source risk management tools</p>
+            <div class="tp-grid">
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Black Duck</div>
+                    <p class="tp-card__tagline">Air-gapped SCA with forensic scanning vs cloud-dependent Black Duck. Compare license analysis depth.</p>
+                    <a href="seculens-vs-blackduck.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Mend (WhiteSource)</div>
+                    <p class="tp-card__tagline">On-premises SCA vs cloud-first composition analysis. Compare air-gap support and forensic scanning.</p>
+                    <a href="seculens-vs-mend.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Snyk Open Source</div>
+                    <p class="tp-card__tagline">Sovereign air-gapped SCA vs developer-friendly cloud tool. Compare data residency and compliance.</p>
+                    <a href="seculens-vs-snyk.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Sonatype Nexus</div>
+                    <p class="tp-card__tagline">Forensic SCA vs repository management. Compare vulnerability detection accuracy and policy engine.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Sonatype-Nexus" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> JFrog Xray</div>
+                    <p class="tp-card__tagline">Standalone SCA vs Artifactory-dependent scanning. Compare independence and coverage depth.</p>
+                    <a href="../contact.html?ref=techpoint&compare=JFrog-Xray" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> FOSSA</div>
+                    <p class="tp-card__tagline">Air-gapped compliance SCA vs cloud license manager. Compare offline capability and compliance depth.</p>
+                    <a href="../contact.html?ref=techpoint&compare=FOSSA" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> OWASP Dependency-Check</div>
+                    <p class="tp-card__tagline">Enterprise SCA vs open-source basic scanner. Compare accuracy, support, and enterprise features.</p>
+                    <a href="../contact.html?ref=techpoint&compare=OWASP-Dependency-Check" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Trivy</div>
+                    <p class="tp-card__tagline">Full SCA platform vs container-focused scanner. Compare SBOM generation and license compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Trivy" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Anchore</div>
+                    <p class="tp-card__tagline">Comprehensive SCA vs container security tool. Compare source code analysis and policy enforcement.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Anchore" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--sca">SCA</span>
+                    <div class="tp-card__vs">SecuLens <span>vs</span> Debricked</div>
+                    <p class="tp-card__tagline">Air-gapped enterprise SCA vs cloud-only open source tool. Compare deployment and compliance features.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Debricked" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SecuStrike DAST Comparisons -->
+    <section class="tp-section">
+        <div class="container">
+            <h2 class="tp-section__title"><i class="fa-solid fa-crosshairs"></i> SecuStrike DAST Comparisons</h2>
+            <p class="tp-section__subtitle">Dynamic Application Security Testing — runtime vulnerability scanners</p>
+            <div class="tp-grid">
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> OWASP ZAP</div>
+                    <p class="tp-card__tagline">Enterprise DAST platform vs open-source proxy tool. Compare automation, support, and reporting.</p>
+                    <a href="../contact.html?ref=techpoint&compare=OWASP-ZAP" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Burp Suite</div>
+                    <p class="tp-card__tagline">Automated enterprise DAST vs manual pen-testing tool. Compare business logic testing and compliance.</p>
+                    <a href="secustrike-vs-burpsuite.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Acunetix</div>
+                    <p class="tp-card__tagline">Air-gapped DAST with compliance vs cloud scanner. Compare deployment and Indian regulatory support.</p>
+                    <a href="secustrike-vs-acunetix.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Invicti (Netsparker)</div>
+                    <p class="tp-card__tagline">On-prem DAST vs proof-based scanning platform. Compare accuracy and enterprise scalability.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Invicti" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Qualys WAS</div>
+                    <p class="tp-card__tagline">Dedicated DAST vs bundled VM web scanner. Compare scan depth and standalone capability.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Qualys-WAS" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Rapid7 AppSpider</div>
+                    <p class="tp-card__tagline">Modern DAST engine vs legacy scanner. Compare API testing and modern app support.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Rapid7-AppSpider" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> HCL AppScan DAST</div>
+                    <p class="tp-card__tagline">Next-gen DAST vs legacy IBM scanning. Compare modern framework support and scan speed.</p>
+                    <a href="../contact.html?ref=techpoint&compare=HCL-AppScan-DAST" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Detectify</div>
+                    <p class="tp-card__tagline">Enterprise on-prem DAST vs SaaS-only surface monitoring. Compare depth and deployment flexibility.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Detectify" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> StackHawk</div>
+                    <p class="tp-card__tagline">Full enterprise DAST vs developer-only CI tool. Compare coverage breadth and compliance features.</p>
+                    <a href="../contact.html?ref=techpoint&compare=StackHawk" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--dast">DAST</span>
+                    <div class="tp-card__vs">SecuStrike <span>vs</span> Nuclei</div>
+                    <p class="tp-card__tagline">Enterprise DAST platform vs open-source template scanner. Compare automation and enterprise readiness.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Nuclei" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SecuShield API Security Comparisons -->
+    <section class="tp-section" style="padding-bottom: 60px;">
+        <div class="container">
+            <h2 class="tp-section__title"><i class="fa-solid fa-plug"></i> SecuShield API Security Comparisons</h2>
+            <p class="tp-section__subtitle">API Security — protect your APIs from threats and vulnerabilities</p>
+            <div class="tp-grid">
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Salt Security</div>
+                    <p class="tp-card__tagline">On-premises API security vs cloud-only AI platform. Compare data sovereignty and deployment models.</p>
+                    <a href="secushield-vs-salt.html" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Noname Security</div>
+                    <p class="tp-card__tagline">Air-gapped API protection vs cloud-dependent monitoring. Compare on-prem capability and compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Noname-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> 42Crunch</div>
+                    <p class="tp-card__tagline">Full API lifecycle security vs spec-focused testing. Compare runtime protection and threat detection.</p>
+                    <a href="../contact.html?ref=techpoint&compare=42Crunch" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Wallarm</div>
+                    <p class="tp-card__tagline">Sovereign API security vs cloud WAF/API tool. Compare on-prem deployment and Indian compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Wallarm" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> APIsec</div>
+                    <p class="tp-card__tagline">Enterprise API security vs automated testing platform. Compare coverage and business logic analysis.</p>
+                    <a href="../contact.html?ref=techpoint&compare=APIsec" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Postman Security</div>
+                    <p class="tp-card__tagline">Dedicated API security vs development tool add-on. Compare security depth and threat modeling.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Postman-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Traceable AI</div>
+                    <p class="tp-card__tagline">On-prem API security vs cloud AI platform. Compare air-gap support and real-time protection.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Traceable-AI" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Cequence</div>
+                    <p class="tp-card__tagline">Lightweight API security vs bot management suite. Compare focus, simplicity, and deployment speed.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Cequence" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Akamai API Security</div>
+                    <p class="tp-card__tagline">Standalone API security vs CDN-bundled offering. Compare independence and on-prem capability.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Akamai-API-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="tp-card">
+                    <span class="tp-badge tp-badge--api">API Security</span>
+                    <div class="tp-card__vs">SecuShield <span>vs</span> Imperva API Security</div>
+                    <p class="tp-card__tagline">Purpose-built API security vs WAF extension. Compare API-specific detection and compliance.</p>
+                    <a href="../contact.html?ref=techpoint&compare=Imperva-API-Security" class="tp-card__link">View Comparison <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand"><a href="../../index.html" class="footer__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a><p>Unified Application Security Platform by Meteonic Innovation Pvt Ltd.</p></div>
+                <div class="footer__col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (API)</a></li></ul></div>
+                <div class="footer__col"><h4>Solutions</h4><ul><li><a href="../solutions/banking.html">Banking</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/automotive.html">Automotive</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li></ul></div>
+                <div class="footer__col"><h4>Resources</h4><ul><li><a href="../blog/index.html">Blog</a></li><li><a href="index.html">TechPoint</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
+                <div class="footer__col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/dpdp.html">DPDP Act</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

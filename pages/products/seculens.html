@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuLens SCA — Software Composition Analysis | SecuNexa</title>
+    <meta name="description" content="SecuLens SCA identifies vulnerabilities, license risks, and hidden dependencies in your open-source components. Generate SBOMs and achieve compliance.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace <span class="badge">SAST</span></a></li>
+                            <li><a href="seculens.html">SecuLens <span class="badge">SCA</span></a></li>
+                            <li><a href="secustrike.html">SecuStrike <span class="badge">DAST</span></a></li>
+                            <li><a href="secushield.html">SecuShield <span class="badge">API Security</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI</a></li>
+                            <li><a href="../compliance/rbi.html">RBI</a></li>
+                            <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                            <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                            <li><a href="../compliance/iso.html">ISO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../resources/blog.html">Blog</a></li>
+                            <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-nav">Request Demo</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero seculens-hero">
+        <div class="container">
+            <div class="product-hero-content">
+                <div class="product-badge">
+                    <i class="fa-solid fa-eye"></i>
+                    <span>SecuLens SCA</span>
+                </div>
+                <h1>Know Every Open-Source Risk — <span class="gradient-text">Vulnerabilities, Licenses, and Hidden Dependencies</span></h1>
+                <p class="product-hero-description">Comprehensive software composition analysis that goes beyond vulnerability scanning. SecuLens maps your entire dependency tree, detects license compliance risks through forensic source-code analysis, and generates regulatory-ready SBOMs for Indian compliance frameworks.</p>
+                <div class="product-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">250K+</span>
+                        <span class="stat-label">CVEs Tracked</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Ecosystems</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">7</span>
+                        <span class="stat-label">Export Formats</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">On-Premise</span>
+                    </div>
+                </div>
+                <div class="product-hero-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#real-world-example" class="btn btn-outline btn-lg">See Real Results</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Does -->
+    <section class="section" id="what-it-does">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What SecuLens Does</span>
+                <h2>Complete Visibility Into Your Open-Source Supply Chain</h2>
+                <p>SecuLens provides six layers of analysis to give you total control over your open-source risk posture.</p>
+            </div>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-bug"></i>
+                    </div>
+                    <h3>Vulnerability Detection</h3>
+                    <p>Scans every direct and transitive dependency against our comprehensive vulnerability intelligence database of 250,000+ CVEs. Identifies known vulnerabilities with severity ratings, exploitability scores, and fix availability. Correlates findings with CISA KEV catalog for actively exploited vulnerabilities.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <h3>License Compliance</h3>
+                    <p>Detects license types for every dependency in your project, including dual-licensed components. Identifies license conflicts, copyleft contamination risks, commercial use restrictions, and attribution requirements. Generates compliance reports mapped to your organization's license policy.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-file-invoice"></i>
+                    </div>
+                    <h3>SBOM Generation</h3>
+                    <p>Produces standards-compliant Software Bill of Materials in CycloneDX and SPDX formats. Includes complete dependency metadata, vulnerability associations, license information, supplier details, and cryptographic hashes for every component in your software supply chain.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-microscope"></i>
+                    </div>
+                    <h3>Forensic License Analysis</h3>
+                    <p>Goes beyond manifest file declarations by scanning actual source code files for license headers, copyright notices, and license text patterns. Collects evidence from source files, README documents, and embedded notices. Assigns confidence scores to each license detection for audit-ready reporting.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <h3>Transitive Dependency Mapping</h3>
+                    <p>Resolves the complete dependency tree including all transitive (indirect) dependencies. Visualizes dependency chains to show how vulnerable components enter your project. Identifies dependency conflicts, version mismatches, and abandoned or unmaintained libraries.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3>Fix Guidance</h3>
+                    <p>Provides actionable remediation guidance for every vulnerability, including the minimum safe version, upgrade path analysis, and breaking change warnings. Identifies if a fix is available, if the component is end-of-life, or if an alternative library should be considered.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2>Deep Software Composition Analysis for the Enterprise</h2>
+                <p>SecuLens is engineered for the complexity of real-world enterprise software supply chains.</p>
+            </div>
+
+            <!-- Feature 1: Ecosystem Coverage -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <div>
+                        <h3>Ecosystem Coverage</h3>
+                        <p>SecuLens supports all major package ecosystems, understanding their unique dependency resolution mechanisms, manifest formats, and lock file structures.</p>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Ecosystem</th>
+                                <th>Package Manager</th>
+                                <th>Manifest Files</th>
+                                <th>Lock Files</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Java</strong></td>
+                                <td>Maven, Gradle</td>
+                                <td>pom.xml, build.gradle, build.gradle.kts</td>
+                                <td>gradle.lockfile, maven-dependency-tree</td>
+                            </tr>
+                            <tr>
+                                <td><strong>JavaScript</strong></td>
+                                <td>npm, Yarn, pnpm</td>
+                                <td>package.json</td>
+                                <td>package-lock.json, yarn.lock, pnpm-lock.yaml</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Python</strong></td>
+                                <td>pip, Poetry, Pipenv, Conda</td>
+                                <td>requirements.txt, pyproject.toml, Pipfile, setup.py</td>
+                                <td>Pipfile.lock, poetry.lock</td>
+                            </tr>
+                            <tr>
+                                <td><strong>.NET</strong></td>
+                                <td>NuGet</td>
+                                <td>*.csproj, packages.config, Directory.Packages.props</td>
+                                <td>packages.lock.json</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Go</strong></td>
+                                <td>Go Modules</td>
+                                <td>go.mod</td>
+                                <td>go.sum</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ruby</strong></td>
+                                <td>Bundler</td>
+                                <td>Gemfile, *.gemspec</td>
+                                <td>Gemfile.lock</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PHP</strong></td>
+                                <td>Composer</td>
+                                <td>composer.json</td>
+                                <td>composer.lock</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Rust</strong></td>
+                                <td>Cargo</td>
+                                <td>Cargo.toml</td>
+                                <td>Cargo.lock</td>
+                            </tr>
+                            <tr>
+                                <td><strong>C/C++</strong></td>
+                                <td>Conan, vcpkg</td>
+                                <td>conanfile.txt, conanfile.py, vcpkg.json</td>
+                                <td>conan.lock, vcpkg-configuration.json</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Feature 2: Vulnerability Intelligence DB -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-database"></i>
+                    </div>
+                    <div>
+                        <h3>Vulnerability Intelligence Database</h3>
+                        <p>Our vulnerability database aggregates data from multiple authoritative sources and is updated continuously for the most comprehensive coverage available.</p>
+                    </div>
+                </div>
+                <div class="vuln-sources-grid">
+                    <div class="vuln-source-card">
+                        <h4><i class="fa-solid fa-landmark"></i> NVD</h4>
+                        <p>NIST National Vulnerability Database — the US government repository of standards-based vulnerability data with CVE identifiers, CVSS scoring, and CWE classifications.</p>
+                        <span class="vuln-count">220,000+ CVEs</span>
+                    </div>
+                    <div class="vuln-source-card">
+                        <h4><i class="fa-brands fa-github"></i> GitHub Advisory DB</h4>
+                        <p>GitHub Security Advisories including community-curated vulnerability reports, package-specific vulnerability mappings, and maintainer-reviewed advisories.</p>
+                        <span class="vuln-count">15,000+ Advisories</span>
+                    </div>
+                    <div class="vuln-source-card">
+                        <h4><i class="fa-solid fa-globe"></i> OSV</h4>
+                        <p>Open Source Vulnerabilities database providing ecosystem-specific vulnerability data with precise affected version ranges and fix information.</p>
+                        <span class="vuln-count">45,000+ Entries</span>
+                    </div>
+                    <div class="vuln-source-card">
+                        <h4><i class="fa-solid fa-shield-halved"></i> CISA KEV</h4>
+                        <p>CISA Known Exploited Vulnerabilities catalog identifying CVEs that are actively being exploited in the wild, requiring urgent remediation.</p>
+                        <span class="vuln-count">1,100+ KEVs</span>
+                    </div>
+                    <div class="vuln-source-card">
+                        <h4><i class="fa-solid fa-flask"></i> Custom Research</h4>
+                        <p>SecuNexa security research team contributions including zero-day discoveries, India-specific threat intelligence, and vulnerabilities not yet in public databases.</p>
+                        <span class="vuln-count">2,500+ Exclusive</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Forensic License Detection -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-fingerprint"></i>
+                    </div>
+                    <div>
+                        <h3>Forensic License Detection</h3>
+                        <p>What makes SecuLens unique: we do not just read license declarations from manifest files. We scan the actual source code to find embedded license headers, copyright notices, and license texts that may contradict or supplement declared licenses.</p>
+                    </div>
+                </div>
+                <div class="forensic-features">
+                    <div class="forensic-card">
+                        <div class="forensic-step">1</div>
+                        <h4>Source File Scanning</h4>
+                        <p>Every source file in every dependency is scanned for license headers, copyright notices, SPDX identifiers, and license text patterns. Covers files that manifest declarations miss entirely.</p>
+                    </div>
+                    <div class="forensic-card">
+                        <div class="forensic-step">2</div>
+                        <h4>Evidence Collection</h4>
+                        <p>For each detected license, SecuLens records the exact file path, line number, matched text, and license pattern that triggered the detection. This creates an audit trail for legal review.</p>
+                    </div>
+                    <div class="forensic-card">
+                        <div class="forensic-step">3</div>
+                        <h4>Confidence Scoring</h4>
+                        <p>Each license detection is assigned a confidence score (0-100%) based on match quality, source reliability, and corroboration from multiple files. High-confidence findings can be auto-approved; low-confidence findings are flagged for manual review.</p>
+                    </div>
+                    <div class="forensic-card">
+                        <div class="forensic-step">4</div>
+                        <h4>Conflict Detection</h4>
+                        <p>Identifies cases where the declared license in a manifest file differs from what is found in the actual source code. Detects dual-licensing, license changes between versions, and copyleft contamination from transitive dependencies.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Interactive HTML Reports -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-chart-bar"></i>
+                    </div>
+                    <div>
+                        <h3>Interactive HTML Reports</h3>
+                        <p>Generate beautiful, self-contained HTML reports that can be shared with stakeholders, attached to compliance submissions, or archived for audit purposes. Reports are fully interactive with filtering, sorting, and drill-down capabilities.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: Multi-Format Export -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-file-export"></i>
+                    </div>
+                    <div>
+                        <h3>Multi-Format Export</h3>
+                        <p>Export scan results in any format your workflow requires. From executive PDF reports to machine-readable SBOMs, SecuLens has you covered.</p>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Format</th>
+                                <th>Use Case</th>
+                                <th>Contents</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>HTML</strong></td>
+                                <td>Interactive review and stakeholder sharing</td>
+                                <td>Full report with charts, tables, drill-down, filtering, and search</td>
+                            </tr>
+                            <tr>
+                                <td><strong>PDF</strong></td>
+                                <td>Executive reporting and compliance submissions</td>
+                                <td>Formatted report with executive summary, findings, and remediation</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Excel</strong></td>
+                                <td>Data analysis and custom reporting</td>
+                                <td>Multi-sheet workbook with vulnerabilities, licenses, and dependencies</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CSV</strong></td>
+                                <td>Integration with other tools and databases</td>
+                                <td>Flat file export of all findings for import into other systems</td>
+                            </tr>
+                            <tr>
+                                <td><strong>JSON</strong></td>
+                                <td>API integration and automation</td>
+                                <td>Structured data output for programmatic consumption</td>
+                            </tr>
+                            <tr>
+                                <td><strong>CycloneDX</strong></td>
+                                <td>SBOM standard (OWASP)</td>
+                                <td>Full BOM with vulnerabilities, licenses, and dependency graph</td>
+                            </tr>
+                            <tr>
+                                <td><strong>SPDX</strong></td>
+                                <td>SBOM standard (Linux Foundation)</td>
+                                <td>License-focused BOM with full package and relationship data</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Feature 6: Compliance Reporting -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                    </div>
+                    <div>
+                        <h3>Indian Compliance Reporting</h3>
+                        <p>Pre-built compliance report templates mapped to SEBI, RBI, and CERT-In requirements. Generate audit-ready documentation that satisfies regulatory expectations without manual effort.</p>
+                    </div>
+                </div>
+                <div class="compliance-cards">
+                    <div class="compliance-card">
+                        <h4><i class="fa-solid fa-landmark"></i> SEBI Compliance</h4>
+                        <p>Reports mapped to SEBI Cybersecurity and Cyber Resilience Framework (CSCRF) requirements for stock brokers, mutual funds, and market intermediaries. Covers software supply chain risk assessment and third-party component inventory.</p>
+                    </div>
+                    <div class="compliance-card">
+                        <h4><i class="fa-solid fa-building-columns"></i> RBI Compliance</h4>
+                        <p>Reports aligned with RBI Master Direction on IT Governance, Risk, Controls and Assurance Practices. Addresses open-source software risk management and software asset inventory requirements for banks and NBFCs.</p>
+                    </div>
+                    <div class="compliance-card">
+                        <h4><i class="fa-solid fa-shield-halved"></i> CERT-In Compliance</h4>
+                        <p>Reports supporting CERT-In vulnerability disclosure and incident reporting requirements. Includes vulnerability tracking, remediation timelines, and evidence of continuous security monitoring for critical infrastructure operators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Real-World Example -->
+    <section class="section" id="real-world-example">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Real-World Results</span>
+                <h2>SecuLens Scan of OWASP WebGoat</h2>
+                <p>Here are the actual results from scanning the popular OWASP WebGoat application, a deliberately vulnerable Java web application used for security training.</p>
+            </div>
+            <div class="real-world-grid">
+                <div class="rw-stat-card">
+                    <div class="rw-stat-icon">
+                        <i class="fa-solid fa-cubes"></i>
+                    </div>
+                    <div class="rw-stat-number">165</div>
+                    <div class="rw-stat-label">Total Libraries Detected</div>
+                    <p>Direct and transitive dependencies across the entire dependency tree, including libraries pulled in by frameworks like Spring Boot.</p>
+                </div>
+                <div class="rw-stat-card">
+                    <div class="rw-stat-icon">
+                        <i class="fa-solid fa-triangle-exclamation"></i>
+                    </div>
+                    <div class="rw-stat-number">86</div>
+                    <div class="rw-stat-label">Vulnerabilities Found</div>
+                    <p>Known vulnerabilities across all severity levels, including critical issues like Log4Shell, Spring4Shell, and Jackson deserialization flaws.</p>
+                </div>
+                <div class="rw-stat-card">
+                    <div class="rw-stat-icon">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                    </div>
+                    <div class="rw-stat-number">12</div>
+                    <div class="rw-stat-label">Unique License Types</div>
+                    <p>Including Apache-2.0, MIT, EPL-2.0, LGPL-2.1, BSD-2-Clause, BSD-3-Clause, and others requiring compliance attention.</p>
+                </div>
+                <div class="rw-stat-card">
+                    <div class="rw-stat-icon">
+                        <i class="fa-solid fa-code-branch"></i>
+                    </div>
+                    <div class="rw-stat-number">4</div>
+                    <div class="rw-stat-label">License Conflicts</div>
+                    <p>Cases where declared licenses differed from forensic analysis results, including one GPL-contaminated transitive dependency chain.</p>
+                </div>
+            </div>
+            <div class="rw-breakdown">
+                <h3>Vulnerability Severity Breakdown</h3>
+                <div class="severity-bars">
+                    <div class="severity-row">
+                        <span class="severity-label critical">Critical</span>
+                        <div class="severity-bar-track">
+                            <div class="severity-bar-fill critical" style="width: 16%"></div>
+                        </div>
+                        <span class="severity-count">14</span>
+                    </div>
+                    <div class="severity-row">
+                        <span class="severity-label high">High</span>
+                        <div class="severity-bar-track">
+                            <div class="severity-bar-fill high" style="width: 28%"></div>
+                        </div>
+                        <span class="severity-count">24</span>
+                    </div>
+                    <div class="severity-row">
+                        <span class="severity-label medium">Medium</span>
+                        <div class="severity-bar-track">
+                            <div class="severity-bar-fill medium" style="width: 33%"></div>
+                        </div>
+                        <span class="severity-count">28</span>
+                    </div>
+                    <div class="severity-row">
+                        <span class="severity-label low">Low</span>
+                        <div class="severity-bar-track">
+                            <div class="severity-bar-fill low" style="width: 23%"></div>
+                        </div>
+                        <span class="severity-count">20</span>
+                    </div>
+                </div>
+                <h3>License Distribution</h3>
+                <div class="license-distribution">
+                    <div class="license-item">
+                        <div class="license-color" style="background: #22c55e;"></div>
+                        <span class="license-name">Apache-2.0</span>
+                        <span class="license-pct">52%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #3b82f6;"></div>
+                        <span class="license-name">MIT</span>
+                        <span class="license-pct">18%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #8b5cf6;"></div>
+                        <span class="license-name">EPL-2.0</span>
+                        <span class="license-pct">9%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #f59e0b;"></div>
+                        <span class="license-name">LGPL-2.1</span>
+                        <span class="license-pct">7%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #06b6d4;"></div>
+                        <span class="license-name">BSD-3-Clause</span>
+                        <span class="license-pct">6%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #ec4899;"></div>
+                        <span class="license-name">BSD-2-Clause</span>
+                        <span class="license-pct">4%</span>
+                    </div>
+                    <div class="license-item">
+                        <div class="license-color" style="background: #94a3b8;"></div>
+                        <span class="license-name">Others</span>
+                        <span class="license-pct">4%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Report Mockup -->
+    <section class="section section-alt" id="sample-report">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sample Report</span>
+                <h2>See What a SecuLens Report Looks Like</h2>
+                <p>Every scan produces a detailed, interactive report covering vulnerabilities, licenses, and dependency mapping.</p>
+            </div>
+            <div class="report-mockup">
+                <div class="report-window">
+                    <div class="report-titlebar">
+                        <div class="report-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="report-title">SecuLens SCA Report — WebGoat 2024.2</span>
+                    </div>
+                    <div class="report-content">
+                        <!-- Risk Score Card -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-gauge-high"></i> Risk Score Card</h3>
+                            <div class="risk-score-display">
+                                <div class="risk-score-circle high-risk">
+                                    <span class="risk-score-value">82</span>
+                                    <span class="risk-score-max">/100</span>
+                                </div>
+                                <div class="risk-score-details">
+                                    <div class="risk-factor">
+                                        <span class="risk-factor-label">Vulnerability Risk</span>
+                                        <div class="risk-factor-bar"><div class="risk-factor-fill" style="width: 88%; background: #ef4444;"></div></div>
+                                        <span class="risk-factor-score">88/100</span>
+                                    </div>
+                                    <div class="risk-factor">
+                                        <span class="risk-factor-label">License Risk</span>
+                                        <div class="risk-factor-bar"><div class="risk-factor-fill" style="width: 45%; background: #f59e0b;"></div></div>
+                                        <span class="risk-factor-score">45/100</span>
+                                    </div>
+                                    <div class="risk-factor">
+                                        <span class="risk-factor-label">Dependency Health</span>
+                                        <div class="risk-factor-bar"><div class="risk-factor-fill" style="width: 62%; background: #f97316;"></div></div>
+                                        <span class="risk-factor-score">62/100</span>
+                                    </div>
+                                    <div class="risk-factor">
+                                        <span class="risk-factor-label">Supply Chain Risk</span>
+                                        <div class="risk-factor-bar"><div class="risk-factor-fill" style="width: 71%; background: #f97316;"></div></div>
+                                        <span class="risk-factor-score">71/100</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Severity Cards -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-chart-pie"></i> Vulnerability Summary</h3>
+                            <div class="report-summary-grid">
+                                <div class="report-stat critical">
+                                    <span class="report-stat-number">14</span>
+                                    <span class="report-stat-label">Critical</span>
+                                </div>
+                                <div class="report-stat high">
+                                    <span class="report-stat-number">24</span>
+                                    <span class="report-stat-label">High</span>
+                                </div>
+                                <div class="report-stat medium">
+                                    <span class="report-stat-number">28</span>
+                                    <span class="report-stat-label">Medium</span>
+                                </div>
+                                <div class="report-stat low">
+                                    <span class="report-stat-number">20</span>
+                                    <span class="report-stat-label">Low</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Top Vulnerable Dependencies -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-list-ol"></i> Top Vulnerable Dependencies</h3>
+                            <div class="table-responsive">
+                                <table class="report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>Component</th>
+                                            <th>Version</th>
+                                            <th>Vulnerabilities</th>
+                                            <th>Highest Severity</th>
+                                            <th>Fix Available</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>log4j-core</td>
+                                            <td>2.14.1</td>
+                                            <td>5</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>2.21.1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>spring-webmvc</td>
+                                            <td>5.3.15</td>
+                                            <td>4</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>5.3.39</td>
+                                        </tr>
+                                        <tr>
+                                            <td>jackson-databind</td>
+                                            <td>2.13.1</td>
+                                            <td>8</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>2.17.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>commons-text</td>
+                                            <td>1.9</td>
+                                            <td>2</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>1.12.0</td>
+                                        </tr>
+                                        <tr>
+                                            <td>snakeyaml</td>
+                                            <td>1.30</td>
+                                            <td>3</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>2.2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>h2-database</td>
+                                            <td>2.1.210</td>
+                                            <td>3</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>2.2.224</td>
+                                        </tr>
+                                        <tr>
+                                            <td>tomcat-embed-core</td>
+                                            <td>9.0.56</td>
+                                            <td>6</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>9.0.87</td>
+                                        </tr>
+                                        <tr>
+                                            <td>guava</td>
+                                            <td>30.1-jre</td>
+                                            <td>2</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>33.1.0-jre</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparison</span>
+                <h2>How SecuLens Compares to Other SCA Tools</h2>
+                <p>See how SecuLens stacks up against the leading software composition analysis solutions.</p>
+            </div>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">SecuLens</th>
+                            <th>Mend (WhiteSource)</th>
+                            <th>Black Duck</th>
+                            <th>Snyk</th>
+                            <th>Sonatype</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ecosystems Supported</td>
+                            <td class="highlight-col"><strong>9</strong></td>
+                            <td>200+</td>
+                            <td>17+</td>
+                            <td>15+</td>
+                            <td>12+</td>
+                        </tr>
+                        <tr>
+                            <td>Vulnerability Database Size</td>
+                            <td class="highlight-col"><strong>250,000+ CVEs</strong></td>
+                            <td>Proprietary DB</td>
+                            <td>KnowledgeBase</td>
+                            <td>Snyk Intel DB</td>
+                            <td>OSS Index</td>
+                        </tr>
+                        <tr>
+                            <td>Forensic License Detection</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Source-level</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                        </tr>
+                        <tr>
+                            <td>SBOM Export (CycloneDX)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>SBOM Export (SPDX)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>On-Premise Deployment</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-minus"></i> Limited</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                        </tr>
+                        <tr>
+                            <td>Air-Gapped Operation</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-minus"></i> Limited</td>
+                        </tr>
+                        <tr>
+                            <td>Indian Compliance (SEBI/RBI)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Built-in</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Interactive HTML Reports</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-minus"></i> Dashboard</td>
+                            <td><i class="fa-solid fa-minus"></i> Dashboard</td>
+                            <td><i class="fa-solid fa-minus"></i> Dashboard</td>
+                            <td><i class="fa-solid fa-minus"></i> Dashboard</td>
+                        </tr>
+                        <tr>
+                            <td>Export Formats</td>
+                            <td class="highlight-col"><strong>7 formats</strong></td>
+                            <td>5 formats</td>
+                            <td>4 formats</td>
+                            <td>4 formats</td>
+                            <td>3 formats</td>
+                        </tr>
+                        <tr>
+                            <td>Confidence Scoring</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Model</td>
+                            <td class="highlight-col"><strong>Per-project</strong></td>
+                            <td>Per-developer</td>
+                            <td>Per-application</td>
+                            <td>Freemium/Per-dev</td>
+                            <td>Per-application</td>
+                        </tr>
+                        <tr>
+                            <td>Data Residency</td>
+                            <td class="highlight-col"><strong>India (On-Prem)</strong></td>
+                            <td>Cloud (US/EU)</td>
+                            <td>Cloud (US) / On-Prem</td>
+                            <td>Cloud (US/EU)</td>
+                            <td>Cloud (US) / On-Prem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose SecuLens Over -->
+    <section class="section section-alt" id="why-choose">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why SecuLens</span>
+                <h2>Why Choose SecuLens Over the Competition</h2>
+            </div>
+            <div class="why-choose-grid">
+                <div class="why-choose-card">
+                    <h3>SecuLens vs Mend (WhiteSource)</h3>
+                    <p>While Mend offers broader ecosystem coverage, SecuLens provides deeper forensic license analysis with source-level evidence collection and confidence scoring. SecuLens operates fully on-premise with air-gapped support, while Mend requires cloud connectivity. For organizations under Indian regulatory frameworks, SecuLens provides built-in SEBI, RBI, and CERT-In compliance reporting that Mend does not offer.</p>
+                </div>
+                <div class="why-choose-card">
+                    <h3>SecuLens vs Black Duck</h3>
+                    <p>Black Duck is a strong enterprise SCA tool, but it comes with significant licensing costs and complexity. SecuLens offers comparable vulnerability detection and license analysis at a fraction of the cost, with simpler deployment and management. SecuLens generates self-contained interactive HTML reports, while Black Duck relies on a centralized dashboard that may not be accessible to all stakeholders.</p>
+                </div>
+                <div class="why-choose-card">
+                    <h3>SecuLens vs Snyk</h3>
+                    <p>Snyk excels in developer experience with its CLI and IDE integrations, but its on-premise deployment options are limited. SecuLens is built from the ground up for on-premise operation, ensuring your dependency data never leaves your network. SecuLens also provides forensic license detection at the source code level, while Snyk relies primarily on manifest file declarations.</p>
+                </div>
+                <div class="why-choose-card">
+                    <h3>SecuLens vs Sonatype</h3>
+                    <p>Sonatype offers strong integration with Maven/Gradle workflows through Nexus, but SecuLens covers more ecosystems with consistent analysis depth. SecuLens provides seven export formats including both CycloneDX and SPDX SBOMs, while Sonatype focuses primarily on its own reporting format. SecuLens confidence scoring for license detection gives legal teams audit-ready evidence that Sonatype does not provide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section class="section" id="technical-specs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Technical Specifications</span>
+                <h2>Deployment and System Requirements</h2>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Specification</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Deployment Model</strong></td>
+                            <td>On-premise (Linux/Windows), Docker, Kubernetes, Air-gapped</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Minimum Hardware</strong></td>
+                            <td>4 CPU cores, 8 GB RAM, 50 GB disk space</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Recommended Hardware</strong></td>
+                            <td>8 CPU cores, 16 GB RAM, 200 GB SSD</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Operating Systems</strong></td>
+                            <td>RHEL 8/9, Ubuntu 20.04/22.04, CentOS Stream 9, Windows Server 2019/2022</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Database</strong></td>
+                            <td>Embedded (SQLite) or PostgreSQL 14+</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CI/CD Integration</strong></td>
+                            <td>Jenkins, GitLab CI, GitHub Actions, Azure DevOps, Bamboo, TeamCity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>API</strong></td>
+                            <td>REST API with OpenAPI 3.0 specification, API key authentication</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Authentication</strong></td>
+                            <td>LDAP, Active Directory, SAML 2.0, local accounts</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vulnerability DB Updates</strong></td>
+                            <td>Online: automatic hourly sync. Offline: encrypted update packages</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scan Performance</strong></td>
+                            <td>Typical scan: 30 seconds to 5 minutes depending on dependency count</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Know Your Dependencies. Manage Your Risk.</h2>
+                <p>Get a personalized demo of SecuLens to see how comprehensive SCA can transform your open-source risk management and compliance posture.</p>
+                <div class="cta-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="../resources/whitepapers.html" class="btn btn-outline btn-lg">Download Datasheet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Related Resources</span>
+                <h2>Learn More About Software Composition Analysis</h2>
+            </div>
+            <div class="resources-grid">
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Blog</span>
+                        <h3>The Hidden Risks in Your Open-Source Dependencies</h3>
+                        <p>Why manifest-level license detection is not enough and how forensic analysis uncovers hidden compliance risks in your software supply chain.</p>
+                    </div>
+                </a>
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Whitepaper</span>
+                        <h3>SBOM Best Practices: CycloneDX vs SPDX for Indian Enterprises</h3>
+                        <p>A practical guide to choosing the right SBOM format for your regulatory requirements and software supply chain maturity level.</p>
+                    </div>
+                </a>
+                <a href="../resources/case-studies.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Case Study</span>
+                        <h3>How an Insurance Company Achieved IRDAI Compliance with SecuLens</h3>
+                        <p>See how SecuLens helped inventory 12,000+ open-source components across 200 applications and achieve regulatory compliance.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </div>
+                    <p class="footer-description">Enterprise-grade application security platform built for Indian regulatory compliance. Secure your code, dependencies, applications, and APIs.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace SAST</a></li>
+                        <li><a href="seculens.html">SecuLens SCA</a></li>
+                        <li><a href="secustrike.html">SecuStrike DAST</a></li>
+                        <li><a href="secushield.html">SecuShield API Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/banking.html">Banking</a></li>
+                        <li><a href="../solutions/government.html">Government</a></li>
+                        <li><a href="../solutions/insurance.html">Insurance</a></li>
+                        <li><a href="../solutions/automotive.html">Automotive</a></li>
+                        <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                        <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../resources/blog.html">Blog</a></li>
+                        <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                        <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../resources/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI</a></li>
+                        <li><a href="../compliance/rbi.html">RBI</a></li>
+                        <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                        <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                        <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                        <li><a href="../compliance/iso.html">ISO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

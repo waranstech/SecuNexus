@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuShield API Security — Discover, Test, and Protect APIs | SecuNexa</title>
+    <meta name="description" content="SecuShield discovers, tests, and protects every API in your organization. Complete API security from discovery to runtime protection.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace <span class="badge">SAST</span></a></li>
+                            <li><a href="seculens.html">SecuLens <span class="badge">SCA</span></a></li>
+                            <li><a href="secustrike.html">SecuStrike <span class="badge">DAST</span></a></li>
+                            <li><a href="secushield.html">SecuShield <span class="badge">API Security</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI</a></li>
+                            <li><a href="../compliance/rbi.html">RBI</a></li>
+                            <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                            <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                            <li><a href="../compliance/iso.html">ISO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../resources/blog.html">Blog</a></li>
+                            <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-nav">Request Demo</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero secushield-hero">
+        <div class="container">
+            <div class="product-hero-content">
+                <div class="product-badge">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuShield API Security</span>
+                </div>
+                <h1>Discover, Test, and Protect <span class="gradient-text">Every API in Your Organization</span></h1>
+                <p class="product-hero-description">Complete API security platform that automatically discovers your API landscape, tests for OWASP API Top 10 vulnerabilities, validates schemas, and provides continuous security posture monitoring. Because you cannot secure what you cannot see.</p>
+                <div class="product-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Discovery Methods</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">API Top 10</span>
+                        <span class="stat-label">Full Coverage</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">REST/GraphQL</span>
+                        <span class="stat-label">Protocol Support</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Real-time</span>
+                        <span class="stat-label">Posture Dashboard</span>
+                    </div>
+                </div>
+                <div class="product-hero-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#api-problem" class="btn btn-outline btn-lg">Why API Security Matters</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The API Security Problem -->
+    <section class="section" id="api-problem">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">The API Security Problem</span>
+                <h2>APIs Are the #1 Attack Vector — and Most Organizations Are Blind</h2>
+                <p>APIs power modern applications, but they have become the primary target for attackers. The numbers tell a sobering story.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">91%</div>
+                    <div class="problem-stat-label">of organizations experienced an API security incident in the past year</div>
+                    <div class="problem-stat-source">Source: Salt Security State of API Security Report 2024</div>
+                </div>
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">60%</div>
+                    <div class="problem-stat-label">of data breaches involve APIs as the primary attack vector</div>
+                    <div class="problem-stat-source">Source: Gartner API Security Research 2024</div>
+                </div>
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">74%</div>
+                    <div class="problem-stat-label">of organizations do not have a complete inventory of their APIs</div>
+                    <div class="problem-stat-source">Source: ESG Research — API Security Survey 2024</div>
+                </div>
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">3x</div>
+                    <div class="problem-stat-label">increase in API attacks year-over-year, outpacing all other web attack vectors</div>
+                    <div class="problem-stat-source">Source: Akamai State of the Internet Report 2024</div>
+                </div>
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">$6.1M</div>
+                    <div class="problem-stat-label">average cost of an API-related data breach for enterprises</div>
+                    <div class="problem-stat-source">Source: IBM Cost of a Data Breach Report 2024</div>
+                </div>
+                <div class="problem-stat-card">
+                    <div class="problem-stat-number">40%</div>
+                    <div class="problem-stat-label">of APIs are shadow or zombie APIs that security teams do not know about</div>
+                    <div class="problem-stat-source">Source: Noname Security API Security Trends Report 2024</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section section-alt" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2>Complete API Security Lifecycle Coverage</h2>
+                <p>From discovery to testing to continuous monitoring, SecuShield covers every aspect of API security.</p>
+            </div>
+
+            <!-- Feature 1: API Discovery -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-radar"></i>
+                    </div>
+                    <div>
+                        <h3>API Discovery</h3>
+                        <p>You cannot protect APIs you do not know about. SecuShield discovers every API in your organization through five complementary methods, building a complete inventory including shadow, zombie, and undocumented APIs.</p>
+                    </div>
+                </div>
+                <div class="discovery-methods-grid">
+                    <div class="discovery-card">
+                        <div class="discovery-number">1</div>
+                        <h4>API Specification Import</h4>
+                        <p>Import OpenAPI/Swagger 2.0 and 3.x specifications, GraphQL schemas, WSDL files, and Postman collections. SecuShield parses every endpoint, parameter, schema, and authentication requirement from your API documentation.</p>
+                    </div>
+                    <div class="discovery-card">
+                        <div class="discovery-number">2</div>
+                        <h4>Traffic Analysis</h4>
+                        <p>Analyze network traffic captures (HAR files, PCAP) or integrate with API gateways (Kong, Apigee, AWS API Gateway) to discover APIs based on actual traffic patterns. Identifies endpoints that are not in any documentation.</p>
+                    </div>
+                    <div class="discovery-card">
+                        <div class="discovery-number">3</div>
+                        <h4>Source Code Scanning</h4>
+                        <p>Scans application source code to discover API routes defined in frameworks like Spring Boot, Express, Django REST Framework, FastAPI, Flask, and ASP.NET. Finds endpoints that may not be documented or exposed yet.</p>
+                    </div>
+                    <div class="discovery-card">
+                        <div class="discovery-number">4</div>
+                        <h4>Active Crawling</h4>
+                        <p>Crawls your web applications and API endpoints to discover additional routes through link analysis, JavaScript parsing, and intelligent fuzzing of common API path patterns (/api/v1/, /graphql, /rest/, etc.).</p>
+                    </div>
+                    <div class="discovery-card">
+                        <div class="discovery-number">5</div>
+                        <h4>Gateway Integration</h4>
+                        <p>Direct integration with API management platforms (Kong, Apigee, MuleSoft, AWS API Gateway, Azure APIM) to pull registered API definitions, traffic statistics, and consumer information automatically.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: OWASP API Top 10 Testing -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-vial"></i>
+                    </div>
+                    <div>
+                        <h3>OWASP API Top 10 Testing</h3>
+                        <p>SecuShield tests every discovered API endpoint against the complete OWASP API Security Top 10 (2023) vulnerability categories with automated, evidence-based verification.</p>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>OWASP API Category</th>
+                                <th>Risk</th>
+                                <th>SecuShield Tests</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>API1:2023 — Broken Object Level Authorization</strong></td>
+                                <td>Accessing other users' data by manipulating object IDs</td>
+                                <td>Automated IDOR testing across all endpoints, ID enumeration, horizontal privilege escalation, UUID predictability analysis</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API2:2023 — Broken Authentication</strong></td>
+                                <td>Weak or missing authentication mechanisms</td>
+                                <td>Token strength analysis, JWT vulnerability testing (alg:none, key confusion, expiry), OAuth flow validation, API key exposure detection</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API3:2023 — Broken Object Property Level Authorization</strong></td>
+                                <td>Exposing or allowing modification of sensitive object properties</td>
+                                <td>Mass assignment testing, excessive data exposure detection, property-level access control validation, response filtering analysis</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API4:2023 — Unrestricted Resource Consumption</strong></td>
+                                <td>Missing rate limiting and resource allocation controls</td>
+                                <td>Rate limiting validation, pagination bypass, resource exhaustion testing, GraphQL query depth/complexity limits, batch request abuse</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API5:2023 — Broken Function Level Authorization</strong></td>
+                                <td>Accessing administrative functions without proper authorization</td>
+                                <td>Vertical privilege escalation, admin endpoint discovery, HTTP method tampering, function-level access control bypass</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API6:2023 — Unrestricted Access to Sensitive Business Flows</strong></td>
+                                <td>Abusing legitimate business workflows at scale</td>
+                                <td>Business flow abuse simulation, automated purchase/signup/scraping detection, anti-automation bypass testing</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API7:2023 — Server-Side Request Forgery</strong></td>
+                                <td>Fetching remote resources without URL validation</td>
+                                <td>SSRF to internal services, cloud metadata access (169.254.169.254), DNS rebinding, URL redirect chain analysis, protocol smuggling</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API8:2023 — Security Misconfiguration</strong></td>
+                                <td>Insecure default configurations and missing hardening</td>
+                                <td>CORS policy audit, security header validation, TLS configuration, exposed debug endpoints, default credentials, verbose error messages</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API9:2023 — Improper Inventory Management</strong></td>
+                                <td>Outdated or undocumented API versions still accessible</td>
+                                <td>API version enumeration, deprecated endpoint discovery, shadow API detection, documentation drift analysis, zombie API identification</td>
+                            </tr>
+                            <tr>
+                                <td><strong>API10:2023 — Unsafe Consumption of APIs</strong></td>
+                                <td>Trusting data from third-party API integrations without validation</td>
+                                <td>Third-party API response validation, redirect chain following, data injection through API responses, webhook payload testing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Feature 3: Schema Validation -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-file-code"></i>
+                    </div>
+                    <div>
+                        <h3>Schema Validation</h3>
+                        <p>Validates that API implementations match their documented specifications. Detects schema drift, undocumented fields, type mismatches, and missing validation that could lead to security vulnerabilities.</p>
+                    </div>
+                </div>
+                <div class="schema-features-grid">
+                    <div class="schema-feature">
+                        <i class="fa-solid fa-code-compare"></i>
+                        <h4>Specification Conformance</h4>
+                        <p>Compares actual API behavior against OpenAPI/Swagger specifications. Identifies endpoints that return undocumented fields, accept undocumented parameters, or behave differently from their documentation.</p>
+                    </div>
+                    <div class="schema-feature">
+                        <i class="fa-solid fa-input-text"></i>
+                        <h4>Input Validation Testing</h4>
+                        <p>Tests every parameter with boundary values, type confusion attacks, oversized payloads, special characters, and encoding variations to identify missing or insufficient input validation.</p>
+                    </div>
+                    <div class="schema-feature">
+                        <i class="fa-solid fa-filter-circle-xmark"></i>
+                        <h4>Response Filtering</h4>
+                        <p>Analyzes API responses for sensitive data that should not be exposed: internal IDs, email addresses, phone numbers, stack traces, database information, and personally identifiable information.</p>
+                    </div>
+                    <div class="schema-feature">
+                        <i class="fa-solid fa-arrows-rotate"></i>
+                        <h4>Schema Drift Detection</h4>
+                        <p>Continuously monitors APIs for changes in behavior, new endpoints, modified response structures, and deprecated features to detect schema drift that could indicate security issues.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Authentication Testing -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                    <div>
+                        <h3>Authentication Testing</h3>
+                        <p>Comprehensive testing of API authentication and authorization mechanisms, including JWT, OAuth 2.0, API keys, mTLS, and custom authentication schemes.</p>
+                    </div>
+                </div>
+                <div class="auth-test-grid">
+                    <div class="auth-test-card">
+                        <h4><i class="fa-solid fa-key"></i> JWT Security Testing</h4>
+                        <ul>
+                            <li>Algorithm confusion attacks (RS256 to HS256)</li>
+                            <li>None algorithm bypass</li>
+                            <li>Token expiry validation</li>
+                            <li>Weak signing key detection</li>
+                            <li>Claim tampering (sub, role, admin)</li>
+                            <li>JWK injection attacks</li>
+                            <li>Kid header injection</li>
+                        </ul>
+                    </div>
+                    <div class="auth-test-card">
+                        <h4><i class="fa-solid fa-right-left"></i> OAuth 2.0 Flow Testing</h4>
+                        <ul>
+                            <li>Authorization code flow validation</li>
+                            <li>PKCE enforcement checking</li>
+                            <li>Redirect URI validation bypass</li>
+                            <li>Scope escalation testing</li>
+                            <li>Token leakage in referrer headers</li>
+                            <li>State parameter validation</li>
+                            <li>Client credential exposure</li>
+                        </ul>
+                    </div>
+                    <div class="auth-test-card">
+                        <h4><i class="fa-solid fa-id-card"></i> API Key Security</h4>
+                        <ul>
+                            <li>Key exposure in URLs, headers, logs</li>
+                            <li>Key rotation policy validation</li>
+                            <li>Scope and permission testing</li>
+                            <li>Rate limiting per key</li>
+                            <li>Revocation effectiveness</li>
+                            <li>Key strength analysis</li>
+                            <li>Cross-environment key reuse</li>
+                        </ul>
+                    </div>
+                    <div class="auth-test-card">
+                        <h4><i class="fa-solid fa-user-lock"></i> Authorization Testing</h4>
+                        <ul>
+                            <li>Horizontal privilege escalation (BOLA)</li>
+                            <li>Vertical privilege escalation (BFLA)</li>
+                            <li>Role-based access control bypass</li>
+                            <li>Multi-tenancy isolation testing</li>
+                            <li>Resource ownership validation</li>
+                            <li>Administrative function access</li>
+                            <li>Cross-account data access</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: Business Logic Testing -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <div>
+                        <h3>Business Logic Testing</h3>
+                        <p>Tests for business logic vulnerabilities that traditional security scanners miss: workflow manipulation, race conditions, price tampering, and abuse of legitimate API functionality at scale.</p>
+                    </div>
+                </div>
+                <div class="logic-tests-grid">
+                    <div class="logic-test">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h4>Transaction Manipulation</h4>
+                        <p>Tests for price modification, quantity manipulation, discount abuse, negative value injection, currency confusion, and payment flow bypass in e-commerce and financial APIs.</p>
+                    </div>
+                    <div class="logic-test">
+                        <i class="fa-solid fa-forward-step"></i>
+                        <h4>Workflow Bypass</h4>
+                        <p>Attempts to skip required steps in multi-step API workflows such as skipping payment in checkout, bypassing verification in onboarding, or accessing resources before approval.</p>
+                    </div>
+                    <div class="logic-test">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Race Conditions</h4>
+                        <p>Tests for time-of-check to time-of-use (TOCTOU) vulnerabilities in API operations such as double-spending, concurrent coupon application, and parallel withdrawal attacks.</p>
+                    </div>
+                    <div class="logic-test">
+                        <i class="fa-solid fa-robot"></i>
+                        <h4>Automation Abuse</h4>
+                        <p>Evaluates whether APIs are protected against automated abuse: mass account creation, credential stuffing, content scraping, and denial-of-inventory attacks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 6: API Security Posture Dashboard -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-gauge-high"></i>
+                    </div>
+                    <div>
+                        <h3>API Security Posture Dashboard</h3>
+                        <p>Real-time visibility into your API security posture with executive dashboards, trend analysis, risk scoring, and compliance status tracking across your entire API portfolio.</p>
+                    </div>
+                </div>
+                <div class="dashboard-features">
+                    <div class="dashboard-feature">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <h4>Risk Trend Analysis</h4>
+                        <p>Track API security risk scores over time with trend lines showing improvement or degradation. Compare risk across teams, services, and business units.</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h4>API Inventory View</h4>
+                        <p>Complete inventory of all discovered APIs with metadata: owner, version, authentication type, data sensitivity classification, last scan date, and current risk score.</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fa-solid fa-clipboard-check"></i>
+                        <h4>Compliance Tracking</h4>
+                        <p>Map API security findings to SEBI, RBI, CERT-In, PCI-DSS, and ISO 27001 requirements. Track compliance status per regulation with gap analysis and remediation guidance.</p>
+                    </div>
+                    <div class="dashboard-feature">
+                        <i class="fa-solid fa-bell"></i>
+                        <h4>Alerting and Notifications</h4>
+                        <p>Configurable alerts for new critical vulnerabilities, SLA breaches, new API discoveries, schema changes, and compliance status changes. Integrate with Slack, Teams, email, and PagerDuty.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2>From Discovery to Protection in 5 Steps</h2>
+                <p>SecuShield provides a systematic approach to API security that scales with your organization.</p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-magnifying-glass-location"></i>
+                    </div>
+                    <h3>Discover</h3>
+                    <p>Import API specifications, analyze traffic, scan source code, crawl applications, and integrate with API gateways. SecuShield builds a comprehensive inventory of every API in your organization, including shadow and zombie APIs that security teams did not know existed.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3>Classify</h3>
+                    <p>Automatically classify APIs by data sensitivity (PII, financial, health data), authentication method, exposure level (internal, partner, public), and business criticality. Apply risk scores based on classification to prioritize security testing efforts.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-flask-vial"></i>
+                    </div>
+                    <h3>Test</h3>
+                    <p>Run automated security tests against every API endpoint for OWASP API Top 10 vulnerabilities, schema validation, authentication weaknesses, authorization bypass, and business logic flaws. Tests are non-destructive and safe for staging and production environments.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-file-medical"></i>
+                    </div>
+                    <h3>Report</h3>
+                    <p>Generate detailed findings with evidence (exact requests and responses), severity ratings, CWE mappings, remediation guidance, and compliance mapping. Export reports in HTML, PDF, JSON, or integrate directly with issue tracking systems.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">05</div>
+                    <div class="step-icon">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <h3>Monitor</h3>
+                    <p>Continuously monitor your API landscape for new APIs, schema changes, configuration drift, and emerging vulnerabilities. The posture dashboard provides real-time visibility with alerts for changes that affect your security and compliance status.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample API Inventory and Findings Mockups -->
+    <section class="section section-alt" id="sample-report">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sample Output</span>
+                <h2>See What SecuShield Reveals About Your APIs</h2>
+                <p>From API inventory management to detailed vulnerability findings, SecuShield provides complete visibility.</p>
+            </div>
+
+            <!-- API Inventory Mockup -->
+            <div class="report-mockup">
+                <div class="report-window">
+                    <div class="report-titlebar">
+                        <div class="report-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="report-title">SecuShield — API Inventory Dashboard</span>
+                    </div>
+                    <div class="report-content">
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-server"></i> Discovered API Inventory</h3>
+                            <div class="report-summary-grid">
+                                <div class="report-stat" style="background: linear-gradient(135deg, #3b82f6, #1d4ed8);">
+                                    <span class="report-stat-number">47</span>
+                                    <span class="report-stat-label">Total APIs</span>
+                                </div>
+                                <div class="report-stat" style="background: linear-gradient(135deg, #22c55e, #15803d);">
+                                    <span class="report-stat-number">31</span>
+                                    <span class="report-stat-label">Documented</span>
+                                </div>
+                                <div class="report-stat" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                                    <span class="report-stat-number">12</span>
+                                    <span class="report-stat-label">Shadow APIs</span>
+                                </div>
+                                <div class="report-stat" style="background: linear-gradient(135deg, #ef4444, #dc2626);">
+                                    <span class="report-stat-number">4</span>
+                                    <span class="report-stat-label">Zombie APIs</span>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>API Name</th>
+                                            <th>Base URL</th>
+                                            <th>Version</th>
+                                            <th>Auth Type</th>
+                                            <th>Endpoints</th>
+                                            <th>Data Class</th>
+                                            <th>Risk Score</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>User Management API</strong></td>
+                                            <td>/api/v2/users</td>
+                                            <td>v2.3.1</td>
+                                            <td>OAuth 2.0</td>
+                                            <td>24</td>
+                                            <td><span class="data-class pii">PII</span></td>
+                                            <td><span class="risk-badge high">78</span></td>
+                                            <td><span class="status-badge active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Payment Gateway API</strong></td>
+                                            <td>/api/v1/payments</td>
+                                            <td>v1.8.0</td>
+                                            <td>mTLS + JWT</td>
+                                            <td>18</td>
+                                            <td><span class="data-class financial">Financial</span></td>
+                                            <td><span class="risk-badge critical">92</span></td>
+                                            <td><span class="status-badge active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Product Catalog API</strong></td>
+                                            <td>/api/v3/products</td>
+                                            <td>v3.1.0</td>
+                                            <td>API Key</td>
+                                            <td>32</td>
+                                            <td><span class="data-class public">Public</span></td>
+                                            <td><span class="risk-badge low">23</span></td>
+                                            <td><span class="status-badge active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Internal Admin API</strong></td>
+                                            <td>/internal/admin</td>
+                                            <td>v1.0.0</td>
+                                            <td>Basic Auth</td>
+                                            <td>15</td>
+                                            <td><span class="data-class pii">PII</span></td>
+                                            <td><span class="risk-badge critical">95</span></td>
+                                            <td><span class="status-badge shadow">Shadow</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Legacy Order API</strong></td>
+                                            <td>/api/v1/orders</td>
+                                            <td>v1.2.0</td>
+                                            <td>Session Cookie</td>
+                                            <td>21</td>
+                                            <td><span class="data-class financial">Financial</span></td>
+                                            <td><span class="risk-badge high">85</span></td>
+                                            <td><span class="status-badge zombie">Zombie</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Notification Service API</strong></td>
+                                            <td>/api/v2/notifications</td>
+                                            <td>v2.1.0</td>
+                                            <td>OAuth 2.0</td>
+                                            <td>8</td>
+                                            <td><span class="data-class internal">Internal</span></td>
+                                            <td><span class="risk-badge medium">45</span></td>
+                                            <td><span class="status-badge active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Report Generation API</strong></td>
+                                            <td>/api/v1/reports</td>
+                                            <td>v1.5.2</td>
+                                            <td>JWT</td>
+                                            <td>12</td>
+                                            <td><span class="data-class pii">PII</span></td>
+                                            <td><span class="risk-badge medium">52</span></td>
+                                            <td><span class="status-badge active">Active</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Debug/Test API</strong></td>
+                                            <td>/debug/api</td>
+                                            <td>N/A</td>
+                                            <td>None</td>
+                                            <td>6</td>
+                                            <td><span class="data-class internal">Internal</span></td>
+                                            <td><span class="risk-badge critical">99</span></td>
+                                            <td><span class="status-badge shadow">Shadow</span></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Findings Mockup -->
+            <div class="report-mockup" style="margin-top: 3rem;">
+                <div class="report-window">
+                    <div class="report-titlebar">
+                        <div class="report-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="report-title">SecuShield — API Security Findings</span>
+                    </div>
+                    <div class="report-content">
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-triangle-exclamation"></i> Security Findings Summary</h3>
+                            <div class="report-summary-grid">
+                                <div class="report-stat critical">
+                                    <span class="report-stat-number">8</span>
+                                    <span class="report-stat-label">Critical</span>
+                                </div>
+                                <div class="report-stat high">
+                                    <span class="report-stat-number">15</span>
+                                    <span class="report-stat-label">High</span>
+                                </div>
+                                <div class="report-stat medium">
+                                    <span class="report-stat-number">27</span>
+                                    <span class="report-stat-label">Medium</span>
+                                </div>
+                                <div class="report-stat low">
+                                    <span class="report-stat-number">19</span>
+                                    <span class="report-stat-label">Low</span>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Severity</th>
+                                            <th>Category</th>
+                                            <th>API</th>
+                                            <th>Endpoint</th>
+                                            <th>OWASP API</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SH-001</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>No Authentication</td>
+                                            <td>Debug/Test API</td>
+                                            <td>GET /debug/api/users</td>
+                                            <td>API2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-002</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>Broken Object Level Authorization</td>
+                                            <td>User Management API</td>
+                                            <td>GET /api/v2/users/{id}/profile</td>
+                                            <td>API1</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-003</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>SQL Injection</td>
+                                            <td>Legacy Order API</td>
+                                            <td>GET /api/v1/orders?filter=</td>
+                                            <td>API8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-004</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>JWT Algorithm None</td>
+                                            <td>Internal Admin API</td>
+                                            <td>POST /internal/admin/login</td>
+                                            <td>API2</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-005</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>Excessive Data Exposure</td>
+                                            <td>User Management API</td>
+                                            <td>GET /api/v2/users/search</td>
+                                            <td>API3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-006</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>Missing Rate Limiting</td>
+                                            <td>Payment Gateway API</td>
+                                            <td>POST /api/v1/payments/transfer</td>
+                                            <td>API4</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-007</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>Mass Assignment</td>
+                                            <td>User Management API</td>
+                                            <td>PUT /api/v2/users/{id}</td>
+                                            <td>API3</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-008</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>CORS Wildcard Origin</td>
+                                            <td>Product Catalog API</td>
+                                            <td>All endpoints</td>
+                                            <td>API8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-009</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>GraphQL Introspection Enabled</td>
+                                            <td>Notification Service API</td>
+                                            <td>POST /api/v2/graphql</td>
+                                            <td>API8</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SH-010</td>
+                                            <td><span class="severity-badge low">Low</span></td>
+                                            <td>Missing Security Headers</td>
+                                            <td>All APIs</td>
+                                            <td>All endpoints</td>
+                                            <td>API8</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparison</span>
+                <h2>How SecuShield Compares to Other API Security Tools</h2>
+                <p>See how SecuShield stacks up against the leading API security platforms in the market.</p>
+            </div>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">SecuShield</th>
+                            <th>Salt Security</th>
+                            <th>Noname Security</th>
+                            <th>42Crunch</th>
+                            <th>Postman</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>API Discovery Methods</td>
+                            <td class="highlight-col"><strong>5 methods</strong></td>
+                            <td>Traffic analysis</td>
+                            <td>Traffic + Gateway</td>
+                            <td>Spec import</td>
+                            <td>Manual import</td>
+                        </tr>
+                        <tr>
+                            <td>OWASP API Top 10 (2023)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> 100%</td>
+                            <td><i class="fa-solid fa-check"></i> Most</td>
+                            <td><i class="fa-solid fa-check"></i> Most</td>
+                            <td><i class="fa-solid fa-check"></i> Most</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                        </tr>
+                        <tr>
+                            <td>Schema Validation</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Advanced</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Advanced</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Authentication Testing</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Comprehensive</td>
+                            <td><i class="fa-solid fa-check"></i> Runtime</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-minus"></i> Manual</td>
+                        </tr>
+                        <tr>
+                            <td>Business Logic Testing</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Automated</td>
+                            <td><i class="fa-solid fa-check"></i> AI-based</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>On-Premise Deployment</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-xmark"></i> Cloud only</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-xmark"></i> Cloud only</td>
+                        </tr>
+                        <tr>
+                            <td>Source Code API Discovery</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-minus"></i> Spec only</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Indian Compliance (SEBI/RBI)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Built-in</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Shadow API Detection</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Multi-method</td>
+                            <td><i class="fa-solid fa-check"></i> Traffic-based</td>
+                            <td><i class="fa-solid fa-check"></i> Traffic-based</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>CI/CD Integration</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native CLI</td>
+                            <td><i class="fa-solid fa-minus"></i> API</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Native</td>
+                            <td><i class="fa-solid fa-check"></i> CLI</td>
+                        </tr>
+                        <tr>
+                            <td>GraphQL Support</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-minus"></i> Limited</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Model</td>
+                            <td class="highlight-col"><strong>Per-API count</strong></td>
+                            <td>Enterprise ($$$)</td>
+                            <td>Enterprise ($$$)</td>
+                            <td>Per-API</td>
+                            <td>Freemium</td>
+                        </tr>
+                        <tr>
+                            <td>Data Residency</td>
+                            <td class="highlight-col"><strong>India (On-Prem)</strong></td>
+                            <td>Cloud (US/EU)</td>
+                            <td>Cloud (US) / On-Prem</td>
+                            <td>Cloud (EU) / On-Prem</td>
+                            <td>Cloud (US)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Know Your APIs. Secure Your APIs.</h2>
+                <p>Get a personalized demo of SecuShield to see how comprehensive API discovery and security testing can eliminate your API blind spots and protect your most critical attack surface.</p>
+                <div class="cta-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="../resources/whitepapers.html" class="btn btn-outline btn-lg">Download Datasheet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Related Resources</span>
+                <h2>Learn More About API Security</h2>
+            </div>
+            <div class="resources-grid">
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Blog</span>
+                        <h3>The Rise of API Attacks: Why Traditional WAFs Are Not Enough</h3>
+                        <p>Understand why web application firewalls fail to protect APIs and what a dedicated API security strategy looks like.</p>
+                    </div>
+                </a>
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Whitepaper</span>
+                        <h3>OWASP API Top 10 (2023): A Complete Guide for Indian Enterprises</h3>
+                        <p>Detailed analysis of each OWASP API Top 10 category with real-world examples and remediation strategies for Indian organizations.</p>
+                    </div>
+                </a>
+                <a href="../resources/case-studies.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Case Study</span>
+                        <h3>How a Fintech Startup Discovered 23 Shadow APIs with SecuShield</h3>
+                        <p>See how API discovery revealed undocumented endpoints processing financial data without authentication or logging.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </div>
+                    <p class="footer-description">Enterprise-grade application security platform built for Indian regulatory compliance. Secure your code, dependencies, applications, and APIs.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace SAST</a></li>
+                        <li><a href="seculens.html">SecuLens SCA</a></li>
+                        <li><a href="secustrike.html">SecuStrike DAST</a></li>
+                        <li><a href="secushield.html">SecuShield API Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/banking.html">Banking</a></li>
+                        <li><a href="../solutions/government.html">Government</a></li>
+                        <li><a href="../solutions/insurance.html">Insurance</a></li>
+                        <li><a href="../solutions/automotive.html">Automotive</a></li>
+                        <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                        <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../resources/blog.html">Blog</a></li>
+                        <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                        <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../resources/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI</a></li>
+                        <li><a href="../compliance/rbi.html">RBI</a></li>
+                        <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                        <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                        <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                        <li><a href="../compliance/iso.html">ISO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Forensic License Detection and Why Does It Matter? | SecuNexa</title>
+    <meta name="description" content="Understand why package metadata is unreliable for license compliance. Learn how forensic license detection works, why it matters for legal teams, and how SecuLens provides source-level evidence.">
+    <meta name="keywords" content="forensic license detection SCA, open source license compliance, license scanning tools">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                            <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                            <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                            <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                            <li><a href="../compliance/certin.html">CERT-In</a></li>
+                            <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                            <li><a href="../compliance/iso27001.html">ISO 27001</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI DSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Blog</a></li>
+                            <li><a href="../resources/docs.html">Documentation</a></li>
+                            <li><a href="../faq.html">FAQ</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="index.html">Blog</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>What is Forensic License Detection and Why Does It Matter?</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Blog Article -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-layout">
+                <article class="blog-article">
+                    <div class="blog-article-header">
+                        <span class="blog-category cat-sca">SCA</span>
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> March 20, 2026</span>
+                        <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 10 min read</span>
+                    </div>
+                    <h1>What is Forensic License Detection and Why Does It Matter?</h1>
+                    <div class="blog-author">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>SecuNexa Team | Meteonic Innovation Pvt Ltd</span>
+                    </div>
+
+                    <div class="blog-share">
+                        <span>Share:</span>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=&text=" class="share-btn share-twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <button class="share-btn share-copy" aria-label="Copy link" onclick="navigator.clipboard.writeText(window.location.href)"><i class="fa-solid fa-link"></i></button>
+                    </div>
+
+                    <div class="blog-content">
+                        <p>Every organization that uses open-source software, which is effectively every organization, operates under a web of legal obligations defined by the licenses attached to those components. These licenses range from permissive (MIT, Apache 2.0, BSD) to copyleft (GPL, AGPL, LGPL), each carrying different obligations around attribution, source code disclosure, and derivative work distribution. Getting license compliance wrong can result in litigation, forced code release, product recall, and significant financial liability. Yet most SCA tools determine license information from the least reliable source available: package metadata.</p>
+
+                        <h2>Why Package Metadata is Unreliable</h2>
+
+                        <p>Package managers like npm, Maven Central, and PyPI allow package authors to declare a license in their package manifest file (package.json, pom.xml, setup.py). This declared license is what most SCA tools report. The problem is that this metadata is frequently inaccurate, incomplete, or misleading.</p>
+
+                        <h3>Metadata Inaccuracy</h3>
+                        <p>Studies of major package registries consistently find that a significant percentage of packages have license metadata that does not match the actual license in the source code. A package might declare MIT in its package.json while containing a LICENSE file that specifies Apache 2.0. Some packages declare a license in metadata but include no LICENSE file at all. Others include source files with license headers that conflict with the declared license.</p>
+
+                        <p>These inaccuracies arise from several causes: authors who change licenses between versions without updating metadata, maintainers who are not careful about license declarations, automated tooling that sets default license values, and legitimate dual-licensing arrangements that cannot be expressed in a single metadata field.</p>
+
+                        <h3>The Dual-License Challenge</h3>
+                        <p>Many significant open-source projects use dual licensing, where the software is available under two different licenses and the user can choose which to comply with. Common dual-license combinations include GPL/Commercial, LGPL/MIT, and AGPL/Proprietary. Package metadata typically can only express one license, meaning SCA tools that rely solely on metadata miss the second license entirely.</p>
+
+                        <p>This matters enormously for compliance. An organization might avoid a component because the metadata shows GPL, not realizing that the component is also available under a permissive commercial license. Conversely, an organization might use a component based on its MIT metadata, unaware that certain source files within the package carry GPL headers that could affect the entire derivative work.</p>
+
+                        <h3>Transitive License Contamination</h3>
+                        <p>Even when direct dependencies have clear licenses, transitive dependencies (dependencies of dependencies) may introduce unexpected license obligations. A project with all MIT direct dependencies might unknowingly include a GPL-licensed transitive dependency five levels deep. If the GPL component's code is linked into the final application, the GPL's copyleft provisions may apply to the entire work. Detecting this requires analyzing the license of every component in the complete dependency tree, not just the declared dependencies.</p>
+
+                        <h2>What Forensic License Detection Means</h2>
+
+                        <p>Forensic license detection is an approach that determines component licenses by examining the actual source code and documentation of each component rather than relying on metadata declarations. The term "forensic" reflects the evidentiary standard: each license determination is backed by specific, citable evidence from the component's files, much like evidence in legal proceedings.</p>
+
+                        <h3>Source-Level Evidence</h3>
+                        <p>A forensic license scanner examines multiple evidence sources within each component:</p>
+
+                        <ul>
+                            <li><strong>LICENSE and COPYING files:</strong> The primary license documents that should contain the authoritative license text</li>
+                            <li><strong>Source code headers:</strong> License notices embedded at the top of individual source files, which may differ from the project-level license</li>
+                            <li><strong>README and documentation:</strong> License statements in project documentation that may indicate licensing intent</li>
+                            <li><strong>NOTICE files:</strong> Attribution notices required by some licenses (Apache 2.0) that document the licenses of included components</li>
+                            <li><strong>Copyright statements:</strong> Copyright holder information that provides context for license interpretation</li>
+                            <li><strong>Package metadata:</strong> Treated as one input among many rather than the sole authority</li>
+                        </ul>
+
+                        <h3>Confidence Scoring</h3>
+                        <p>Because different evidence sources may provide conflicting information, forensic detection assigns a confidence score to each license determination. A component where the LICENSE file, source headers, and metadata all agree on MIT receives a high confidence score. A component where the metadata says MIT but source headers include Apache 2.0 notices receives a lower confidence score with a flag for human review.</p>
+
+                        <p>This confidence scoring enables risk-proportionate review processes. Components with high-confidence, permissive license determinations can be approved automatically. Components with low confidence scores or copyleft license indicators are routed to legal review with the specific evidence that triggered the flag, enabling efficient, targeted review rather than requiring legal teams to examine every component.</p>
+
+                        <h2>Legal Significance</h2>
+
+                        <p>In a legal dispute over open-source license compliance, the relevant evidence is the actual license text in the software, not the metadata in a package registry. Courts examine the license files distributed with the code, the copyright notices in source files, and the licensing intent expressed in project documentation. An organization that relied solely on package metadata to determine its license obligations would find that defense inadequate in litigation.</p>
+
+                        <p>Forensic license detection provides the same evidence that a court would examine. The license determination report produced by a forensic scanner serves as a defensible record of due diligence, showing that the organization examined the actual licensing evidence for each component rather than relying on potentially inaccurate metadata.</p>
+
+                        <p>For organizations in regulated industries, this evidentiary standard also satisfies audit requirements. Regulators and auditors increasingly expect documented license compliance programs that go beyond surface-level metadata checks. A forensic license report demonstrates a level of rigor that satisfies these expectations.</p>
+
+                        <h2>Real-World Examples Where Metadata Fails</h2>
+
+                        <h3>Example 1: The Missing Copyleft</h3>
+                        <p>A popular JavaScript utility library declares MIT in its package.json. However, the library includes a vendored copy of a C library (compiled to WebAssembly) that is licensed under LGPL-2.1. The LGPL license text is present in the vendored directory but is not reflected in the package metadata. An SCA tool relying on metadata reports this component as MIT. A forensic scanner detects the LGPL-2.1 license in the vendored directory and flags the component for review, because LGPL obligations around dynamic linking may affect how the component can be distributed.</p>
+
+                        <h3>Example 2: The License Change</h3>
+                        <p>A database driver library changed its license from Apache 2.0 to a Server Side Public License (SSPL) starting from version 4.0. The package metadata for versions 3.x correctly shows Apache 2.0. However, when a developer updates to version 4.x, some metadata-based tools continue to show Apache 2.0 because the package.json was not updated to reflect the license change in initial 4.0 releases. A forensic scanner detects the SSPL license text in the LICENSE file and correctly reports the license change, preventing the organization from unknowingly using SSPL-licensed code in a context where SSPL compliance is problematic.</p>
+
+                        <h3>Example 3: The Dual-License Selection</h3>
+                        <p>A graphics processing library is dual-licensed under GPL-3.0 and a commercial license. The package metadata shows only GPL-3.0. An organization using this component in a proprietary product needs to know that a commercial license option exists. A forensic scanner identifies both the GPL-3.0 license file and the commercial licensing terms in the README, presenting the organization with the full picture needed to make an informed licensing decision.</p>
+
+                        <h2>How SecuLens Forensic Detection Works</h2>
+
+                        <p>SecuLens implements forensic license detection through a multi-pass analysis pipeline. The first pass identifies all license-relevant files within each component (LICENSE, COPYING, NOTICE, README, and files containing license headers). The second pass extracts license text from each identified file and matches it against a comprehensive license reference database containing over 500 known license texts and variants. The third pass reconciles findings from all sources, identifies conflicts, and computes a confidence score for each license determination.</p>
+
+                        <p>Each license finding includes the specific file path and text excerpt that supports the determination, enabling legal teams to review the actual evidence rather than trusting an opaque classification. Findings are organized by component and include a complete evidence chain showing how each license determination was reached.</p>
+
+                        <p>For organizations building compliance programs, SecuLens provides license policy enforcement that can automatically approve components meeting policy criteria (high confidence, permissive license, no conflicts) while routing exceptions to the appropriate review workflow. This automation reduces the burden on legal teams while maintaining the rigor that regulated environments demand.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <h3>Upgrade Your License Compliance</h3>
+                        <p>See how SecuLens forensic license detection uncovers risks that metadata-based tools miss.</p>
+                        <a href="../contact.html" class="btn btn-primary">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Related Articles</h3>
+                        <ul class="related-posts">
+                            <li><a href="mend-vs-snyk-vs-seculens.html">Mend vs Snyk vs SecuLens</a></li>
+                            <li><a href="opensource-license-compliance.html">Open Source License Compliance Guide</a></li>
+                            <li><a href="sbom-guide-2026.html">Complete Guide to SBOM in 2026</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>Free SCA Assessment</h3>
+                        <p>Upload your manifest files and see forensic license detection in action.</p>
+                        <a href="../lead-magnets/free-sca-assessment.html" class="btn btn-outline">Get Started</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                        <li><a href="../platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../resources/docs.html">Documentation</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                        <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                        <li><a href="../compliance/certin.html">CERT-In</a></li>
+                        <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

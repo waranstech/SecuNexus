@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuLens vs Mend (WhiteSource) — Feature Comparison | TechPoint</title>
+    <meta name="description" content="Detailed comparison of SecuLens and Mend (WhiteSource). Compare air-gapped deployment, forensic license scanning, and no-code-to-cloud architecture.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <style>
+        .compare-hero{padding:120px 0 50px;background:linear-gradient(135deg,#0a1628 0%,#1a2a4a 50%,#0f1d35 100%);color:#fff;text-align:center}.compare-hero__breadcrumb{font-size:.875rem;color:#64748b;margin-bottom:1.5rem}.compare-hero__breadcrumb a{color:#94a3b8;text-decoration:none}.compare-hero__breadcrumb a:hover{color:#00d4ff}.compare-hero__vs{display:flex;align-items:center;justify-content:center;gap:2rem;margin-bottom:1.5rem;flex-wrap:wrap}.compare-hero__product{text-align:center}.compare-hero__product-icon{width:72px;height:72px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.8rem;margin:0 auto .75rem}.compare-hero__product-icon--ours{background:linear-gradient(135deg,#7b2ff7,#00d4ff);color:#fff}.compare-hero__product-icon--theirs{background:#1e293b;border:2px solid #334155;color:#94a3b8}.compare-hero__product-name{font-size:1.25rem;font-weight:700}.compare-hero__vs-badge{font-size:1.1rem;font-weight:800;color:#7b2ff7;background:rgba(123,47,247,.15);padding:.5rem 1.25rem;border-radius:30px}.compare-hero p{color:#94a3b8;max-width:560px;margin:0 auto}.compare-section{padding:60px 0}.compare-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:12px;overflow:hidden;box-shadow:0 4px 24px rgba(0,0,0,.06)}.compare-table thead th{background:#0f172a;color:#fff;padding:1rem 1.5rem;font-weight:600;font-size:.95rem;text-align:center}.compare-table thead th:first-child{text-align:left;width:40%}.compare-table tbody td{padding:1rem 1.5rem;border-bottom:1px solid #e2e8f0;text-align:center;font-size:.95rem}.compare-table tbody td:first-child{text-align:left;font-weight:600;color:#0f172a}.compare-table tbody tr:last-child td{border-bottom:none}.compare-table tbody tr:nth-child(even){background:#f8fafc}.compare-check{color:#10b981;font-weight:700;font-size:1.1rem}.compare-cross{color:#ef4444;font-weight:700;font-size:1.1rem}.compare-limited{color:#f59e0b;font-weight:600;font-size:.85rem}.compare-price{font-weight:600;font-size:.85rem}.compare-price--good{color:#10b981}.compare-price--bad{color:#ef4444}.compare-blurred-wrapper{position:relative;margin-top:-1px}.compare-blurred-table{filter:blur(5px);-webkit-filter:blur(5px);pointer-events:none;user-select:none;opacity:.5}.compare-blurred-table .compare-table{border-radius:0 0 12px 12px}.compare-unlock-overlay{position:absolute;top:0;left:0;right:0;bottom:0;display:flex;align-items:center;justify-content:center;z-index:10}.compare-unlock-card{background:#fff;border-radius:16px;padding:2.5rem;box-shadow:0 20px 60px rgba(0,0,0,.15);max-width:420px;width:90%;text-align:center}.compare-unlock-card h3{font-size:1.3rem;font-weight:700;color:#0f172a;margin-bottom:.5rem}.compare-unlock-card p{color:#64748b;font-size:.9rem;margin-bottom:1.5rem}.compare-unlock-card .form-group{margin-bottom:.75rem}.compare-unlock-card input{width:100%;padding:.7rem 1rem;border:1px solid #d1d5db;border-radius:8px;font-size:.9rem;font-family:'Inter',sans-serif;transition:border-color .2s;box-sizing:border-box}.compare-unlock-card input:focus{outline:none;border-color:#7b2ff7;box-shadow:0 0 0 3px rgba(123,47,247,.1)}.compare-unlock-card .btn-unlock{width:100%;padding:.8rem;background:linear-gradient(135deg,#7b2ff7,#6320d0);color:#fff;border:none;border-radius:8px;font-size:.95rem;font-weight:600;cursor:pointer;font-family:'Inter',sans-serif;transition:transform .2s,box-shadow .2s}.compare-unlock-card .btn-unlock:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(123,47,247,.3)}.compare-unlock-card .form-note{font-size:.75rem;color:#94a3b8;margin-top:.75rem}.why-choose{padding:60px 0;background:#f8fafc}.why-choose h2{font-size:1.8rem;font-weight:700;color:#0f172a;margin-bottom:2rem;text-align:center}.why-choose__grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:900px;margin:0 auto}.why-choose__item{background:#fff;padding:1.5rem;border-radius:12px;border:1px solid #e2e8f0}.why-choose__item i{color:#7b2ff7;font-size:1.3rem;margin-bottom:.75rem;display:block}.why-choose__item h4{font-size:1rem;font-weight:700;color:#0f172a;margin-bottom:.4rem}.why-choose__item p{font-size:.875rem;color:#64748b;line-height:1.6}.compare-cta{padding:60px 0;text-align:center}.compare-cta h2{font-size:1.8rem;font-weight:700;color:#0f172a;margin-bottom:1rem}.compare-cta p{color:#64748b;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto}.compare-cta .btn{display:inline-block;padding:.85rem 2rem;background:linear-gradient(135deg,#7b2ff7,#6320d0);color:#fff;text-decoration:none;border-radius:8px;font-weight:600;transition:transform .2s,box-shadow .2s}.compare-cta .btn:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(123,47,247,.3)}@media(max-width:768px){.compare-hero__vs{gap:1rem}.compare-table thead th,.compare-table tbody td{padding:.75rem;font-size:.85rem}.compare-unlock-card{padding:1.5rem}}
+    </style>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="nav__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a>
+                <button class="nav__toggle" id="navToggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav__menu" id="navMenu">
+                    <li class="nav__item"><a href="../platform.html" class="nav__link">Platform</a></li>
+                    <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace — SAST</a></li>
+                            <li><a href="../products/seculens.html">SecuLens — SCA</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike — DAST</a></li>
+                            <li><a href="../products/secushield.html">SecuShield — API Security</a></li>
+                        </ul></li>
+                    <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="nav__dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul></li>
+                    <li class="nav__item"><a href="../blog/index.html" class="nav__link">Resources</a></li>
+                    <li class="nav__item"><a href="../about.html" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn--primary nav__cta">Request Demo</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="compare-hero">
+        <div class="container">
+            <div class="compare-hero__breadcrumb">
+                <a href="../../index.html">Home</a> &rsaquo; <a href="index.html">TechPoint</a> &rsaquo; SecuLens vs Mend (WhiteSource)
+            </div>
+            <div class="compare-hero__vs">
+                <div class="compare-hero__product">
+                    <div class="compare-hero__product-icon compare-hero__product-icon--ours"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div class="compare-hero__product-name">SecuLens</div>
+                </div>
+                <div class="compare-hero__vs-badge">VS</div>
+                <div class="compare-hero__product">
+                    <div class="compare-hero__product-icon compare-hero__product-icon--theirs"><i class="fa-solid fa-circle-half-stroke"></i></div>
+                    <div class="compare-hero__product-name">Mend (WhiteSource)</div>
+                </div>
+            </div>
+            <p>On-premises air-gapped SCA with forensic scanning vs cloud-first composition analysis. No code ever leaves your network.</p>
+        </div>
+    </section>
+
+    <section class="compare-section">
+        <div class="container">
+            <table class="compare-table">
+                <thead>
+                    <tr><th>Feature</th><th>SecuLens</th><th>Mend (WhiteSource)</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Air-Gapped Deployment</td>
+                        <td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td>
+                        <td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Forensic License Scan</td>
+                        <td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td>
+                        <td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td>
+                    </tr>
+                    <tr>
+                        <td>Indian Compliance (SEBI, RBI, CERT-In)</td>
+                        <td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td>
+                        <td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td>
+                    </tr>
+                    <tr>
+                        <td>No Code to Cloud</td>
+                        <td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td>
+                        <td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="compare-blurred-wrapper">
+                <div class="compare-blurred-table">
+                    <table class="compare-table">
+                        <tbody>
+                            <tr><td>SBOM Generation</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td></tr>
+                            <tr><td>Snippet Analysis</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td></tr>
+                            <tr><td>Auto-Remediation PRs</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td></tr>
+                            <tr><td>Policy Engine</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td></tr>
+                            <tr><td>Offline Vulnerability Updates</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-cross"><i class="fa-solid fa-circle-xmark"></i> No</span></td></tr>
+                            <tr><td>Container Scanning</td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td><td><span class="compare-check"><i class="fa-solid fa-circle-check"></i> Yes</span></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="compare-unlock-overlay">
+                    <div class="compare-unlock-card">
+                        <h3><i class="fa-solid fa-lock"></i> Register to See Full Comparison</h3>
+                        <p>Unlock all feature comparisons, detailed analysis, and the full report.</p>
+                        <form action="../contact.html" method="get">
+                            <input type="hidden" name="ref" value="techpoint">
+                            <input type="hidden" name="compare" value="Mend-WhiteSource">
+                            <div class="form-group"><input type="text" name="name" placeholder="Full Name" required></div>
+                            <div class="form-group"><input type="email" name="email" placeholder="Work Email" required></div>
+                            <div class="form-group"><input type="text" name="company" placeholder="Company Name" required></div>
+                            <button type="submit" class="btn-unlock"><i class="fa-solid fa-unlock"></i> Unlock Full Report</button>
+                        </form>
+                        <p class="form-note">No spam. We respect your privacy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose">
+        <div class="container">
+            <h2>Why Choose SecuLens over Mend?</h2>
+            <div class="why-choose__grid">
+                <div class="why-choose__item">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <h4>No Code Leaves Your Network</h4>
+                    <p>Mend requires sending your code hashes and metadata to their cloud. SecuLens runs entirely on-premises, ensuring complete data sovereignty.</p>
+                </div>
+                <div class="why-choose__item">
+                    <i class="fa-solid fa-fingerprint"></i>
+                    <h4>Forensic License Scanning</h4>
+                    <p>SecuLens performs deep forensic license analysis at the file and snippet level. Mend only offers basic manifest-level license detection.</p>
+                </div>
+                <div class="why-choose__item">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h4>Regulatory Compliance</h4>
+                    <p>Built-in compliance reporting for Indian regulators including SEBI, RBI, and CERT-In. Mend has no Indian regulatory compliance support.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="compare-cta">
+        <div class="container">
+            <h2>Ready to See SecuLens in Action?</h2>
+            <p>Schedule a personalized demo and see how SecuLens provides true air-gapped SCA that Mend cannot match.</p>
+            <a href="../contact.html" class="btn">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand"><a href="../../index.html" class="footer__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a><p>Unified Application Security Platform by Meteonic Innovation Pvt Ltd.</p></div>
+                <div class="footer__col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (API)</a></li></ul></div>
+                <div class="footer__col"><h4>Solutions</h4><ul><li><a href="../solutions/banking.html">Banking</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/automotive.html">Automotive</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li></ul></div>
+                <div class="footer__col"><h4>Resources</h4><ul><li><a href="../blog/index.html">Blog</a></li><li><a href="index.html">TechPoint</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
+                <div class="footer__col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/dpdp.html">DPDP Act</a></li></ul></div>
+            </div>
+            <div class="footer__bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All Rights Reserved.</p></div>
+        </div>
+    </footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

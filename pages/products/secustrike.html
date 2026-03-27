@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuStrike DAST — Dynamic Application Security Testing | SecuNexa</title>
+    <meta name="description" content="SecuStrike DAST attacks your applications before hackers do. Find runtime vulnerabilities, config errors, and business logic flaws through intelligent dynamic scanning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item">
+                        <a href="../../index.html" class="nav-link">Platform</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace <span class="badge">SAST</span></a></li>
+                            <li><a href="seculens.html">SecuLens <span class="badge">SCA</span></a></li>
+                            <li><a href="secustrike.html">SecuStrike <span class="badge">DAST</span></a></li>
+                            <li><a href="secushield.html">SecuShield <span class="badge">API Security</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../solutions/banking.html">Banking</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/automotive.html">Automotive</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                            <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI</a></li>
+                            <li><a href="../compliance/rbi.html">RBI</a></li>
+                            <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                            <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                            <li><a href="../compliance/iso.html">ISO</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../resources/blog.html">Blog</a></li>
+                            <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-nav">Request Demo</a>
+                    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="product-hero secustrike-hero">
+        <div class="container">
+            <div class="product-hero-content">
+                <div class="product-badge">
+                    <i class="fa-solid fa-crosshairs"></i>
+                    <span>SecuStrike DAST</span>
+                </div>
+                <h1>Attack Your Applications <span class="gradient-text">Before Hackers Do</span></h1>
+                <p class="product-hero-description">Dynamic application security testing that probes your running applications like a real attacker. SecuStrike discovers runtime vulnerabilities, configuration errors, business logic flaws, and API vulnerabilities that static analysis can never find.</p>
+                <div class="product-hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">OWASP</span>
+                        <span class="stat-label">Top 10 Coverage</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Scan Types</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">CI/CD</span>
+                        <span class="stat-label">Native Integration</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Zero</span>
+                        <span class="stat-label">Destructive Tests</span>
+                    </div>
+                </div>
+                <div class="product-hero-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#owasp-coverage" class="btn btn-outline btn-lg">See OWASP Coverage</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What It Does -->
+    <section class="section" id="what-it-does">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What SecuStrike Does</span>
+                <h2>Find What Static Analysis Misses</h2>
+                <p>SecuStrike tests your applications the way attackers do — from the outside in, at runtime, against real configurations and deployments.</p>
+            </div>
+            <div class="analysis-grid">
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                    <h3>Runtime Vulnerabilities</h3>
+                    <p>Discovers vulnerabilities that only manifest at runtime: injection flaws that bypass input validation, authentication bypass through session manipulation, insecure direct object references, and server-side request forgery. These issues cannot be detected by examining source code alone.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <h3>Configuration Errors</h3>
+                    <p>Identifies security misconfigurations in web servers, application servers, frameworks, and cloud deployments. Detects missing security headers, overly permissive CORS policies, exposed debug endpoints, default credentials, directory listing enabled, and insecure TLS configurations.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-puzzle-piece"></i>
+                    </div>
+                    <h3>Business Logic Flaws</h3>
+                    <p>Tests for business logic vulnerabilities such as price manipulation, privilege escalation through parameter tampering, workflow bypass, race conditions in transaction processing, and insufficient rate limiting that allow abuse of application functionality.</p>
+                </div>
+                <div class="analysis-card">
+                    <div class="analysis-icon">
+                        <i class="fa-solid fa-plug-circle-bolt"></i>
+                    </div>
+                    <h3>API Vulnerabilities</h3>
+                    <p>Tests REST, GraphQL, and SOAP APIs for broken authentication, excessive data exposure, mass assignment, injection flaws, rate limiting bypass, and schema validation failures. Discovers undocumented endpoints and tests for OWASP API Top 10 vulnerabilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OWASP Top 10 Coverage -->
+    <section class="section section-alt" id="owasp-coverage">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">OWASP Top 10 Coverage</span>
+                <h2>Complete Coverage of OWASP Top 10 (2021)</h2>
+                <p>SecuStrike tests for every category in the OWASP Top 10, with multiple test vectors for each vulnerability class.</p>
+            </div>
+            <div class="table-responsive">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>OWASP Category</th>
+                            <th>Description</th>
+                            <th>SecuStrike Tests</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>A01:2021 — Broken Access Control</strong></td>
+                            <td>Restrictions on authenticated users are not enforced properly</td>
+                            <td>IDOR testing, privilege escalation, forced browsing, CORS misconfiguration, JWT manipulation, path traversal, method-based access control bypass</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A02:2021 — Cryptographic Failures</strong></td>
+                            <td>Failures related to cryptography leading to sensitive data exposure</td>
+                            <td>TLS/SSL configuration audit, weak cipher detection, certificate validation, sensitive data in transit analysis, cookie security flags, HSTS enforcement</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A03:2021 — Injection</strong></td>
+                            <td>User-supplied data is sent to an interpreter as part of a command or query</td>
+                            <td>SQL injection (error-based, blind, time-based), XSS (reflected, stored, DOM), command injection, LDAP injection, template injection, header injection</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A04:2021 — Insecure Design</strong></td>
+                            <td>Missing or ineffective control design leading to weaknesses</td>
+                            <td>Business logic flaw detection, workflow bypass testing, rate limiting validation, account enumeration, predictable resource location, missing re-authentication</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A05:2021 — Security Misconfiguration</strong></td>
+                            <td>Missing security hardening or improperly configured permissions</td>
+                            <td>Default credentials, exposed admin panels, directory listing, debug mode detection, stack trace exposure, unnecessary HTTP methods, security header audit</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A06:2021 — Vulnerable Components</strong></td>
+                            <td>Using components with known vulnerabilities</td>
+                            <td>Server/framework version fingerprinting, known CVE detection from response headers, JavaScript library version detection, component enumeration</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A07:2021 — Authentication Failures</strong></td>
+                            <td>Broken authentication and session management</td>
+                            <td>Brute force testing, credential stuffing simulation, session fixation, session timeout validation, password policy testing, multi-factor bypass, token predictability</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A08:2021 — Software and Data Integrity</strong></td>
+                            <td>Assumptions about software updates and data integrity without verification</td>
+                            <td>Insecure deserialization, CI/CD pipeline exposure, unsigned update detection, content integrity validation, subresource integrity checking</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A09:2021 — Security Logging Failures</strong></td>
+                            <td>Insufficient logging, detection, monitoring, and active response</td>
+                            <td>Error response analysis, information disclosure in error messages, log injection testing, detection evasion simulation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>A10:2021 — Server-Side Request Forgery</strong></td>
+                            <td>Web application fetches a remote resource without validating the URL</td>
+                            <td>SSRF to internal services, cloud metadata endpoint access, DNS rebinding, URL redirect bypass, protocol smuggling</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Key Features</span>
+                <h2>Intelligent Dynamic Scanning for Modern Applications</h2>
+                <p>SecuStrike combines smart crawling, authenticated scanning, and CI/CD integration for comprehensive runtime security testing.</p>
+            </div>
+
+            <!-- Feature 1: Authenticated Scanning -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-key"></i>
+                    </div>
+                    <div>
+                        <h3>Authenticated Scanning</h3>
+                        <p>Test your application as a logged-in user to discover vulnerabilities behind authentication. SecuStrike supports multiple authentication methods and maintains session state throughout the scan.</p>
+                    </div>
+                </div>
+                <div class="auth-methods-grid">
+                    <div class="auth-method-card">
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                        <h4>Form-Based Login</h4>
+                        <p>Automatically fills and submits login forms, handles multi-step authentication flows, CAPTCHA workaround via pre-authenticated sessions, and OTP-based authentication with manual token entry.</p>
+                    </div>
+                    <div class="auth-method-card">
+                        <i class="fa-solid fa-cookie-bite"></i>
+                        <h4>Session Token Import</h4>
+                        <p>Import session cookies or authentication tokens directly for applications with complex login flows, SSO, or external identity providers that cannot be automated.</p>
+                    </div>
+                    <div class="auth-method-card">
+                        <i class="fa-solid fa-id-badge"></i>
+                        <h4>OAuth 2.0 / OIDC</h4>
+                        <p>Native support for OAuth 2.0 authorization code flow, client credentials, and OpenID Connect authentication for testing modern API-driven applications.</p>
+                    </div>
+                    <div class="auth-method-card">
+                        <i class="fa-solid fa-certificate"></i>
+                        <h4>Certificate Authentication</h4>
+                        <p>Client certificate (mTLS) support for applications that require mutual TLS authentication, common in banking and government applications.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 2: Smart Crawling -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-spider"></i>
+                    </div>
+                    <div>
+                        <h3>Smart Crawling</h3>
+                        <p>SecuStrike uses a headless browser engine to crawl modern JavaScript-heavy applications. It executes JavaScript, interacts with dynamic UI elements, fills forms, and discovers AJAX-loaded content that traditional crawlers miss.</p>
+                    </div>
+                </div>
+                <div class="crawl-features-grid">
+                    <div class="crawl-feature">
+                        <i class="fa-brands fa-js"></i>
+                        <h4>JavaScript Execution</h4>
+                        <p>Full browser engine (Chromium-based) renders pages, executes JavaScript, handles SPAs built with React, Angular, and Vue.js, and discovers dynamically generated content and routes.</p>
+                    </div>
+                    <div class="crawl-feature">
+                        <i class="fa-solid fa-hand-pointer"></i>
+                        <h4>Interactive Element Discovery</h4>
+                        <p>Clicks buttons, expands menus, interacts with modals and dropdowns, fills and submits forms, and triggers AJAX requests to maximize application coverage.</p>
+                    </div>
+                    <div class="crawl-feature">
+                        <i class="fa-solid fa-sitemap"></i>
+                        <h4>Sitemap and OpenAPI Import</h4>
+                        <p>Import sitemaps, OpenAPI/Swagger specifications, Postman collections, and HAR files to augment crawling with known endpoints and API definitions.</p>
+                    </div>
+                    <div class="crawl-feature">
+                        <i class="fa-solid fa-filter"></i>
+                        <h4>Scope Control</h4>
+                        <p>Fine-grained control over scan scope with URL include/exclude patterns, domain restrictions, path exclusions, and request rate limiting to stay within defined boundaries.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: CI/CD Integration -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-rotate"></i>
+                    </div>
+                    <div>
+                        <h3>CI/CD Integration</h3>
+                        <p>Automate security testing in your deployment pipeline. SecuStrike integrates with all major CI/CD platforms and can gate deployments based on vulnerability findings.</p>
+                    </div>
+                </div>
+                <div class="code-example">
+                    <div class="code-example-header">
+                        <span class="code-filename">Jenkinsfile</span>
+                        <span class="code-lang">Groovy</span>
+                    </div>
+                    <pre class="code-block"><code><span class="code-keyword">pipeline</span> {
+    <span class="code-keyword">agent</span> any
+    <span class="code-keyword">stages</span> {
+        <span class="code-keyword">stage</span>(<span class="code-string">'Deploy to Staging'</span>) {
+            <span class="code-keyword">steps</span> {
+                <span class="code-function">sh</span> <span class="code-string">'./deploy.sh staging'</span>
+            }
+        }
+        <span class="code-keyword">stage</span>(<span class="code-string">'DAST Scan'</span>) {
+            <span class="code-keyword">steps</span> {
+                <span class="code-function">sh</span> <span class="code-string">'''
+                    secustrike scan \
+                        --target https://staging.example.com \
+                        --auth-type form \
+                        --auth-url https://staging.example.com/login \
+                        --auth-username $STAGING_USER \
+                        --auth-password $STAGING_PASS \
+                        --scan-type standard \
+                        --format html,json \
+                        --output reports/dast-report \
+                        --fail-on high \
+                        --timeout 14400
+                '''</span>
+            }
+            <span class="code-keyword">post</span> {
+                <span class="code-keyword">always</span> {
+                    <span class="code-function">publishHTML</span>([
+                        allowMissing: <span class="code-keyword">false</span>,
+                        reportDir: <span class="code-string">'reports'</span>,
+                        reportFiles: <span class="code-string">'dast-report.html'</span>,
+                        reportName: <span class="code-string">'SecuStrike DAST Report'</span>
+                    ])
+                    <span class="code-function">archiveArtifacts</span> <span class="code-string">'reports/**'</span>
+                }
+            }
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="cicd-platforms">
+                    <div class="cicd-platform">
+                        <i class="fa-brands fa-jenkins"></i>
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="cicd-platform">
+                        <i class="fa-brands fa-gitlab"></i>
+                        <span>GitLab CI</span>
+                    </div>
+                    <div class="cicd-platform">
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub Actions</span>
+                    </div>
+                    <div class="cicd-platform">
+                        <i class="fa-brands fa-microsoft"></i>
+                        <span>Azure DevOps</span>
+                    </div>
+                    <div class="cicd-platform">
+                        <i class="fa-solid fa-circle-nodes"></i>
+                        <span>Bamboo</span>
+                    </div>
+                    <div class="cicd-platform">
+                        <i class="fa-solid fa-city"></i>
+                        <span>TeamCity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Safe Scanning -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-heart-pulse"></i>
+                    </div>
+                    <div>
+                        <h3>Safe Scanning</h3>
+                        <p>SecuStrike is designed to be safe to run against production-like environments. It never performs destructive actions, respects rate limits, and can be configured to avoid dangerous test patterns.</p>
+                    </div>
+                </div>
+                <div class="safe-scanning-grid">
+                    <div class="safe-feature">
+                        <i class="fa-solid fa-shield-heart"></i>
+                        <h4>Non-Destructive Testing</h4>
+                        <p>No DELETE operations, no data modification, no account lockouts. SecuStrike verifies vulnerabilities through observation and controlled payloads that do not alter application state.</p>
+                    </div>
+                    <div class="safe-feature">
+                        <i class="fa-solid fa-gauge"></i>
+                        <h4>Rate Limiting</h4>
+                        <p>Configurable request rate limiting to prevent overwhelming target applications. Automatic throttling when error rates increase, with circuit breaker patterns for reliability.</p>
+                    </div>
+                    <div class="safe-feature">
+                        <i class="fa-solid fa-ban"></i>
+                        <h4>Exclusion Controls</h4>
+                        <p>Exclude sensitive endpoints (logout, delete, payment processing) from scanning. URL-based, method-based, and parameter-based exclusion rules for fine-grained control.</p>
+                    </div>
+                    <div class="safe-feature">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <h4>Scan Scheduling</h4>
+                        <p>Schedule scans during low-traffic windows. Pause and resume capabilities for long-running scans. Automatic scan cancellation if application health degrades.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 5: Evidence-Based Reporting -->
+            <div class="feature-block">
+                <div class="feature-block-header">
+                    <div class="feature-icon-lg">
+                        <i class="fa-solid fa-file-contract"></i>
+                    </div>
+                    <div>
+                        <h3>Evidence-Based Reporting</h3>
+                        <p>Every finding includes complete evidence: the exact HTTP request sent, the server response received, the vulnerability confirmation method, and step-by-step reproduction instructions. No black-box hand-waving.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scan Types -->
+    <section class="section section-alt" id="scan-types">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Scan Types</span>
+                <h2>Choose the Right Scan for Your Needs</h2>
+                <p>SecuStrike offers four scan profiles optimized for different use cases, from quick CI/CD checks to deep penetration testing.</p>
+            </div>
+            <div class="scan-types-grid">
+                <div class="scan-type-card">
+                    <div class="scan-type-header quick">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h3>Quick Scan</h3>
+                        <span class="scan-duration">15-30 minutes</span>
+                    </div>
+                    <div class="scan-type-body">
+                        <p>Fast surface-level scan ideal for CI/CD pipelines. Tests for the most critical and common vulnerabilities without deep crawling.</p>
+                        <h4>What It Covers</h4>
+                        <ul>
+                            <li>OWASP Top 10 critical checks</li>
+                            <li>Security header validation</li>
+                            <li>TLS/SSL configuration</li>
+                            <li>Common injection points</li>
+                            <li>Authentication flow testing</li>
+                            <li>Known CVE fingerprinting</li>
+                        </ul>
+                        <h4>Best For</h4>
+                        <p>CI/CD pipeline gates, pre-deployment checks, quick security posture assessment, daily automated scans.</p>
+                    </div>
+                </div>
+                <div class="scan-type-card">
+                    <div class="scan-type-header standard">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <h3>Standard Scan</h3>
+                        <span class="scan-duration">1-4 hours</span>
+                    </div>
+                    <div class="scan-type-body">
+                        <p>Comprehensive scan with full crawling and testing coverage. The recommended scan type for regular security assessments.</p>
+                        <h4>What It Covers</h4>
+                        <ul>
+                            <li>Everything in Quick Scan</li>
+                            <li>Full site crawling with JavaScript execution</li>
+                            <li>Authenticated scanning behind login</li>
+                            <li>Form submission and parameter testing</li>
+                            <li>Business logic flaw detection</li>
+                            <li>Comprehensive injection testing</li>
+                            <li>Session management analysis</li>
+                            <li>CORS and CSP validation</li>
+                        </ul>
+                        <h4>Best For</h4>
+                        <p>Weekly security assessments, release candidate testing, compliance scanning, staging environment validation.</p>
+                    </div>
+                </div>
+                <div class="scan-type-card">
+                    <div class="scan-type-header deep">
+                        <i class="fa-solid fa-microscope"></i>
+                        <h3>Deep Scan</h3>
+                        <span class="scan-duration">4-12 hours</span>
+                    </div>
+                    <div class="scan-type-body">
+                        <p>Maximum depth and coverage for thorough security assessment. Uses advanced techniques including fuzzing, logic testing, and multi-step attack chains.</p>
+                        <h4>What It Covers</h4>
+                        <ul>
+                            <li>Everything in Standard Scan</li>
+                            <li>Advanced fuzzing (parameter, header, body)</li>
+                            <li>Multi-step attack chain simulation</li>
+                            <li>Blind injection detection (time-based, OOB)</li>
+                            <li>Race condition testing</li>
+                            <li>SSRF with DNS callback verification</li>
+                            <li>Advanced deserialization testing</li>
+                            <li>Second-order injection detection</li>
+                        </ul>
+                        <h4>Best For</h4>
+                        <p>Quarterly penetration testing, pre-audit preparation, high-risk application assessment, regulatory compliance validation.</p>
+                    </div>
+                </div>
+                <div class="scan-type-card">
+                    <div class="scan-type-header api">
+                        <i class="fa-solid fa-plug-circle-bolt"></i>
+                        <h3>API Scan</h3>
+                        <span class="scan-duration">30 min - 2 hours</span>
+                    </div>
+                    <div class="scan-type-body">
+                        <p>Specialized scan for REST, GraphQL, and SOAP APIs. Import OpenAPI/Swagger specs or Postman collections for targeted API security testing.</p>
+                        <h4>What It Covers</h4>
+                        <ul>
+                            <li>OWASP API Top 10 testing</li>
+                            <li>Schema validation and type confusion</li>
+                            <li>Authentication and authorization testing</li>
+                            <li>Rate limiting and quota enforcement</li>
+                            <li>Mass assignment detection</li>
+                            <li>GraphQL introspection and query depth</li>
+                            <li>API versioning and deprecation checks</li>
+                            <li>Input validation and boundary testing</li>
+                        </ul>
+                        <h4>Best For</h4>
+                        <p>API-first applications, microservices architectures, mobile app backends, third-party API integration testing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sample Report Mockup -->
+    <section class="section" id="sample-report">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Sample Report</span>
+                <h2>See What a SecuStrike Report Looks Like</h2>
+                <p>Every scan produces an evidence-based report with complete request/response data for every finding.</p>
+            </div>
+            <div class="report-mockup">
+                <div class="report-window">
+                    <div class="report-titlebar">
+                        <div class="report-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="report-title">SecuStrike DAST Report — Banking Portal v2.4.0</span>
+                    </div>
+                    <div class="report-content">
+                        <!-- Scan Summary -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-chart-pie"></i> Scan Summary</h3>
+                            <div class="report-summary-grid">
+                                <div class="report-stat critical">
+                                    <span class="report-stat-number">5</span>
+                                    <span class="report-stat-label">Critical</span>
+                                </div>
+                                <div class="report-stat high">
+                                    <span class="report-stat-number">12</span>
+                                    <span class="report-stat-label">High</span>
+                                </div>
+                                <div class="report-stat medium">
+                                    <span class="report-stat-number">23</span>
+                                    <span class="report-stat-label">Medium</span>
+                                </div>
+                                <div class="report-stat low">
+                                    <span class="report-stat-number">18</span>
+                                    <span class="report-stat-label">Low</span>
+                                </div>
+                                <div class="report-stat info">
+                                    <span class="report-stat-number">31</span>
+                                    <span class="report-stat-label">Info</span>
+                                </div>
+                            </div>
+                            <div class="report-meta">
+                                <div class="report-meta-item">
+                                    <strong>Target:</strong> https://staging-portal.bank.example.com
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Scan Type:</strong> Standard (Authenticated)
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>URLs Crawled:</strong> 847
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Requests Sent:</strong> 34,521
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Scan Duration:</strong> 2 hours 18 minutes
+                                </div>
+                                <div class="report-meta-item">
+                                    <strong>Scan Date:</strong> March 27, 2026 at 02:00 IST
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Findings Table -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-list"></i> Findings Overview</h3>
+                            <div class="table-responsive">
+                                <table class="report-table">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Severity</th>
+                                            <th>Vulnerability</th>
+                                            <th>URL</th>
+                                            <th>OWASP</th>
+                                            <th>Confidence</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>SS-001</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>SQL Injection</td>
+                                            <td>/api/accounts/search?q=</td>
+                                            <td>A03</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-002</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>Broken Access Control (IDOR)</td>
+                                            <td>/api/accounts/{id}/statement</td>
+                                            <td>A01</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-003</td>
+                                            <td><span class="severity-badge critical">Critical</span></td>
+                                            <td>Authentication Bypass</td>
+                                            <td>/admin/dashboard</td>
+                                            <td>A07</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-004</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>Stored XSS</td>
+                                            <td>/profile/update</td>
+                                            <td>A03</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-005</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>SSRF</td>
+                                            <td>/api/webhooks/test</td>
+                                            <td>A10</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-006</td>
+                                            <td><span class="severity-badge high">High</span></td>
+                                            <td>Sensitive Data Exposure</td>
+                                            <td>/api/users/profile</td>
+                                            <td>A02</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-007</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>Missing Security Headers</td>
+                                            <td>All pages</td>
+                                            <td>A05</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-008</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>CORS Misconfiguration</td>
+                                            <td>/api/*</td>
+                                            <td>A01</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-009</td>
+                                            <td><span class="severity-badge medium">Medium</span></td>
+                                            <td>Session Token in URL</td>
+                                            <td>/dashboard?session=</td>
+                                            <td>A07</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>SS-010</td>
+                                            <td><span class="severity-badge low">Low</span></td>
+                                            <td>Cookie Without Secure Flag</td>
+                                            <td>All pages</td>
+                                            <td>A02</td>
+                                            <td>Confirmed</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        <!-- Evidence Example -->
+                        <div class="report-section">
+                            <h3 class="report-section-title"><i class="fa-solid fa-bug"></i> Finding Detail — SS-001: SQL Injection</h3>
+                            <div class="report-finding-detail">
+                                <div class="finding-header-bar critical">
+                                    <span class="finding-severity">CRITICAL</span>
+                                    <span class="finding-id">SS-001</span>
+                                    <span class="finding-cwe">CWE-89</span>
+                                </div>
+                                <div class="finding-code">
+                                    <div class="code-label">Request Sent:</div>
+                                    <pre class="code-block"><code>GET /api/accounts/search?q=test<span class="code-highlight">' OR '1'='1' --</span> HTTP/1.1
+Host: staging-portal.bank.example.com
+Cookie: session=eyJhbGciOiJIUzI1NiJ9...
+Accept: application/json</code></pre>
+                                </div>
+                                <div class="finding-code">
+                                    <div class="code-label">Response Received (truncated):</div>
+                                    <pre class="code-block"><code>HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "accounts": [
+    {"id": 10001, "name": "Rajesh Kumar", "balance": "₹4,52,300"},
+    {"id": 10002, "name": "Priya Sharma", "balance": "₹12,87,450"},
+    {"id": 10003, "name": "Amit Patel", "balance": "₹78,920"},
+    <span class="code-comment">// ... 2,847 more records returned</span>
+  ],
+  "total": 2850
+}</code></pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section section-alt" id="comparison">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Comparison</span>
+                <h2>How SecuStrike Compares to Other DAST Tools</h2>
+                <p>See how SecuStrike stacks up against the leading dynamic application security testing solutions.</p>
+            </div>
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight-col">SecuStrike</th>
+                            <th>OWASP ZAP</th>
+                            <th>Burp Suite Pro</th>
+                            <th>Acunetix</th>
+                            <th>Invicti</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>OWASP Top 10 Coverage</td>
+                            <td class="highlight-col"><strong>100%</strong></td>
+                            <td>90%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                            <td>100%</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript/SPA Crawling</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> AJAX Spider</td>
+                            <td><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Full</td>
+                        </tr>
+                        <tr>
+                            <td>Authenticated Scanning</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Multi-method</td>
+                            <td><i class="fa-solid fa-check"></i> Manual setup</td>
+                            <td><i class="fa-solid fa-check"></i> Advanced</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>API Testing (REST/GraphQL)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native</td>
+                            <td><i class="fa-solid fa-minus"></i> Plugins</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>CI/CD Integration</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native CLI</td>
+                            <td><i class="fa-solid fa-check"></i> CLI/API</td>
+                            <td><i class="fa-solid fa-check"></i> Enterprise</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>On-Premise Deployment</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-check"></i> Desktop</td>
+                            <td><i class="fa-solid fa-check"></i> Enterprise</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                            <td><i class="fa-solid fa-check"></i> Available</td>
+                        </tr>
+                        <tr>
+                            <td>Evidence-Based Reporting</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Full</td>
+                            <td><i class="fa-solid fa-minus"></i> Basic</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Proof-Based</td>
+                        </tr>
+                        <tr>
+                            <td>Indian Compliance (SEBI/RBI)</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Built-in</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                            <td><i class="fa-solid fa-xmark"></i> No</td>
+                        </tr>
+                        <tr>
+                            <td>Safe Scanning Mode</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Native</td>
+                            <td><i class="fa-solid fa-minus"></i> Manual config</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Interactive HTML Reports</td>
+                            <td class="highlight-col"><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                            <td><i class="fa-solid fa-check"></i> Yes</td>
+                        </tr>
+                        <tr>
+                            <td>Pricing Model</td>
+                            <td class="highlight-col"><strong>Per-target</strong></td>
+                            <td>Free / Open Source</td>
+                            <td>Per-user ($$$)</td>
+                            <td>Per-target</td>
+                            <td>Per-target ($$$)</td>
+                        </tr>
+                        <tr>
+                            <td>Data Residency</td>
+                            <td class="highlight-col"><strong>India (On-Prem)</strong></td>
+                            <td>Local</td>
+                            <td>Cloud (UK) / Local</td>
+                            <td>Cloud (EU/US)</td>
+                            <td>Cloud (US) / On-Prem</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Find What Static Analysis Misses</h2>
+                <p>Get a personalized demo of SecuStrike to see how dynamic testing can uncover runtime vulnerabilities, configuration errors, and business logic flaws in your applications.</p>
+                <div class="cta-actions">
+                    <a href="../contact.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="../resources/whitepapers.html" class="btn btn-outline btn-lg">Download Datasheet</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Resources -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Related Resources</span>
+                <h2>Learn More About Dynamic Security Testing</h2>
+            </div>
+            <div class="resources-grid">
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-newspaper"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Blog</span>
+                        <h3>SAST vs DAST: Why You Need Both for Complete Application Security</h3>
+                        <p>Understand the strengths and limitations of static and dynamic analysis, and why combining both provides the best coverage.</p>
+                    </div>
+                </a>
+                <a href="../resources/blog.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-file-lines"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Technical Guide</span>
+                        <h3>Integrating DAST Into Your CI/CD Pipeline: A Step-by-Step Guide</h3>
+                        <p>Learn how to add SecuStrike to your Jenkins, GitLab CI, or GitHub Actions pipeline with quality gates that prevent vulnerable deployments.</p>
+                    </div>
+                </a>
+                <a href="../resources/case-studies.html" class="resource-card">
+                    <div class="resource-image">
+                        <div class="resource-placeholder">
+                            <i class="fa-solid fa-building-columns"></i>
+                        </div>
+                    </div>
+                    <div class="resource-body">
+                        <span class="resource-type">Case Study</span>
+                        <h3>How a Government Agency Found 47 Critical Vulnerabilities with SecuStrike</h3>
+                        <p>See how automated DAST scanning replaced manual penetration testing for a government digital services portal.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </div>
+                    <p class="footer-description">Enterprise-grade application security platform built for Indian regulatory compliance. Secure your code, dependencies, applications, and APIs.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace SAST</a></li>
+                        <li><a href="seculens.html">SecuLens SCA</a></li>
+                        <li><a href="secustrike.html">SecuStrike DAST</a></li>
+                        <li><a href="secushield.html">SecuShield API Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../solutions/banking.html">Banking</a></li>
+                        <li><a href="../solutions/government.html">Government</a></li>
+                        <li><a href="../solutions/insurance.html">Insurance</a></li>
+                        <li><a href="../solutions/automotive.html">Automotive</a></li>
+                        <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                        <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../resources/blog.html">Blog</a></li>
+                        <li><a href="../resources/techpoint.html">TechPoint</a></li>
+                        <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                        <li><a href="../resources/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI</a></li>
+                        <li><a href="../compliance/rbi.html">RBI</a></li>
+                        <li><a href="../compliance/cert-in.html">CERT-In</a></li>
+                        <li><a href="../compliance/dpdp.html">DPDP</a></li>
+                        <li><a href="../compliance/pci-dss.html">PCI-DSS</a></li>
+                        <li><a href="../compliance/iso.html">ISO</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

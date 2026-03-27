@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CERT-In Compliance Checklist for Application Security Teams | SecuNexa</title>
+    <meta name="description" content="21-point CERT-In compliance checklist for application security teams. Covers SBOM requirements, vulnerability reporting timelines, security testing mandates, and how SecuNexa maps to each requirement.">
+    <meta name="keywords" content="CERT-In compliance checklist, CERT-In directive application security, CERT-In SBOM requirements">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                            <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                            <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                            <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                            <li><a href="../compliance/certin.html">CERT-In</a></li>
+                            <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                            <li><a href="../compliance/iso27001.html">ISO 27001</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI DSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Blog</a></li>
+                            <li><a href="../resources/docs.html">Documentation</a></li>
+                            <li><a href="../faq.html">FAQ</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="index.html">Blog</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>CERT-In Compliance Checklist for Application Security Teams</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Blog Article -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-layout">
+                <article class="blog-article">
+                    <div class="blog-article-header">
+                        <span class="blog-category cat-compliance">Compliance</span>
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> March 22, 2026</span>
+                        <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 12 min read</span>
+                    </div>
+                    <h1>CERT-In Compliance Checklist for Application Security Teams</h1>
+                    <div class="blog-author">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>SecuNexa Team | Meteonic Innovation Pvt Ltd</span>
+                    </div>
+
+                    <div class="blog-share">
+                        <span>Share:</span>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=&text=" class="share-btn share-twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <button class="share-btn share-copy" aria-label="Copy link" onclick="navigator.clipboard.writeText(window.location.href)"><i class="fa-solid fa-link"></i></button>
+                    </div>
+
+                    <div class="blog-content">
+                        <p>The Indian Computer Emergency Response Team (CERT-In), operating under the Ministry of Electronics and Information Technology, has issued directives that create binding obligations for organizations operating in India. The April 2022 directive and subsequent clarifications established some of the most stringent incident reporting and cybersecurity requirements globally. For application security teams, these directives translate into specific technical and procedural requirements that must be implemented, documented, and regularly demonstrated.</p>
+
+                        <p>This article provides a practical 21-point checklist that application security teams can use to assess and improve their CERT-In compliance posture.</p>
+
+                        <h2>CERT-In Directive Overview</h2>
+
+                        <p>The CERT-In directive of April 2022 applies to all service providers, intermediaries, data centers, body corporates, and government organizations operating in India. Key provisions relevant to application security include mandatory reporting of cyber incidents within six hours of detection, maintenance of ICT system logs for 180 days within Indian jurisdiction, synchronization of ICT system clocks with NTP servers, designation of a point of contact for CERT-In communication, and maintenance of comprehensive records of ICT infrastructure and assets.</p>
+
+                        <p>While the directive covers broad cybersecurity operations, application security teams play a critical role in several compliance areas. The six-hour reporting requirement means that organizations must be able to rapidly determine the impact of application-level vulnerabilities. The logging requirements apply to application logs. And the asset inventory requirements extend to software components and dependencies.</p>
+
+                        <h2>The 21-Point Application Security Checklist</h2>
+
+                        <h3>Incident Preparedness (Points 1-5)</h3>
+
+                        <p><strong>1. Six-Hour Incident Detection Capability</strong><br>
+                        Verify that your application monitoring can detect security incidents (data breaches, unauthorized access, application compromise) and generate alerts within a timeframe that allows six-hour reporting to CERT-In. This requires real-time application security monitoring, not just periodic scanning.</p>
+
+                        <p><strong>2. Application-Level Incident Response Playbook</strong><br>
+                        Maintain documented playbooks for common application security incidents: SQL injection exploitation, authentication bypass, data exfiltration through API abuse, and supply chain compromise through vulnerable dependencies. Each playbook should include detection criteria, containment steps, evidence preservation procedures, and CERT-In reporting templates.</p>
+
+                        <p><strong>3. Vulnerability Impact Assessment Process</strong><br>
+                        Establish a process to rapidly assess whether a newly disclosed vulnerability (such as a critical CVE in an open-source component) affects your applications. This requires maintaining current SBOMs and having the ability to query them programmatically. The faster you can determine impact, the faster you can make informed reporting decisions.</p>
+
+                        <p><strong>4. Point of Contact Designation</strong><br>
+                        Designate and register a point of contact with CERT-In who has authority to report incidents and access to application security information. Ensure backup contacts are designated for coverage during leave or unavailability. The point of contact should have direct communication channels with the application security team.</p>
+
+                        <p><strong>5. Communication Templates</strong><br>
+                        Prepare pre-formatted incident report templates that comply with CERT-In reporting requirements. Include fields for incident type, affected systems, timeline, impact assessment, and containment measures. Having templates ready eliminates formatting delays during the critical six-hour reporting window.</p>
+
+                        <h3>Application Logging and Monitoring (Points 6-10)</h3>
+
+                        <p><strong>6. Application Log Retention (180 Days)</strong><br>
+                        Configure all application logging to retain records for a minimum of 180 rolling days within Indian jurisdiction. This includes authentication logs, authorization decisions, API access logs, error logs, and security event logs. Verify that log storage is adequate for 180 days of production volume.</p>
+
+                        <p><strong>7. Clock Synchronization</strong><br>
+                        Ensure all application servers synchronize their clocks with NTP servers designated by CERT-In or the National Informatics Centre (NIC). Accurate timestamps are essential for incident investigation and correlation. Configure NTP synchronization monitoring to detect clock drift.</p>
+
+                        <p><strong>8. Security Event Logging</strong><br>
+                        Implement comprehensive security event logging in all applications. Log failed authentication attempts, privilege escalation events, access to sensitive data, API rate limit violations, input validation failures, and session management events. Each log entry must include timestamp, source IP, user identity (if available), and event description.</p>
+
+                        <p><strong>9. Log Integrity Protection</strong><br>
+                        Implement controls to prevent log tampering. This may include write-once log storage, log forwarding to a centralized SIEM, cryptographic log chaining, or dedicated log management systems with access controls that prevent application administrators from modifying logs.</p>
+
+                        <p><strong>10. Monitoring and Alerting</strong><br>
+                        Deploy real-time monitoring and alerting for application security events. Configure alerts for patterns that may indicate active exploitation: unusual authentication failure rates, unexpected API usage patterns, data access anomalies, and application error rate spikes. Alert thresholds should be tuned to minimize false positives while ensuring that actual incidents trigger notification within the timeframe needed for six-hour reporting.</p>
+
+                        <h3>Vulnerability Management (Points 11-15)</h3>
+
+                        <p><strong>11. Continuous SAST Integration</strong><br>
+                        Integrate static application security testing into the CI/CD pipeline so that every code change is analyzed for security vulnerabilities before deployment. Maintain quality gates that prevent high-severity vulnerabilities from reaching production. Document SAST tool configuration, rule sets, and quality gate thresholds.</p>
+
+                        <p><strong>12. Regular DAST Scanning</strong><br>
+                        Conduct dynamic application security testing against all internet-facing applications on a scheduled basis (monthly at minimum for critical applications). DAST results should be tracked in the vulnerability management system with remediation SLAs. Maintain evidence of regular scanning cadence.</p>
+
+                        <p><strong>13. Software Composition Analysis</strong><br>
+                        Run SCA scans on all applications to identify known vulnerabilities in open-source and third-party components. Maintain a current vulnerability database and scan continuously for newly disclosed CVEs affecting deployed applications. This capability is essential for rapid impact assessment when CERT-In issues advisories about specific vulnerabilities.</p>
+
+                        <p><strong>14. Remediation SLA Enforcement</strong><br>
+                        Define and enforce remediation SLAs based on vulnerability severity: Critical (7 days), High (30 days), Medium (90 days), Low (180 days). Track actual remediation times against SLAs and escalate overdue items. Maintain historical data showing compliance with SLA targets.</p>
+
+                        <p><strong>15. Vulnerability Reporting to CERT-In</strong><br>
+                        Establish a process for reporting application security vulnerabilities to CERT-In when required. This includes vulnerabilities that may affect other organizations (such as vulnerabilities in commonly used software that your organization develops or maintains). Maintain awareness of CERT-In advisory categories that trigger mandatory reporting.</p>
+
+                        <h3>Software Supply Chain (Points 16-19)</h3>
+
+                        <p><strong>16. Software Bill of Materials (SBOM)</strong><br>
+                        Generate and maintain SBOMs for all critical applications. SBOMs should be in standardized formats (CycloneDX or SPDX) and include all direct and transitive dependencies with version information. Update SBOMs with every build and maintain historical versions.</p>
+
+                        <p><strong>17. Dependency Update Discipline</strong><br>
+                        Establish a regular cadence for reviewing and updating application dependencies. Track the age and vulnerability status of all dependencies. Prioritize updates for components with known vulnerabilities but also maintain awareness of components that are end-of-life or unmaintained.</p>
+
+                        <p><strong>18. Third-Party Risk Assessment</strong><br>
+                        Conduct risk assessments for all significant third-party software components and services used in critical applications. Assess the vendor's security practices, update frequency, vulnerability response history, and license terms. Document the risk assessment and review it annually or when significant changes occur.</p>
+
+                        <p><strong>19. Secure Software Procurement</strong><br>
+                        Implement security requirements in software procurement processes. Require vendors to provide SBOMs, vulnerability disclosure policies, and security testing evidence. For custom-developed software from vendors, require adherence to secure development lifecycle practices and evidence of security testing.</p>
+
+                        <h3>Governance and Documentation (Points 20-21)</h3>
+
+                        <p><strong>20. Application Security Policy</strong><br>
+                        Maintain a documented application security policy that covers secure development practices, security testing requirements, vulnerability management procedures, third-party component management, and incident response. Review and update the policy annually. Ensure all development teams are trained on the policy.</p>
+
+                        <p><strong>21. Compliance Evidence Repository</strong><br>
+                        Maintain a centralized repository of all compliance evidence: scan reports, remediation records, policy documents, training records, incident response records, and audit findings. This repository should support rapid retrieval during CERT-In inquiries or regulatory audits. Implement retention policies that maintain evidence for the required period.</p>
+
+                        <h2>How SecuNexa Maps to the Checklist</h2>
+
+                        <p>The SecuNexa platform addresses checklist items across multiple categories:</p>
+
+                        <ul>
+                            <li><strong>Items 3, 13, 16:</strong> SecuLens provides continuous SCA monitoring with SBOM generation, enabling rapid vulnerability impact assessment when CERT-In issues advisories.</li>
+                            <li><strong>Items 11, 14:</strong> SecuTrace integrates into CI/CD pipelines for continuous SAST with configurable quality gates and remediation SLA tracking.</li>
+                            <li><strong>Items 12:</strong> SecuStrike provides scheduled and on-demand DAST scanning for web applications and APIs.</li>
+                            <li><strong>Items 10:</strong> SecuShield provides runtime application security monitoring with real-time alerting on security events.</li>
+                            <li><strong>Items 14, 21:</strong> The unified SecuNexa dashboard provides centralized vulnerability management, SLA tracking, and compliance evidence generation across all testing types.</li>
+                        </ul>
+
+                        <p>All SecuNexa products operate on-premises with air-gapped support, ensuring that application security data, log data, and compliance evidence remain within Indian jurisdiction as required by the CERT-In directive.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <h3>Download the Full CERT-In Checklist</h3>
+                        <p>Get the complete checklist as a downloadable PDF with detailed implementation guidance for each item.</p>
+                        <a href="../lead-magnets/certin-checklist.html" class="btn btn-primary">Download Checklist <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Related Articles</h3>
+                        <ul class="related-posts">
+                            <li><a href="rbi-cyber-security-framework.html">RBI Cyber Security Framework Explained</a></li>
+                            <li><a href="sebi-cscrf-compliance-guide.html">SEBI CSCRF Compliance Guide</a></li>
+                            <li><a href="sbom-guide-2026.html">Complete Guide to SBOM in 2026</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>Compliance Assessment</h3>
+                        <p>Get a free assessment of your CERT-In application security compliance posture.</p>
+                        <a href="../contact.html" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                        <li><a href="../platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../resources/docs.html">Documentation</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                        <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                        <li><a href="../compliance/certin.html">CERT-In</a></li>
+                        <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

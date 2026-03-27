@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Security Blog | SecuNexa Insights</title>
+    <meta name="description" content="Expert insights on application security, SCA, SAST, DAST, compliance, and air-gapped security for Indian enterprises. Stay updated with SecuNexa's security research team.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                            <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                            <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                            <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                            <li><a href="../compliance/certin.html">CERT-In</a></li>
+                            <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                            <li><a href="../compliance/iso27001.html">ISO 27001</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI DSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html" class="active">Blog</a></li>
+                            <li><a href="../resources/docs.html">Documentation</a></li>
+                            <li><a href="../faq.html">FAQ</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-blog">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-blog"></i> SecuNexa Insights</span>
+                <h1>SecuNexa Insights &mdash; Application Security Blog</h1>
+                <p class="hero-subtitle">Expert analysis, compliance guides, and technical deep-dives from our security research team. Helping Indian enterprises build secure software.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Search & Filter -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-controls">
+                <div class="blog-search">
+                    <i class="fa-solid fa-search"></i>
+                    <input type="text" id="blogSearch" placeholder="Search articles..." class="blog-search-input">
+                </div>
+                <div class="blog-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="industry">Industry Insights</button>
+                    <button class="filter-btn" data-filter="compliance">Compliance</button>
+                    <button class="filter-btn" data-filter="comparison">Comparison</button>
+                    <button class="filter-btn" data-filter="education">Education</button>
+                    <button class="filter-btn" data-filter="technical">Technical</button>
+                    <button class="filter-btn" data-filter="buyers-guide">Buyer's Guide</button>
+                </div>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="blog-grid" id="blogGrid">
+
+                <!-- Card 1 -->
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-industry">Industry Insights</span>
+                        <span class="blog-date">March 25, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="airgapped-appsec-indian-banks.html">Why Air-Gapped Application Security is Non-Negotiable for Indian Banks</a></h3>
+                    <p class="blog-card-excerpt">Indian banking regulators are tightening data sovereignty requirements. Learn why air-gapped application security is essential for banks operating in regulated environments, and what to look for when evaluating solutions.</p>
+                    <a href="airgapped-appsec-indian-banks.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="blog-card" data-category="compliance">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-compliance">Compliance</span>
+                        <span class="blog-date">March 20, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="sebi-cscrf-compliance-guide.html">SEBI CSCRF 2024-2025: Complete Application Security Compliance Guide</a></h3>
+                    <p class="blog-card-excerpt">SEBI's Cyber Security and Cyber Resilience Framework imposes strict security requirements on market participants. This guide breaks down the application security mandates and how to achieve compliance.</p>
+                    <a href="sebi-cscrf-compliance-guide.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="blog-card" data-category="comparison">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-comparison">Comparison</span>
+                        <span class="blog-date">March 18, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="seculens-vs-blackduck.html">SecuLens vs Black Duck &mdash; An Honest SCA Comparison for Indian Enterprises</a></h3>
+                    <p class="blog-card-excerpt">Choosing between SCA tools? We compare SecuLens and Black Duck across features, air-gap support, Indian compliance coverage, and total cost of ownership for regulated enterprises.</p>
+                    <a href="seculens-vs-blackduck.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 4 -->
+                <article class="blog-card" data-category="education">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date">March 15, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="what-is-sbom-certin.html">What is SBOM and Why Does CERT-In Require It?</a></h3>
+                    <p class="blog-card-excerpt">Software Bill of Materials (SBOM) is becoming a regulatory mandate. Understand what SBOM is, the formats available, why CERT-In requires it, and how to generate accurate SBOMs for your applications.</p>
+                    <a href="what-is-sbom-certin.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 5 -->
+                <article class="blog-card" data-category="education">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date">March 12, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="opensource-license-compliance.html">Open-Source License Compliance &mdash; A Legal Guide for Indian Companies</a></h3>
+                    <p class="blog-card-excerpt">Open-source license violations can expose your company to significant legal risk. This guide covers license types, obligations, GPL contamination risks, and how forensic detection protects your IP.</p>
+                    <a href="opensource-license-compliance.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 6 -->
+                <article class="blog-card" data-category="buyers-guide">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-buyers-guide">Buyer's Guide</span>
+                        <span class="blog-date">March 10, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="top-10-sca-tools-2026.html">Top 10 SCA Tools Compared &mdash; 2026 Enterprise Buyer's Guide</a></h3>
+                    <p class="blog-card-excerpt">Evaluating SCA solutions? We compare the top 10 software composition analysis tools across detection accuracy, language support, air-gap capability, pricing, and enterprise features.</p>
+                    <a href="top-10-sca-tools-2026.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 7 -->
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-industry">Industry Insights</span>
+                        <span class="blog-date">March 7, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="banks-cloud-sca-tools.html">Why Banks Should Not Use Cloud-Based SCA Tools</a></h3>
+                    <p class="blog-card-excerpt">Cloud-based SCA tools require uploading source code or dependency manifests to external servers. For banks, this creates unacceptable data sovereignty and regulatory compliance risks.</p>
+                    <a href="banks-cloud-sca-tools.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 8 -->
+                <article class="blog-card" data-category="technical">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-technical">Technical</span>
+                        <span class="blog-date">March 4, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="sast-cpp-analysis.html">Static Analysis for C/C++ &mdash; Why Most SAST Tools Fall Short</a></h3>
+                    <p class="blog-card-excerpt">C and C++ present unique challenges for static analysis tools. From pointer arithmetic to memory safety, learn why generic SAST tools miss critical vulnerabilities in native code.</p>
+                    <a href="sast-cpp-analysis.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 9 -->
+                <article class="blog-card" data-category="education">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date">March 1, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="dast-vs-sast-vs-sca.html">DAST vs SAST vs SCA &mdash; Which Do You Need?</a></h3>
+                    <p class="blog-card-excerpt">Application security testing comes in many forms. Understand the differences between DAST, SAST, and SCA, when to use each, and why a comprehensive approach requires all three.</p>
+                    <a href="dast-vs-sast-vs-sca.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 10 -->
+                <article class="blog-card" data-category="technical">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-technical">Technical</span>
+                        <span class="blog-date">February 26, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="api-security-testing-guide.html">API Security Testing &mdash; Beyond OWASP Top 10</a></h3>
+                    <p class="blog-card-excerpt">APIs are the backbone of modern applications and a prime attack surface. Go beyond the OWASP API Top 10 to explore business logic testing, authentication flaws, and GraphQL-specific vulnerabilities.</p>
+                    <a href="api-security-testing-guide.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 11 -->
+                <article class="blog-card" data-category="technical">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-technical">Technical</span>
+                        <span class="blog-date">February 22, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="devsecops-airgapped.html">How to Build a DevSecOps Pipeline in Air-Gapped Environments</a></h3>
+                    <p class="blog-card-excerpt">Building DevSecOps in air-gapped environments requires rethinking standard cloud-native pipelines. Learn the architecture patterns, CI/CD integration strategies, and database management techniques that work offline.</p>
+                    <a href="devsecops-airgapped.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 12 -->
+                <article class="blog-card" data-category="compliance">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-compliance">Compliance</span>
+                        <span class="blog-date">February 18, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="rbi-framework-appsec.html">RBI Cyber Security Framework &mdash; Application Security Requirements</a></h3>
+                    <p class="blog-card-excerpt">The Reserve Bank of India's Cyber Security Framework mandates comprehensive application security controls for financial institutions. Understand the specific requirements and how to generate audit-ready evidence.</p>
+                    <a href="rbi-framework-appsec.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 13 -->
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-industry">Industry Insights</span>
+                        <span class="blog-date">February 14, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="opensource-vulnerability-cost-india.html">The True Cost of Open-Source Vulnerabilities &mdash; India Case Studies</a></h3>
+                    <p class="blog-card-excerpt">From Log4Shell to Spring4Shell, open-source vulnerabilities have cost Indian enterprises crores in remediation and breach response. Explore real-world impacts and prevention strategies.</p>
+                    <a href="opensource-vulnerability-cost-india.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 14 -->
+                <article class="blog-card" data-category="comparison">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-comparison">Comparison</span>
+                        <span class="blog-date">February 10, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="mend-vs-snyk-vs-seculens.html">Mend vs Snyk vs SecuLens &mdash; SCA for Regulated Industries</a></h3>
+                    <p class="blog-card-excerpt">Three leading SCA platforms compared specifically for regulated industry needs. We evaluate deployment models, compliance reporting, air-gap capabilities, and vulnerability intelligence quality.</p>
+                    <a href="mend-vs-snyk-vs-seculens.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 15 -->
+                <article class="blog-card" data-category="education">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date">February 6, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="forensic-license-detection.html">What is Forensic License Detection and Why Does It Matter?</a></h3>
+                    <p class="blog-card-excerpt">Package metadata often lies about licenses. Forensic license detection examines actual source code to determine true licensing obligations, protecting organizations from legal exposure.</p>
+                    <a href="forensic-license-detection.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 16 -->
+                <article class="blog-card" data-category="compliance">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-compliance">Compliance</span>
+                        <span class="blog-date">February 2, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="certin-compliance-checklist.html">CERT-In Compliance Checklist for Application Security Teams</a></h3>
+                    <p class="blog-card-excerpt">CERT-In directives impose strict reporting and security requirements on Indian organizations. Use this comprehensive checklist to ensure your application security program meets every mandate.</p>
+                    <a href="certin-compliance-checklist.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 17 -->
+                <article class="blog-card" data-category="comparison">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-comparison">Comparison</span>
+                        <span class="blog-date">January 28, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="sonatype-vs-seculens.html">Sonatype vs SecuLens &mdash; Why Air-Gapped SCA Changes Everything</a></h3>
+                    <p class="blog-card-excerpt">Sonatype Nexus Lifecycle is a popular SCA choice, but how does it compare when air-gapped deployment is a requirement? We break down the feature differences that matter for regulated enterprises.</p>
+                    <a href="sonatype-vs-seculens.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 18 -->
+                <article class="blog-card" data-category="buyers-guide">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-buyers-guide">Buyer's Guide</span>
+                        <span class="blog-date">January 24, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="sast-evaluation-checklist.html">How to Evaluate SAST Tools &mdash; A Buyer's Checklist</a></h3>
+                    <p class="blog-card-excerpt">Choosing a SAST tool requires evaluating language coverage, accuracy, integration capabilities, and deployment flexibility. This buyer's checklist covers every criterion you should assess.</p>
+                    <a href="sast-evaluation-checklist.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 19 -->
+                <article class="blog-card" data-category="industry">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-industry">Industry Insights</span>
+                        <span class="blog-date">January 20, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="appsec-insurance-india.html">Application Security for the Indian Insurance Industry</a></h3>
+                    <p class="blog-card-excerpt">India's insurance sector faces mounting cybersecurity regulations from IRDAI. Learn the unique application security challenges insurers face and how to build a compliant, effective security program.</p>
+                    <a href="appsec-insurance-india.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+                <!-- Card 20 -->
+                <article class="blog-card" data-category="education">
+                    <div class="blog-card-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date">January 15, 2026</span>
+                    </div>
+                    <h3 class="blog-card-title"><a href="sbom-guide-2026.html">The Complete Guide to Software Bill of Materials (SBOM) in 2026</a></h3>
+                    <p class="blog-card-excerpt">SBOM has evolved from a nice-to-have to a regulatory requirement. This comprehensive guide covers everything from format selection to generation best practices and regulatory drivers worldwide.</p>
+                    <a href="sbom-guide-2026.html" class="blog-read-more">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="newsletter-cta">
+                <div class="newsletter-content">
+                    <h2>Stay Ahead of Security Threats</h2>
+                    <p>Subscribe to SecuNexa Insights and receive expert analysis, compliance updates, and technical deep-dives delivered to your inbox every week.</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <div class="newsletter-input-group">
+                        <input type="email" placeholder="Enter your email address" required class="newsletter-input">
+                        <button type="submit" class="btn btn-primary">Subscribe <i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                    <p class="newsletter-note">No spam. Unsubscribe anytime. We respect your privacy.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                        <li><a href="../platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../resources/docs.html">Documentation</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                        <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                        <li><a href="../compliance/certin.html">CERT-In</a></li>
+                        <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+    <script>
+        // Blog search and filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const searchInput = document.getElementById('blogSearch');
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const blogCards = document.querySelectorAll('.blog-card');
+            let activeFilter = 'all';
+
+            function filterCards() {
+                const searchTerm = searchInput.value.toLowerCase();
+                blogCards.forEach(card => {
+                    const category = card.dataset.category;
+                    const title = card.querySelector('.blog-card-title').textContent.toLowerCase();
+                    const excerpt = card.querySelector('.blog-card-excerpt').textContent.toLowerCase();
+                    const matchesFilter = activeFilter === 'all' || category === activeFilter;
+                    const matchesSearch = !searchTerm || title.includes(searchTerm) || excerpt.includes(searchTerm);
+                    card.style.display = matchesFilter && matchesSearch ? '' : 'none';
+                });
+            }
+
+            searchInput.addEventListener('input', filterCards);
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+                    activeFilter = this.dataset.filter;
+                    filterCards();
+                });
+            });
+        });
+    </script>
+</body>
+</html>

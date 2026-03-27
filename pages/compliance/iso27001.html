@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISO 27001 &amp; SOC 2 Compliance — SecuNexa</title>
+  <meta name="description" content="Map SecuNexa application security testing to ISO 27001 Annex A.14 controls and SOC 2 trust service criteria for continuous compliance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../../index.html" class="nav__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav__menu" id="navMenu">
+          <li class="nav__item"><a href="../platform.html" class="nav__link">Platform</a></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Products <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../products/secutrace.html">SecuTrace — SAST</a></li>
+              <li><a href="../products/seculens.html">SecuLens — SCA</a></li>
+              <li><a href="../products/secustrike.html">SecuStrike — DAST</a></li>
+              <li><a href="../products/secushield.html">SecuShield — API Security</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+              <li><a href="../solutions/government.html">Government &amp; Defense</a></li>
+              <li><a href="../solutions/insurance.html">Insurance &amp; NBFC</a></li>
+              <li><a href="../solutions/automotive.html">Automotive</a></li>
+              <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+              <li><a href="../solutions/telecom.html">Telecom &amp; IT</a></li>
+              <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+              <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="sebi.html">SEBI CSCRF</a></li>
+              <li><a href="rbi.html">RBI Framework</a></li>
+              <li><a href="certin.html">CERT-In</a></li>
+              <li><a href="dpdp.html">DPDP Act</a></li>
+              <li><a href="pci-dss.html">PCI-DSS</a></li>
+              <li><a href="iso27001.html">ISO 27001</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Resources <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../blog/index.html">Blog</a></li>
+              <li><a href="../techpoint/index.html">TechPoint</a></li>
+              <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+              <li><a href="../resources/case-studies.html">Case Studies</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+            </ul></li>
+          <li class="nav__item"><a href="../about.html" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="../contact.html" class="btn btn--primary nav__cta">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--compliance">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge"><i class="fa-solid fa-award"></i> International Standards</span>
+          <h1>ISO 27001 Annex A.14 — Secure Development</h1>
+          <p>ISO 27001 Annex A.14 and SOC 2 Trust Service Criteria require organizations to implement security in their system development lifecycle. SecuNexa provides the automated application security testing controls that map directly to these internationally recognized standards, generating continuous compliance evidence for certification audits.</p>
+          <div class="hero__actions">
+            <a href="../contact.html" class="btn btn--primary">Request Compliance Demo</a>
+            <a href="#iso-mapping" class="btn btn--outline">View ISO 27001 Mapping</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ISO 27001 Controls -->
+    <section class="section" id="iso-mapping">
+      <div class="container">
+        <div class="section__header">
+          <h2>ISO 27001 Annex A.14 — System Acquisition, Development &amp; Maintenance</h2>
+          <p>Annex A.14 of ISO 27001:2013 (and the corresponding controls in ISO 27001:2022 Annex A) establishes requirements for secure system development. Here is how SecuNexa maps to each relevant control.</p>
+        </div>
+        <div class="table-responsive">
+          <table class="compliance-table">
+            <thead>
+              <tr>
+                <th>ISO 27001 Control</th>
+                <th>Control Title</th>
+                <th>SecuNexa Engine</th>
+                <th>Implementation Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>A.14.2.1</code></td>
+                <td>Secure Development Policy</td>
+                <td><strong>SecuTrace (SAST)</strong> + <strong>SecuNexa Platform</strong></td>
+                <td>SecuNexa enforces secure development policies through automated static analysis rule sets. Custom policies can be defined to match organizational standards. Quality gates ensure policy compliance before code reaches production, transforming written policies into enforceable technical controls.</td>
+              </tr>
+              <tr>
+                <td><code>A.14.2.5</code></td>
+                <td>Secure System Engineering Principles</td>
+                <td><strong>SecuTrace (SAST)</strong> + <strong>SecuLens (SCA)</strong></td>
+                <td>SAST validates adherence to secure engineering principles including input validation, output encoding, authentication controls, and cryptographic usage. SCA ensures third-party components meet security standards. Findings are categorized by CWE and mapped to OWASP guidelines for engineering teams.</td>
+              </tr>
+              <tr>
+                <td><code>A.14.2.8</code></td>
+                <td>System Security Testing</td>
+                <td><strong>SecuStrike (DAST)</strong> + <strong>SecuShield (API)</strong></td>
+                <td>Automated security testing of deployed applications and APIs during development and before release. DAST performs black-box testing of web applications while SecuShield tests API endpoints for authentication, authorization, and data exposure vulnerabilities. Scheduled and on-demand testing capabilities.</td>
+              </tr>
+              <tr>
+                <td><code>A.14.2.9</code></td>
+                <td>System Acceptance Testing</td>
+                <td><strong>SecuNexa Platform</strong></td>
+                <td>Pre-deployment quality gates serve as automated acceptance testing criteria. Applications must pass security scans with zero critical and high findings before production deployment is approved. Gate policies are configurable by application risk tier and environment.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Additional ISO 27001 Controls -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <h2>Additional ISO 27001 Controls Supported</h2>
+          <p>Beyond Annex A.14, SecuNexa contributes evidence to several other ISO 27001 control domains.</p>
+        </div>
+        <div class="card-grid card-grid--3col">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-shield-virus"></i></div>
+            <h3>A.12.6 — Technical Vulnerability Management</h3>
+            <p>SecuNexa provides continuous vulnerability identification across application code (SAST), third-party components (SCA), running applications (DAST), and API interfaces. Automated scanning ensures technical vulnerabilities are identified promptly, with prioritized remediation guidance based on CVSS scoring and asset criticality.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-network-wired"></i></div>
+            <h3>A.13.1 — Network Security Management</h3>
+            <p>SecuShield's API security testing validates network-level security controls for application interfaces including TLS configuration, certificate validation, and secure communication protocols. DAST scanning tests for information leakage through HTTP headers, insecure redirects, and misconfigured CORS policies.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-handshake"></i></div>
+            <h3>A.15.1 — Supplier Relationships</h3>
+            <p>SecuLens (SCA) provides supply chain transparency through SBOM generation, tracking all third-party and open-source components. License compliance analysis, vulnerability monitoring, and end-of-life detection help organizations manage information security risks from supplier-provided software components.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-clipboard-check"></i></div>
+            <h3>A.18.2 — Information Security Reviews</h3>
+            <p>SecuNexa's continuous scanning and compliance reporting supports independent reviews of information security practices. Historical scan data, trend analysis, and compliance matrices provide the evidence auditors need to verify that security controls are operating effectively.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-lock"></i></div>
+            <h3>A.10.1 — Cryptographic Controls</h3>
+            <p>SecuTrace (SAST) detects weak or deprecated cryptographic implementations in source code including MD5/SHA-1 usage, hardcoded keys, insufficient key lengths, insecure random number generation, and improper certificate validation. Ensures applications follow current cryptographic best practices.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-user-gear"></i></div>
+            <h3>A.9.4 — System Access Control</h3>
+            <p>SecuStrike (DAST) and SecuShield (API) test authentication mechanisms, session management, and authorization controls in running applications. Identifies broken access controls, privilege escalation paths, and insecure direct object references that violate access control policies.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOC 2 Trust Criteria -->
+    <section class="section" id="soc2">
+      <div class="container">
+        <div class="section__header">
+          <h2>SOC 2 Trust Service Criteria Mapping</h2>
+          <p>SOC 2 examinations evaluate controls relevant to security, availability, processing integrity, confidentiality, and privacy. SecuNexa provides evidence for the following trust service criteria.</p>
+        </div>
+        <div class="table-responsive">
+          <table class="compliance-table">
+            <thead>
+              <tr>
+                <th>Trust Criteria</th>
+                <th>Category</th>
+                <th>SecuNexa Contribution</th>
+                <th>Evidence Provided</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>CC6.1</code></td>
+                <td>Logical and Physical Access Controls</td>
+                <td><strong>SecuStrike (DAST)</strong> + <strong>SecuShield (API)</strong></td>
+                <td>Testing results demonstrating that application-level access controls prevent unauthorized access. Evidence of authentication testing, authorization bypass testing, and session management validation across web and API interfaces.</td>
+              </tr>
+              <tr>
+                <td><code>CC7.1</code></td>
+                <td>System Operations — Vulnerability Management</td>
+                <td><strong>SecuLens (SCA)</strong> + <strong>SecuTrace (SAST)</strong></td>
+                <td>Continuous vulnerability identification reports, CVE tracking dashboards, remediation SLA compliance records, and SBOM artifacts demonstrating proactive vulnerability management.</td>
+              </tr>
+              <tr>
+                <td><code>CC7.2</code></td>
+                <td>System Operations — Monitoring</td>
+                <td><strong>SecuNexa Platform</strong></td>
+                <td>Scan scheduling configurations, automated alerting records, trend analysis reports, and dashboard screenshots demonstrating continuous security monitoring of application environments.</td>
+              </tr>
+              <tr>
+                <td><code>CC8.1</code></td>
+                <td>Change Management</td>
+                <td><strong>SecuTrace (SAST)</strong> + <strong>SecuNexa Platform</strong></td>
+                <td>Pre-deployment scan records, quality gate enforcement logs, scan-on-commit configurations, and evidence that all code changes undergo security review before production deployment.</td>
+              </tr>
+              <tr>
+                <td><code>PI1.1</code></td>
+                <td>Processing Integrity</td>
+                <td><strong>SecuTrace (SAST)</strong> + <strong>SecuStrike (DAST)</strong></td>
+                <td>Evidence that applications are tested for input validation, data integrity, and processing accuracy. SAST detects data handling flaws in code while DAST validates processing integrity of running applications.</td>
+              </tr>
+              <tr>
+                <td><code>C1.1</code></td>
+                <td>Confidentiality</td>
+                <td><strong>SecuShield (API)</strong> + <strong>SecuTrace (SAST)</strong></td>
+                <td>Testing evidence for data exposure prevention — API responses checked for excessive data disclosure, source code scanned for PII logging, and encryption implementation validated for data-at-rest and data-in-transit.</td>
+              </tr>
+              <tr>
+                <td><code>P6.1</code></td>
+                <td>Privacy — Disclosure and Notification</td>
+                <td><strong>SecuShield (API)</strong> + <strong>SecuStrike (DAST)</strong></td>
+                <td>API endpoint testing ensuring personal data is not exposed beyond authorized scope. Web application testing validating that privacy controls function correctly and data collection aligns with disclosed purposes.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance Reporting -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <h2>Audit-Ready Evidence for Certification Bodies</h2>
+          <p>SecuNexa generates structured compliance packages that auditors from certification bodies and CPA firms expect during ISO 27001 certification and SOC 2 examinations.</p>
+        </div>
+        <div class="card-grid card-grid--2col">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-folder-open"></i></div>
+            <h3>Control Evidence Packages</h3>
+            <p>Pre-organized evidence bundles mapped to each ISO 27001 Annex A control or SOC 2 trust criteria. Each bundle includes scan configurations, finding summaries, remediation records, and trend data — structured so auditors can efficiently validate control effectiveness without requesting additional documentation.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-timeline"></i></div>
+            <h3>Continuous Control Monitoring</h3>
+            <p>Rather than point-in-time assessments, SecuNexa provides continuous evidence of control operation throughout the audit period. This is particularly valuable for SOC 2 Type II reports that evaluate control effectiveness over a 6-12 month period, demonstrating consistent application of security controls.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-arrows-spin"></i></div>
+            <h3>Gap Analysis Reports</h3>
+            <p>Automated identification of control gaps where application security testing reveals non-conformities. Gap reports include specific findings, affected controls, risk assessment, and recommended remediation actions — enabling organizations to close gaps before audit fieldwork begins.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-file-export"></i></div>
+            <h3>Multi-Format Export</h3>
+            <p>All evidence available in HTML dashboards, PDF reports, Excel workbooks, JSON, and CSV formats. Compatible with GRC platforms (ServiceNow, Archer, OneTrust) for centralized compliance management. Machine-readable formats enable automated evidence collection workflows.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-block">
+          <h2>Strengthen Your ISO 27001 and SOC 2 Posture</h2>
+          <p>ISO 27001 certification and SOC 2 reports are increasingly expected by enterprise customers and partners. SecuNexa automates the application security controls these standards require, providing continuous evidence of compliance that reduces audit preparation time by up to 70% and strengthens your overall security posture.</p>
+          <div class="cta-block__actions">
+            <a href="../contact.html" class="btn btn--primary btn--lg">Schedule a Compliance Consultation</a>
+            <a href="../resources/whitepapers.html" class="btn btn--outline btn--lg">Download ISO 27001 Mapping Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="footer__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a><p>Unified Application Security Platform by Meteonic Innovation Pvt Ltd.</p><div class="footer__social"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div></div>
+        <div class="footer__col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (API)</a></li></ul></div>
+        <div class="footer__col"><h4>Solutions</h4><ul><li><a href="../solutions/banking.html">Banking</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/automotive.html">Automotive</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li></ul></div>
+        <div class="footer__col"><h4>Resources</h4><ul><li><a href="../blog/index.html">Blog</a></li><li><a href="../techpoint/index.html">TechPoint</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h4>Compliance</h4><ul><li><a href="sebi.html">SEBI CSCRF</a></li><li><a href="rbi.html">RBI Framework</a></li><li><a href="certin.html">CERT-In</a></li><li><a href="dpdp.html">DPDP Act</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All Rights Reserved.</p><div class="footer__legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Security Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

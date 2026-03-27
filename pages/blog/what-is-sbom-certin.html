@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is SBOM and Why Does CERT-In Require It? | SecuNexa</title>
+    <meta name="description" content="Understanding Software Bill of Materials (SBOM), CERT-In requirements, SBOM formats like CycloneDX and SPDX, and how to generate accurate SBOMs for your applications.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header class="header"><div class="container"><nav class="nav"><a href="../../index.html" class="logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><ul class="nav-links"><li><a href="../platform.html">Platform</a></li><li class="dropdown"><a href="#">Products <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></li><li class="dropdown"><a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../solutions/banking.html">Banking &amp; Finance</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/healthcare.html">Healthcare</a></li><li><a href="../solutions/insurance.html">Insurance</a></li><li><a href="../solutions/telecom.html">Telecom</a></li></ul></li><li class="dropdown"><a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li><li><a href="../compliance/iso27001.html">ISO 27001</a></li><li><a href="../compliance/pci-dss.html">PCI DSS</a></li></ul></li><li class="dropdown"><a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li></ul></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul><a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a><button class="mobile-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></nav></div></header>
+
+    <section class="breadcrumb-section"><div class="container"><nav class="breadcrumb"><a href="../../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="index.html">Blog</a><i class="fa-solid fa-chevron-right"></i><span>What is SBOM and Why Does CERT-In Require It?</span></nav></div></section>
+
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-layout">
+                <article class="blog-article">
+                    <div class="blog-article-header">
+                        <span class="blog-category cat-education">Education</span>
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> March 15, 2026</span>
+                    </div>
+                    <h1>What is SBOM and Why Does CERT-In Require It?</h1>
+                    <div class="blog-author"><i class="fa-solid fa-user-shield"></i><span>SecuNexa Security Research Team</span></div>
+
+                    <div class="blog-share"><span>Share:</span><a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="https://twitter.com/intent/tweet?url=&text=" class="share-btn share-twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a><button class="share-btn share-copy" aria-label="Copy link" onclick="navigator.clipboard.writeText(window.location.href)"><i class="fa-solid fa-link"></i></button></div>
+
+                    <div class="blog-content">
+                        <p>Every modern software application is built on a foundation of third-party and open-source components. A typical enterprise application may contain hundreds or even thousands of open-source libraries, each with their own dependencies, vulnerabilities, and licensing obligations. A Software Bill of Materials (SBOM) is the definitive inventory of every component in your software, providing the transparency necessary for effective vulnerability management, license compliance, and regulatory adherence.</p>
+
+                        <p>In the Indian context, CERT-In (Indian Computer Emergency Response Team) has increasingly emphasized the importance of software inventory management as part of its cybersecurity directives. Understanding what SBOM is, why it matters, and how to generate accurate SBOMs is now essential for every Indian organization that develops or deploys software.</p>
+
+                        <h2>Understanding Software Bill of Materials</h2>
+
+                        <p>An SBOM is a structured, machine-readable document that lists every component present in a piece of software. Think of it as a detailed ingredient label for software. Just as food packaging lists every ingredient, preservative, and additive, an SBOM lists every library, framework, module, and component that makes up an application.</p>
+
+                        <p>A comprehensive SBOM includes several categories of information for each component. The component identity includes the name, version, supplier or author, and a unique identifier such as a Package URL (purl). Relationship data describes how components relate to each other, distinguishing between direct dependencies that your code explicitly imports and transitive dependencies pulled in by those direct dependencies. Licensing information documents the license under which each component is distributed, which determines what obligations your organization has when using that component. Vulnerability status maps each component to known security vulnerabilities (CVEs) in vulnerability databases.</p>
+
+                        <p>The depth and accuracy of an SBOM depends entirely on the tools and methods used to generate it. A shallow SBOM generated from package manager lock files captures only declared dependencies. A deep SBOM generated through comprehensive SCA analysis also identifies vendored code (source files copied directly into the project), modified forks of open-source libraries, embedded components that bypass package managers, and transitive dependencies across multiple ecosystem boundaries.</p>
+
+                        <h2>Why CERT-In Requires SBOM</h2>
+
+                        <p>CERT-In's cybersecurity directives have evolved to address the growing threat landscape associated with software supply chain attacks. The rationale for SBOM requirements stems from several critical security concerns.</p>
+
+                        <p>First, vulnerability response speed depends on knowing what you have. When a critical vulnerability like Log4Shell (CVE-2021-44228) is disclosed, organizations need to immediately determine whether they are affected. Without an SBOM, this determination requires manual auditing of every application, a process that can take days or weeks. With accurate SBOMs, the same determination takes minutes: search the SBOM inventory for the affected component and version, and you immediately know which applications need remediation.</p>
+
+                        <p>Second, supply chain attacks are escalating in frequency and sophistication. Attackers are increasingly targeting open-source package repositories, compromising popular libraries to inject malicious code that propagates to downstream consumers. An SBOM provides the visibility needed to detect when a compromised component enters your software supply chain, enabling rapid response before the malicious code reaches production.</p>
+
+                        <p>Third, CERT-In's six-hour incident reporting requirement makes software inventory visibility operationally critical. When a cybersecurity incident occurs, organizations must report to CERT-In within six hours, including details about affected systems and software. Without pre-existing SBOMs, gathering this information within the reporting window is practically impossible.</p>
+
+                        <p>Fourth, CERT-In aligns with global trends toward mandatory SBOM requirements. The United States Executive Order 14028 on Improving the Nation's Cybersecurity established SBOM requirements for software sold to the federal government. The European Union's Cyber Resilience Act includes SBOM mandates for products sold in the EU market. India's regulatory direction follows this global trajectory, positioning SBOM as a fundamental cybersecurity hygiene practice.</p>
+
+                        <h2>SBOM Formats: CycloneDX vs SPDX</h2>
+
+                        <p>Two primary formats dominate the SBOM landscape, each with distinct characteristics and strengths.</p>
+
+                        <p>CycloneDX is a lightweight SBOM format developed by OWASP (Open Worldwide Application Security Project). It was designed specifically for security use cases, making it particularly well-suited for vulnerability management workflows. CycloneDX supports JSON and XML encoding, includes native support for vulnerability references (VEX - Vulnerability Exploitability eXchange), and provides extensions for service definitions and hardware components. Its security-first design makes it the preferred format for application security teams. CycloneDX version 1.5 and later includes comprehensive support for dependency graphs, formulation data (how software was built), and licensing information.</p>
+
+                        <p>SPDX (Software Package Data Exchange) is an ISO/IEC 5962:2021 international standard maintained by the Linux Foundation. SPDX has a broader scope than CycloneDX, covering detailed license information, file-level analysis, and inter-document relationships. It supports multiple serialization formats including JSON, XML, RDF, YAML, and tag-value. SPDX's strength lies in license compliance analysis, making it the preferred format for legal and procurement teams. The standardized format provides a common language for communicating software composition across organizational boundaries.</p>
+
+                        <p>For Indian enterprises, the recommendation is to support both formats. Use CycloneDX for security-focused workflows such as vulnerability tracking and incident response. Use SPDX for license compliance analysis and legal documentation. Most modern SCA tools can generate both formats from the same analysis data.</p>
+
+                        <h2>How to Generate Accurate SBOMs</h2>
+
+                        <p>Generating an accurate SBOM requires more than running a single tool against your package manager lock file. A reliable SBOM generation process involves several stages and considerations.</p>
+
+                        <p>Start with package manager analysis. Every application should have its declared dependencies analyzed through the appropriate package manager. For Java applications, analyze pom.xml or build.gradle files and resolve the complete dependency tree. For Node.js, analyze package-lock.json or yarn.lock. For Python, analyze requirements.txt, Pipfile.lock, or pyproject.toml. For .NET, analyze packages.config or project files with PackageReference entries. This step captures declared dependencies but misses vendored and embedded components.</p>
+
+                        <p>Add binary analysis for compiled artifacts. Applications deployed as compiled binaries, container images, or packaged archives need binary-level analysis to identify components that are not visible in source-level package manager files. This is particularly important for C/C++ applications where dependency management is less standardized and components are frequently statically linked.</p>
+
+                        <p>Implement source-level forensic analysis for the most comprehensive results. Forensic analysis examines the actual source code to identify components that were copied, vendored, or embedded without using a package manager. This catches code snippets from Stack Overflow, copied utility libraries, and modified forks of open-source projects that would otherwise be invisible in the SBOM.</p>
+
+                        <p>Automate SBOM generation in your CI/CD pipeline. SBOMs should be generated automatically with every build, not as a periodic manual exercise. Integrate your SCA tool into the build pipeline so that an up-to-date SBOM is produced alongside every release artifact. Store SBOMs in a central repository alongside the software artifacts they describe, with version tracking that correlates SBOM versions to software versions.</p>
+
+                        <p>Validate and enrich SBOM data. Raw SBOM output from automated tools should be validated for completeness and enriched with additional context. Verify that all components have valid package URLs or identifiers. Confirm that license information is accurate (this is where forensic license detection becomes valuable). Map components to known vulnerabilities and update the vulnerability status regularly. Add organizational metadata such as the application name, version, deployment environment, and data classification.</p>
+
+                        <h2>SBOM Management Best Practices</h2>
+
+                        <p>Generating SBOMs is only the first step. Effective SBOM management requires ongoing processes and infrastructure. Maintain a central SBOM repository where all application SBOMs are stored, versioned, and searchable. This repository should support querying across all SBOMs to answer questions like "which applications use this component?" when a new vulnerability is disclosed.</p>
+
+                        <p>Implement continuous vulnerability monitoring against your SBOM inventory. As new CVEs are published, automatically cross-reference them against your SBOM repository and generate alerts for affected applications. This transforms SBOM from a static document into a dynamic security intelligence tool.</p>
+
+                        <p>Establish retention policies that maintain historical SBOMs for at least the support lifetime of each software version. If a vulnerability is discovered in a component, you need the ability to check historical SBOMs to determine whether currently deployed or recently decommissioned software versions are affected.</p>
+
+                        <p>SecuLens, the SCA engine in the SecuNexa platform, generates comprehensive SBOMs in both CycloneDX and SPDX formats. It combines package manager analysis, binary fingerprinting, and forensic source-level detection to produce SBOMs that capture vendored, embedded, and modified components that simpler tools miss. The entire SBOM generation and management workflow operates in air-gapped environments, ensuring that software inventory data never leaves your controlled infrastructure.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <h3>Generate Accurate SBOMs Today</h3>
+                        <p>See how SecuLens produces comprehensive SBOMs with forensic detection in air-gapped environments.</p>
+                        <a href="../contact.html" class="btn btn-primary">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Related Articles</h3>
+                        <ul class="related-posts">
+                            <li><a href="sbom-guide-2026.html">The Complete Guide to SBOM in 2026</a></li>
+                            <li><a href="certin-compliance-checklist.html">CERT-In Compliance Checklist for AppSec Teams</a></li>
+                            <li><a href="opensource-license-compliance.html">Open-Source License Compliance &mdash; A Legal Guide</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>SBOM Best Practices Guide</h3>
+                        <p>Download our guide to implementing SBOM in your software development lifecycle.</p>
+                        <a href="../resources/whitepapers.html" class="btn btn-outline">Download Guide</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><a href="../../index.html" class="footer-logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p><div class="footer-social"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div><div class="footer-col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></div><div class="footer-col"><h4>Solutions</h4><ul><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../platform.html">Platform Overview</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li></ul></div><div class="footer-col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p><div class="footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></div></div></div></footer>
+    <script src="../../js/main.js"></script>
+</body>
+</html>

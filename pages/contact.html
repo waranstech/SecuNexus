@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SecuNexa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="devsecops.html">DevSecOps</a></li>
+                            <li><a href="enterprise.html">Enterprise Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="compliance-sebi.html">SEBI</a></li>
+                            <li><a href="compliance-rbi.html">RBI</a></li>
+                            <li><a href="compliance-certin.html">CERT-In</a></li>
+                            <li><a href="compliance-gdpr.html">GDPR</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="docs.html">Documentation</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+                <a href="pricing.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-contact">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-envelope"></i> Contact</span>
+                <h1>Let's Secure Your Applications Together</h1>
+                <p class="hero-subtitle">Whether you need a demo, have technical questions, or want to explore partnership opportunities — our team is ready to help.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form + Info -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Lead Capture Form -->
+                <div class="contact-form-wrapper">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and our team will get back to you within one business day.</p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-name">Full Name <span class="required">*</span></label>
+                                <input type="text" id="contact-name" name="name" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Work Email <span class="required">*</span></label>
+                                <input type="email" id="contact-email" name="email" placeholder="you@company.com" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-company">Company Name <span class="required">*</span></label>
+                                <input type="text" id="contact-company" name="company" placeholder="Your company name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-title">Job Title</label>
+                                <input type="text" id="contact-title" name="job_title" placeholder="e.g. CISO, Security Lead">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contact-phone">Phone Number</label>
+                                <input type="tel" id="contact-phone" name="phone" placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-industry">Industry <span class="required">*</span></label>
+                                <select id="contact-industry" name="industry" required>
+                                    <option value="" disabled selected>Select your industry</option>
+                                    <option value="banking">Banking &amp; Financial Services</option>
+                                    <option value="insurance">Insurance</option>
+                                    <option value="government">Government &amp; Public Sector</option>
+                                    <option value="defense">Defense &amp; Aerospace</option>
+                                    <option value="healthcare">Healthcare &amp; Pharma</option>
+                                    <option value="technology">Technology &amp; SaaS</option>
+                                    <option value="manufacturing">Manufacturing</option>
+                                    <option value="energy">Energy &amp; Utilities</option>
+                                    <option value="telecom">Telecommunications</option>
+                                    <option value="retail">Retail &amp; E-Commerce</option>
+                                    <option value="education">Education</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-product">Product Interest</label>
+                            <select id="contact-product" name="product_interest">
+                                <option value="" disabled selected>Select a product or solution</option>
+                                <option value="secunexus">SecuNexus Platform (Full Suite)</option>
+                                <option value="secutrace">SecuTrace (SAST)</option>
+                                <option value="seculens">SecuLens (SCA)</option>
+                                <option value="secustrike">SecuStrike (DAST)</option>
+                                <option value="secushield">SecuShield (RASP)</option>
+                                <option value="airgapped">Air-Gapped Deployment</option>
+                                <option value="compliance">Compliance Solutions</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Message <span class="required">*</span></label>
+                            <textarea id="contact-message" name="message" placeholder="Tell us about your security needs, deployment environment, and any specific requirements..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            <i class="fa-solid fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info Sidebar -->
+                <div class="contact-sidebar">
+                    <div class="contact-info-card">
+                        <h3>Get in Touch</h3>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <p>info@secunexa.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-phone"></i>
+                            <div>
+                                <strong>Phone</strong>
+                                <p>+91 80 4567 8900</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Address</strong>
+                                <p>Meteonic Innovation Pvt Ltd<br>
+                                4th Floor, Tech Park Tower<br>
+                                Whitefield Main Road<br>
+                                Bengaluru, Karnataka 560066<br>
+                                India</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Sales Inquiries</h3>
+                        <p>For pricing, demos, and enterprise solutions:</p>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p>sales@secunexa.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Technical Support</h3>
+                        <p>For existing customers with support contracts:</p>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <p>support@secunexa.com</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-card">
+                        <h3>Office Hours</h3>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <p>Monday - Friday<br>
+                                9:00 AM - 6:00 PM IST</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Location -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Location</span>
+                <h2>Our Office</h2>
+                <p>Visit us at our headquarters in Bengaluru, India's technology capital.</p>
+            </div>
+            <div class="office-location">
+                <div class="office-map-placeholder">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <p>Meteonic Innovation Pvt Ltd</p>
+                    <p>4th Floor, Tech Park Tower, Whitefield Main Road</p>
+                    <p>Bengaluru, Karnataka 560066, India</p>
+                </div>
+                <div class="office-details">
+                    <div class="office-detail">
+                        <i class="fa-solid fa-plane-arrival"></i>
+                        <div>
+                            <strong>Nearest Airport</strong>
+                            <p>Kempegowda International Airport (BLR) — 40 km</p>
+                        </div>
+                    </div>
+                    <div class="office-detail">
+                        <i class="fa-solid fa-train"></i>
+                        <div>
+                            <strong>Nearest Metro</strong>
+                            <p>Whitefield Metro Station — 2 km</p>
+                        </div>
+                    </div>
+                    <div class="office-detail">
+                        <i class="fa-solid fa-car"></i>
+                        <div>
+                            <strong>Parking</strong>
+                            <p>Visitor parking available in Tech Park basement</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Mini Section -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-mini">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How quickly can we get started?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most organizations can go from initial contact to a running proof-of-concept within 2-3 weeks. Our standard deployment process includes: initial consultation (1-2 days), environment assessment (2-3 days), installation and configuration (3-5 days), and training and onboarding (2-3 days). For air-gapped environments, add an additional week for secure package preparation and transfer. Our team handles the heavy lifting so your developers can focus on what they do best.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer free trials?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes, we offer a 14-day proof-of-concept (PoC) for qualified organizations. The PoC includes full access to the SecuNexus platform with all four engines, installation on your infrastructure, scanning of up to 3 projects, dedicated technical support during the evaluation, and a comprehensive findings report. Contact our sales team to discuss eligibility and get started.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can it run in our air-gapped environment?</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely. SecuNexus was built air-gapped from day one — it's not a cloud tool retrofitted for offline use. The platform requires zero internet connectivity for any of its core functions: scanning, analysis, reporting, and dashboard access all work completely offline. Updates are delivered via encrypted USB packages with cryptographic signature verification. Our offline vulnerability database covers NVD, CVE, and custom vulnerability data, and can be updated through the same secure offline process. <a href="airgapped.html">Learn more about our air-gapped deployment</a>.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="faq.html" class="btn btn-outline">View All FAQs <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="devsecops.html">DevSecOps</a></li>
+                        <li><a href="enterprise.html">Enterprise Security</a></li>
+                        <li><a href="platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="compliance-sebi.html">SEBI</a></li>
+                        <li><a href="compliance-rbi.html">RBI</a></li>
+                        <li><a href="compliance-certin.html">CERT-In</a></li>
+                        <li><a href="compliance-gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

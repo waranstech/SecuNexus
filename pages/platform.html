@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecuNexus Platform Overview | SecuNexa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="platform.html" class="active">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="devsecops.html">DevSecOps</a></li>
+                            <li><a href="enterprise.html">Enterprise Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="compliance-sebi.html">SEBI</a></li>
+                            <li><a href="compliance-rbi.html">RBI</a></li>
+                            <li><a href="compliance-certin.html">CERT-In</a></li>
+                            <li><a href="compliance-gdpr.html">GDPR</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="docs.html">Documentation</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="pricing.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-platform">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-cubes"></i> Platform Overview</span>
+                <h1>SecuNexus: One Platform to Secure Everything You Build</h1>
+                <p class="hero-subtitle">A unified application security platform combining SAST, SCA, DAST, and RASP — built for on-premises and air-gapped environments from day one.</p>
+                <div class="hero-actions">
+                    <a href="pricing.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="#architecture" class="btn btn-outline btn-lg">Explore Architecture</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Section -->
+    <section id="architecture" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Architecture</span>
+                <h2>How SecuNexus Works</h2>
+                <p>Four specialized engines feeding into a unified risk and compliance layer — all running entirely on your infrastructure.</p>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="arch-row arch-engines">
+                    <div class="arch-block engine-block">
+                        <div class="arch-icon"><i class="fa-solid fa-code"></i></div>
+                        <div class="arch-label">SecuTrace</div>
+                        <div class="arch-sublabel">SAST Engine</div>
+                    </div>
+                    <div class="arch-block engine-block">
+                        <div class="arch-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="arch-label">SecuLens</div>
+                        <div class="arch-sublabel">SCA Engine</div>
+                    </div>
+                    <div class="arch-block engine-block">
+                        <div class="arch-icon"><i class="fa-solid fa-crosshairs"></i></div>
+                        <div class="arch-label">SecuStrike</div>
+                        <div class="arch-sublabel">DAST Engine</div>
+                    </div>
+                    <div class="arch-block engine-block">
+                        <div class="arch-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="arch-label">SecuShield</div>
+                        <div class="arch-sublabel">RASP Engine</div>
+                    </div>
+                </div>
+
+                <div class="arch-connector">
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                </div>
+
+                <div class="arch-row arch-core">
+                    <div class="arch-block core-block wide-block">
+                        <div class="arch-icon"><i class="fa-solid fa-brain"></i></div>
+                        <div class="arch-label">Unified Risk Engine</div>
+                        <div class="arch-sublabel">Correlation &bull; Prioritization &bull; Deduplication</div>
+                    </div>
+                </div>
+
+                <div class="arch-connector">
+                    <div class="arch-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+                </div>
+
+                <div class="arch-row arch-output">
+                    <div class="arch-block output-block">
+                        <div class="arch-icon"><i class="fa-solid fa-file-lines"></i></div>
+                        <div class="arch-label">Reporting &amp; Compliance Engine</div>
+                        <div class="arch-sublabel">SEBI &bull; RBI &bull; CERT-In &bull; GDPR &bull; OWASP</div>
+                    </div>
+                    <div class="arch-block output-block">
+                        <div class="arch-icon"><i class="fa-solid fa-database"></i></div>
+                        <div class="arch-label">Offline VulnDB</div>
+                        <div class="arch-sublabel">NVD &bull; CVE &bull; Custom Rules</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="arch-key-points">
+                <div class="key-point">
+                    <i class="fa-solid fa-server"></i>
+                    <h4>On-Premises</h4>
+                    <p>Deploy entirely within your data center. No cloud dependency.</p>
+                </div>
+                <div class="key-point">
+                    <i class="fa-solid fa-wifi-slash"></i>
+                    <h4>Air-Gapped</h4>
+                    <p>Fully functional without any internet connectivity.</p>
+                </div>
+                <div class="key-point">
+                    <i class="fa-solid fa-rotate"></i>
+                    <h4>Offline Updates</h4>
+                    <p>Encrypted USB-based update packages with signature verification.</p>
+                </div>
+                <div class="key-point">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>Unified DB</h4>
+                    <p>Single consolidated database for all findings, metrics, and reports.</p>
+                </div>
+                <div class="key-point">
+                    <i class="fa-solid fa-user-lock"></i>
+                    <h4>RBAC</h4>
+                    <p>Role-based access control with granular permissions per project.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unified Dashboard Section -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Dashboard</span>
+                <h2>Unified Security Dashboard</h2>
+                <p>Three views, one truth. See your security posture at every level of your organization.</p>
+            </div>
+
+            <div class="dashboard-views">
+                <div class="dashboard-view">
+                    <div class="view-header">
+                        <i class="fa-solid fa-building"></i>
+                        <h3>Org-Level View</h3>
+                    </div>
+                    <div class="view-mockup">
+                        <div class="mockup-bar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-row">
+                                <div class="mockup-stat">
+                                    <span class="stat-number">24</span>
+                                    <span class="stat-label">Active Projects</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">1,247</span>
+                                    <span class="stat-label">Total Findings</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">89%</span>
+                                    <span class="stat-label">Remediation Rate</span>
+                                </div>
+                            </div>
+                            <div class="mockup-chart-placeholder">
+                                <i class="fa-solid fa-chart-line"></i>
+                                <span>Risk Trend Over Time</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="view-features">
+                        <li><i class="fa-solid fa-check"></i> Aggregate risk scores across all projects</li>
+                        <li><i class="fa-solid fa-check"></i> Compliance status by regulation</li>
+                        <li><i class="fa-solid fa-check"></i> Team productivity metrics</li>
+                        <li><i class="fa-solid fa-check"></i> Executive summary reports</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-view">
+                    <div class="view-header">
+                        <i class="fa-solid fa-folder-open"></i>
+                        <h3>Project-Level View</h3>
+                    </div>
+                    <div class="view-mockup">
+                        <div class="mockup-bar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-row">
+                                <div class="mockup-stat">
+                                    <span class="stat-number">47</span>
+                                    <span class="stat-label">Critical</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">183</span>
+                                    <span class="stat-label">High</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">312</span>
+                                    <span class="stat-label">Medium</span>
+                                </div>
+                            </div>
+                            <div class="mockup-chart-placeholder">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <span>Findings by Engine</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="view-features">
+                        <li><i class="fa-solid fa-check"></i> Findings grouped by severity and engine</li>
+                        <li><i class="fa-solid fa-check"></i> Dependency tree visualization</li>
+                        <li><i class="fa-solid fa-check"></i> Scan history and trend analysis</li>
+                        <li><i class="fa-solid fa-check"></i> Policy compliance status</li>
+                    </ul>
+                </div>
+
+                <div class="dashboard-view">
+                    <div class="view-header">
+                        <i class="fa-solid fa-user-gear"></i>
+                        <h3>Developer View</h3>
+                    </div>
+                    <div class="view-mockup">
+                        <div class="mockup-bar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-row">
+                                <div class="mockup-stat">
+                                    <span class="stat-number">12</span>
+                                    <span class="stat-label">My Issues</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">3</span>
+                                    <span class="stat-label">Critical</span>
+                                </div>
+                                <div class="mockup-stat">
+                                    <span class="stat-number">8</span>
+                                    <span class="stat-label">Fixed Today</span>
+                                </div>
+                            </div>
+                            <div class="mockup-chart-placeholder">
+                                <i class="fa-solid fa-code"></i>
+                                <span>Code-Level Findings</span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="view-features">
+                        <li><i class="fa-solid fa-check"></i> Personal fix queue with priorities</li>
+                        <li><i class="fa-solid fa-check"></i> Code-level remediation guidance</li>
+                        <li><i class="fa-solid fa-check"></i> IDE integration status</li>
+                        <li><i class="fa-solid fa-check"></i> Fix verification workflows</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Four Engines Comparison -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Engines</span>
+                <h2>Four Engines, Complete Coverage</h2>
+                <p>Each engine specializes in a different layer of application security, working together for comprehensive protection.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>SecuTrace <span class="engine-tag">SAST</span></th>
+                            <th>SecuLens <span class="engine-tag">SCA</span></th>
+                            <th>SecuStrike <span class="engine-tag">DAST</span></th>
+                            <th>SecuShield <span class="engine-tag">RASP</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>What It Scans</strong></td>
+                            <td>Source code</td>
+                            <td>Dependencies &amp; libraries</td>
+                            <td>Running applications</td>
+                            <td>Runtime behavior</td>
+                        </tr>
+                        <tr>
+                            <td><strong>When It Runs</strong></td>
+                            <td>During development / CI</td>
+                            <td>During build / CI</td>
+                            <td>Post-deployment / staging</td>
+                            <td>Production runtime</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Key Findings</strong></td>
+                            <td>SQL injection, XSS, buffer overflows, hardcoded secrets</td>
+                            <td>Known CVEs, license risks, outdated packages</td>
+                            <td>Auth flaws, misconfigs, injection via HTTP</td>
+                            <td>Zero-day attacks, anomalous behavior, runtime exploits</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Languages</strong></td>
+                            <td>Java, Python, JavaScript, C/C++, Go, .NET, PHP, Ruby</td>
+                            <td>All major package managers (npm, Maven, pip, NuGet, Go modules)</td>
+                            <td>Language-agnostic (HTTP-based)</td>
+                            <td>Java, .NET, Node.js, Python</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Offline Capable</strong></td>
+                            <td><i class="fa-solid fa-check text-success"></i> Full offline</td>
+                            <td><i class="fa-solid fa-check text-success"></i> Offline VulnDB</td>
+                            <td><i class="fa-solid fa-check text-success"></i> Full offline</td>
+                            <td><i class="fa-solid fa-check text-success"></i> Full offline</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CI/CD Integration</strong></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-check text-success"></i></td>
+                            <td><i class="fa-solid fa-minus text-muted"></i> Agent-based</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Fix Guidance</strong></td>
+                            <td>Code-level remediation</td>
+                            <td>Upgrade paths &amp; alternatives</td>
+                            <td>Configuration guidance</td>
+                            <td>Auto-block &amp; alerting</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deployment Options -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Deployment</span>
+                <h2>Deployment Options</h2>
+                <p>Choose the deployment model that matches your organization's security and compliance requirements.</p>
+            </div>
+
+            <div class="deployment-cards">
+                <div class="deployment-card">
+                    <div class="deployment-icon">
+                        <i class="fa-solid fa-wifi-slash"></i>
+                    </div>
+                    <h3>Full Air-Gap</h3>
+                    <p class="deployment-desc">Complete isolation from any network. Zero external connectivity required at any point.</p>
+                    <ul class="deployment-features">
+                        <li><i class="fa-solid fa-check"></i> No internet required — ever</li>
+                        <li><i class="fa-solid fa-check"></i> USB-based encrypted updates</li>
+                        <li><i class="fa-solid fa-check"></i> Offline vulnerability database</li>
+                        <li><i class="fa-solid fa-check"></i> Local-only report generation</li>
+                        <li><i class="fa-solid fa-check"></i> Signature-verified packages</li>
+                    </ul>
+                    <span class="deployment-ideal">Ideal for: Defense, Government, Critical Infrastructure</span>
+                </div>
+
+                <div class="deployment-card">
+                    <div class="deployment-icon">
+                        <i class="fa-solid fa-server"></i>
+                    </div>
+                    <h3>On-Premises with Controlled Updates</h3>
+                    <p class="deployment-desc">Run on your infrastructure with optional controlled connectivity for updates only.</p>
+                    <ul class="deployment-features">
+                        <li><i class="fa-solid fa-check"></i> Your data center, your control</li>
+                        <li><i class="fa-solid fa-check"></i> Optional scheduled update windows</li>
+                        <li><i class="fa-solid fa-check"></i> Proxy-compatible updates</li>
+                        <li><i class="fa-solid fa-check"></i> Full data sovereignty</li>
+                        <li><i class="fa-solid fa-check"></i> Flexible network policies</li>
+                    </ul>
+                    <span class="deployment-ideal">Ideal for: Banks, Insurance, Healthcare</span>
+                </div>
+
+                <div class="deployment-card">
+                    <div class="deployment-icon">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                    </div>
+                    <h3>Private Cloud</h3>
+                    <p class="deployment-desc">Deploy in your private cloud infrastructure (AWS VPC, Azure VNet, GCP VPC).</p>
+                    <ul class="deployment-features">
+                        <li><i class="fa-solid fa-check"></i> Private cloud compatible</li>
+                        <li><i class="fa-solid fa-check"></i> VPC / VNet deployment</li>
+                        <li><i class="fa-solid fa-check"></i> Container-based architecture</li>
+                        <li><i class="fa-solid fa-check"></i> Auto-scaling support</li>
+                        <li><i class="fa-solid fa-check"></i> Cloud-native integrations</li>
+                    </ul>
+                    <span class="deployment-ideal">Ideal for: Tech Companies, SaaS Providers, Startups</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Ecosystem -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Integrations</span>
+                <h2>Integration Ecosystem</h2>
+                <p>SecuNexus fits seamlessly into your existing development workflows and toolchains.</p>
+            </div>
+
+            <div class="integration-grid">
+                <div class="integration-category">
+                    <h3><i class="fa-solid fa-arrows-spin"></i> CI/CD Pipelines</h3>
+                    <div class="integration-items">
+                        <div class="integration-item">
+                            <i class="fa-brands fa-jenkins"></i>
+                            <span>Jenkins</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-brands fa-gitlab"></i>
+                            <span>GitLab CI</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub Actions</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-infinity"></i>
+                            <span>Azure DevOps</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-circle-nodes"></i>
+                            <span>TeamCity</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-gears"></i>
+                            <span>Bamboo</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Developer Tools</h3>
+                    <div class="integration-items">
+                        <div class="integration-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <span>IntelliJ IDEA</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-terminal"></i>
+                            <span>CLI Tools</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-plug"></i>
+                            <span>REST API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-category">
+                    <h3><i class="fa-solid fa-ticket"></i> Issue Tracking</h3>
+                    <div class="integration-items">
+                        <div class="integration-item">
+                            <i class="fa-brands fa-jira"></i>
+                            <span>Jira</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-table-columns"></i>
+                            <span>Azure Boards</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub Issues</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-brands fa-gitlab"></i>
+                            <span>GitLab Issues</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="integration-category">
+                    <h3><i class="fa-solid fa-file-export"></i> Reporting</h3>
+                    <div class="integration-items">
+                        <div class="integration-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <span>PDF Reports</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-file-csv"></i>
+                            <span>CSV Export</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-code"></i>
+                            <span>JSON / XML</span>
+                        </div>
+                        <div class="integration-item">
+                            <i class="fa-solid fa-file-contract"></i>
+                            <span>SARIF Format</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enterprise Features -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Enterprise</span>
+                <h2>Enterprise-Grade Features</h2>
+                <p>Built for organizations that need security, scalability, and compliance at scale.</p>
+            </div>
+
+            <div class="enterprise-features">
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                    <h3>Multi-Project Management</h3>
+                    <p>Manage hundreds of projects with team-based organization, shared policies, and centralized reporting across your entire portfolio.</p>
+                </div>
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-gavel"></i></div>
+                    <h3>Policy Engine</h3>
+                    <p>Define custom security policies and quality gates. Automatically block builds that violate severity thresholds or compliance requirements.</p>
+                </div>
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                    <h3>Audit Trail</h3>
+                    <p>Complete, immutable audit logs for every action — scans, findings, status changes, user activities, and configuration modifications.</p>
+                </div>
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                    <h3>Custom Rules</h3>
+                    <p>Create organization-specific security rules for SAST and SCA. Enforce internal coding standards alongside industry best practices.</p>
+                </div>
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+                    <h3>SLA Tracking</h3>
+                    <p>Set and monitor remediation SLAs by severity. Get automated alerts when issues approach or breach their deadlines.</p>
+                </div>
+                <div class="enterprise-feature">
+                    <div class="feature-icon"><i class="fa-solid fa-user-lock"></i></div>
+                    <h3>Advanced RBAC</h3>
+                    <p>Granular role-based access control with custom roles, project-level permissions, and LDAP/Active Directory integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to See SecuNexus in Action?</h2>
+                <p>Schedule a personalized demo with our security experts. We'll walk you through the platform using your own use cases.</p>
+                <form class="cta-form" id="platform-cta-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" placeholder="Work Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="company" placeholder="Company Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" placeholder="Phone Number">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Tell us about your security requirements..." rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-lg">Request a Demo</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="devsecops.html">DevSecOps</a></li>
+                        <li><a href="enterprise.html">Enterprise Security</a></li>
+                        <li><a href="platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="compliance-sebi.html">SEBI</a></li>
+                        <li><a href="compliance-rbi.html">RBI</a></li>
+                        <li><a href="compliance-certin.html">CERT-In</a></li>
+                        <li><a href="compliance-gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

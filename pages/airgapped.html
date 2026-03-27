@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air-Gapped Application Security | SecuNexa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="airgapped.html" class="active">Air-Gapped Security</a></li>
+                            <li><a href="devsecops.html">DevSecOps</a></li>
+                            <li><a href="enterprise.html">Enterprise Security</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="compliance-sebi.html">SEBI</a></li>
+                            <li><a href="compliance-rbi.html">RBI</a></li>
+                            <li><a href="compliance-certin.html">CERT-In</a></li>
+                            <li><a href="compliance-gdpr.html">GDPR</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="docs.html">Documentation</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="case-studies.html">Case Studies</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="pricing.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero hero-airgapped">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-wifi-slash"></i> Air-Gapped Security</span>
+                <h1>The Only AppSec Platform Built Air-Gapped from Day One</h1>
+                <p class="hero-subtitle">Not retrofitted. Not adapted. SecuNexus was architected from its first line of code to operate in fully disconnected, air-gapped environments with zero compromise on capability.</p>
+                <div class="hero-actions">
+                    <a href="#cta-airgapped" class="btn btn-primary btn-lg">See It in Action</a>
+                    <a href="#the-problem" class="btn btn-outline btn-lg">Learn Why It Matters</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Problem -->
+    <section id="the-problem" class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">The Problem</span>
+                <h2>Why Cloud-Based AppSec Fails for Regulated Industries</h2>
+                <p>Most application security tools were built cloud-first. For regulated industries, this creates fundamental problems that cannot be patched away.</p>
+            </div>
+
+            <div class="problem-grid">
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>Source Code Leaves Your Network</h3>
+                    <p>Cloud-based SAST tools require uploading your proprietary source code to external servers for analysis. For defense contractors, banks, and government agencies, this is a non-starter that violates security policies and regulations.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-globe"></i></div>
+                    <h3>Internet Dependency</h3>
+                    <p>Cloud tools stop working when connectivity is lost. In air-gapped environments — common in defense, critical infrastructure, and high-security facilities — these tools are completely non-functional.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Vulnerability Data Exposure</h3>
+                    <p>SCA tools that query cloud databases expose your dependency information externally. This reveals your technology stack, potentially vulnerable components, and software supply chain to third parties.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                    <h3>Compliance Violations</h3>
+                    <p>Data localization requirements from regulators like SEBI, RBI, and CERT-In mandate that sensitive data remain within Indian territory. Cloud-hosted tools with foreign data centers often violate these requirements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How Air-Gapped Works -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">How It Works</span>
+                <h2>Air-Gapped Security, Step by Step</h2>
+                <p>Every stage of the application security lifecycle works entirely offline, from installation through daily operations.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fa-solid fa-box-open"></i></div>
+                    <h3>Installation</h3>
+                    <p>SecuNexus is delivered as a self-contained installation package on encrypted media. Install on your servers without any internet connectivity. The package includes all engines, the vulnerability database, the dashboard, and all dependencies.</p>
+                    <div class="step-detail">
+                        <code class="code-block">
+                            <span class="code-comment"># Mount encrypted installation media</span><br>
+                            <span class="code-cmd">$ secunexus-installer</span> --mode airgap --target /opt/secunexus<br>
+                            <span class="code-comment"># Verify installation integrity</span><br>
+                            <span class="code-cmd">$ secunexus</span> verify --checksum
+                        </code>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                    <h3>Scanning</h3>
+                    <p>All four engines — SAST, SCA, DAST, and RASP — run entirely on your local infrastructure. Source code never leaves your servers. The offline vulnerability database provides the same detection coverage as cloud-connected alternatives.</p>
+                    <div class="step-detail">
+                        <code class="code-block">
+                            <span class="code-comment"># Run full scan — no internet required</span><br>
+                            <span class="code-cmd">$ secunexus scan</span> --project myapp --engines all<br>
+                            <span class="code-comment"># Results stored in local database</span><br>
+                            <span class="code-cmd">$ secunexus report</span> --project myapp --format pdf
+                        </code>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fa-solid fa-rotate"></i></div>
+                    <h3>Updates</h3>
+                    <p>Vulnerability database and platform updates are delivered via encrypted USB packages. Transfer is a controlled, auditable process with cryptographic signature verification to ensure package integrity and authenticity.</p>
+                    <div class="step-detail">
+                        <code class="code-block">
+                            <span class="code-comment"># Verify update package signature</span><br>
+                            <span class="code-cmd">$ secunexus update</span> --verify /media/usb/update-2026-03.pkg<br>
+                            <span class="code-comment"># Apply verified update</span><br>
+                            <span class="code-cmd">$ secunexus update</span> --apply /media/usb/update-2026-03.pkg
+                        </code>
+                    </div>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-icon"><i class="fa-solid fa-file-lines"></i></div>
+                    <h3>Reporting</h3>
+                    <p>Generate compliance reports, executive summaries, and developer-focused findings — all locally. Export to PDF, CSV, JSON, or SARIF format. Compliance templates for SEBI, RBI, CERT-In, and OWASP are included and work offline.</p>
+                    <div class="step-detail">
+                        <code class="code-block">
+                            <span class="code-comment"># Generate compliance report</span><br>
+                            <span class="code-cmd">$ secunexus report</span> --compliance sebi --format pdf<br>
+                            <span class="code-comment"># Export all findings</span><br>
+                            <span class="code-cmd">$ secunexus export</span> --all --format sarif
+                        </code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Update Mechanism Detail -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Updates</span>
+                <h2>Secure Offline Update Mechanism</h2>
+                <p>Keeping your security tools up-to-date without compromising your air gap.</p>
+            </div>
+
+            <div class="update-mechanism">
+                <div class="update-flow">
+                    <div class="update-step">
+                        <div class="update-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+                        <h4>1. Package Preparation</h4>
+                        <p>Meteonic prepares encrypted update packages containing the latest vulnerability signatures, engine updates, and compliance templates on a secure build server.</p>
+                    </div>
+                    <div class="update-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="update-step">
+                        <div class="update-icon"><i class="fa-solid fa-lock"></i></div>
+                        <h4>2. Encrypted Transfer</h4>
+                        <p>Update packages are AES-256 encrypted and transferred to USB media. Each package includes a SHA-256 checksum and RSA digital signature for integrity verification.</p>
+                    </div>
+                    <div class="update-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="update-step">
+                        <div class="update-icon"><i class="fa-solid fa-usb"></i></div>
+                        <h4>3. USB Transfer</h4>
+                        <p>Authorized personnel physically transport the USB media to the air-gapped environment following your organization's secure media handling procedures.</p>
+                    </div>
+                    <div class="update-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    <div class="update-step">
+                        <div class="update-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>4. Signature Verification</h4>
+                        <p>SecuNexus verifies the package's digital signature against Meteonic's public key (pre-installed). Only authentic, unmodified packages are accepted for installation.</p>
+                    </div>
+                </div>
+
+                <div class="update-features">
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>AES-256 encryption at rest</span>
+                    </div>
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>RSA digital signatures</span>
+                    </div>
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>SHA-256 integrity checksums</span>
+                    </div>
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>Rollback capability</span>
+                    </div>
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>Monthly update cadence</span>
+                    </div>
+                    <div class="update-feature">
+                        <i class="fa-solid fa-check-double"></i>
+                        <span>Emergency hotfix support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Comparison</span>
+                <h2>Air-Gapped vs. Cloud-Based AppSec Tools</h2>
+                <p>See why air-gapped deployment is not just a feature — it's a fundamentally different architecture.</p>
+            </div>
+
+            <div class="table-responsive">
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>Capability</th>
+                            <th class="highlight-col">SecuNexus (Air-Gapped)</th>
+                            <th>Cloud-Based Tools</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Internet Required</strong></td>
+                            <td class="highlight-col"><i class="fa-solid fa-xmark text-success"></i> Never</td>
+                            <td><i class="fa-solid fa-check text-danger"></i> Always</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Source Code Location</strong></td>
+                            <td class="highlight-col">Stays on your servers</td>
+                            <td>Uploaded to vendor cloud</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Vulnerability Database</strong></td>
+                            <td class="highlight-col">Local offline copy, USB-updated</td>
+                            <td>Cloud-hosted, always connected</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Data Sovereignty</strong></td>
+                            <td class="highlight-col"><i class="fa-solid fa-check text-success"></i> 100% on-premises</td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i> Data in vendor's cloud</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Works During Outage</strong></td>
+                            <td class="highlight-col"><i class="fa-solid fa-check text-success"></i> Fully functional</td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i> Non-functional</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Compliance (SEBI/RBI)</strong></td>
+                            <td class="highlight-col"><i class="fa-solid fa-check text-success"></i> Fully compliant</td>
+                            <td><i class="fa-solid fa-triangle-exclamation text-warning"></i> Depends on data center location</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Defense/Govt Ready</strong></td>
+                            <td class="highlight-col"><i class="fa-solid fa-check text-success"></i> Yes</td>
+                            <td><i class="fa-solid fa-xmark text-danger"></i> Typically not</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Update Mechanism</strong></td>
+                            <td class="highlight-col">Encrypted USB with signature verification</td>
+                            <td>Automatic cloud updates</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Scan Performance</strong></td>
+                            <td class="highlight-col">Local hardware — consistent &amp; fast</td>
+                            <td>Depends on network &amp; vendor capacity</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Attack Surface</strong></td>
+                            <td class="highlight-col">Minimal (no external connections)</td>
+                            <td>Expanded (APIs, cloud infra, network)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Needs Air-Gapped -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Industries</span>
+                <h2>Who Needs Air-Gapped Application Security?</h2>
+                <p>Organizations where data sovereignty, regulatory compliance, and operational security are non-negotiable.</p>
+            </div>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3>Banks &amp; Financial Institutions</h3>
+                    <p>Banks handling core banking systems, payment gateways, and trading platforms operate under strict data localization rules from RBI and SEBI. Source code for these systems cannot be exposed to external networks.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fa-solid fa-jet-fighter"></i></div>
+                    <h3>Defense &amp; Aerospace</h3>
+                    <p>Military software, weapons systems, and classified communication platforms are developed in SCIFs and secure facilities where internet connectivity is prohibited by policy and physical design.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fa-solid fa-landmark"></i></div>
+                    <h3>Government Agencies</h3>
+                    <p>Government e-governance platforms, identity systems (like Aadhaar infrastructure), and intelligence applications require security tools that operate within government-controlled networks only.</p>
+                </div>
+                <div class="industry-card">
+                    <div class="industry-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Critical Infrastructure</h3>
+                    <p>Power grids, water treatment plants, nuclear facilities, and telecommunications infrastructure run OT/IT converged networks that must remain isolated from the public internet for safety and security.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compliance Benefits -->
+    <section class="section section-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Compliance</span>
+                <h2>Compliance Benefits of Air-Gapped Deployment</h2>
+                <p>SecuNexus air-gapped deployment directly addresses requirements from major Indian regulators.</p>
+            </div>
+
+            <div class="compliance-benefits">
+                <div class="compliance-card">
+                    <div class="compliance-header">
+                        <i class="fa-solid fa-landmark"></i>
+                        <h3>SEBI</h3>
+                        <span>Securities and Exchange Board of India</span>
+                    </div>
+                    <ul class="compliance-list">
+                        <li><i class="fa-solid fa-check"></i> Cybersecurity and Cyber Resilience Framework compliance</li>
+                        <li><i class="fa-solid fa-check"></i> Data localization within Indian territory</li>
+                        <li><i class="fa-solid fa-check"></i> Audit trail for all security activities</li>
+                        <li><i class="fa-solid fa-check"></i> Vulnerability assessment and penetration testing documentation</li>
+                    </ul>
+                </div>
+                <div class="compliance-card">
+                    <div class="compliance-header">
+                        <i class="fa-solid fa-building-columns"></i>
+                        <h3>RBI</h3>
+                        <span>Reserve Bank of India</span>
+                    </div>
+                    <ul class="compliance-list">
+                        <li><i class="fa-solid fa-check"></i> IT Governance and Information Security framework compliance</li>
+                        <li><i class="fa-solid fa-check"></i> Data stored and processed within India</li>
+                        <li><i class="fa-solid fa-check"></i> Secure software development lifecycle documentation</li>
+                        <li><i class="fa-solid fa-check"></i> Third-party risk mitigation (no external vendors handling code)</li>
+                    </ul>
+                </div>
+                <div class="compliance-card">
+                    <div class="compliance-header">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>CERT-In</h3>
+                        <span>Indian Computer Emergency Response Team</span>
+                    </div>
+                    <ul class="compliance-list">
+                        <li><i class="fa-solid fa-check"></i> Incident reporting readiness with detailed vulnerability data</li>
+                        <li><i class="fa-solid fa-check"></i> 6-hour incident reporting support with pre-formatted reports</li>
+                        <li><i class="fa-solid fa-check"></i> Continuous vulnerability monitoring without external exposure</li>
+                        <li><i class="fa-solid fa-check"></i> Log retention and audit compliance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Architecture -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Architecture</span>
+                <h2>Technical Architecture for Air-Gapped Deployment</h2>
+                <p>A robust, self-contained architecture designed for complete network isolation.</p>
+            </div>
+
+            <div class="tech-architecture">
+                <div class="arch-diagram-detailed">
+                    <div class="arch-layer">
+                        <h4 class="layer-title">Presentation Layer</h4>
+                        <div class="layer-components">
+                            <div class="component">
+                                <i class="fa-solid fa-display"></i>
+                                <span>Web Dashboard</span>
+                                <small>Local HTTPS</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-terminal"></i>
+                                <span>CLI Interface</span>
+                                <small>Local Binary</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-plug"></i>
+                                <span>REST API</span>
+                                <small>Local Network Only</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arch-layer">
+                        <h4 class="layer-title">Engine Layer</h4>
+                        <div class="layer-components">
+                            <div class="component">
+                                <i class="fa-solid fa-code"></i>
+                                <span>SecuTrace</span>
+                                <small>SAST Engine</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span>SecuLens</span>
+                                <small>SCA Engine</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-crosshairs"></i>
+                                <span>SecuStrike</span>
+                                <small>DAST Engine</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-shield-halved"></i>
+                                <span>SecuShield</span>
+                                <small>RASP Agent</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arch-layer">
+                        <h4 class="layer-title">Core Services</h4>
+                        <div class="layer-components">
+                            <div class="component">
+                                <i class="fa-solid fa-brain"></i>
+                                <span>Risk Engine</span>
+                                <small>Correlation &amp; Dedup</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-gavel"></i>
+                                <span>Policy Engine</span>
+                                <small>Rules &amp; Gates</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-file-lines"></i>
+                                <span>Report Generator</span>
+                                <small>Compliance Reports</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arch-layer">
+                        <h4 class="layer-title">Data Layer</h4>
+                        <div class="layer-components">
+                            <div class="component">
+                                <i class="fa-solid fa-database"></i>
+                                <span>Findings DB</span>
+                                <small>PostgreSQL</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-bug"></i>
+                                <span>Offline VulnDB</span>
+                                <small>NVD + CVE Mirror</small>
+                            </div>
+                            <div class="component">
+                                <i class="fa-solid fa-clock-rotate-left"></i>
+                                <span>Audit Logs</span>
+                                <small>Immutable Store</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="arch-layer arch-layer-external">
+                        <h4 class="layer-title">External Boundary (Air Gap)</h4>
+                        <div class="layer-components">
+                            <div class="component component-usb">
+                                <i class="fa-solid fa-usb"></i>
+                                <span>USB Update Port</span>
+                                <small>Only External Interface</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-specs">
+                    <h3>Minimum System Requirements</h3>
+                    <div class="specs-grid">
+                        <div class="spec">
+                            <strong>CPU</strong>
+                            <span>8 cores (16 recommended)</span>
+                        </div>
+                        <div class="spec">
+                            <strong>RAM</strong>
+                            <span>32 GB (64 GB recommended)</span>
+                        </div>
+                        <div class="spec">
+                            <strong>Storage</strong>
+                            <span>500 GB SSD (1 TB recommended)</span>
+                        </div>
+                        <div class="spec">
+                            <strong>OS</strong>
+                            <span>RHEL 8+, Ubuntu 20.04+, CentOS 8+</span>
+                        </div>
+                        <div class="spec">
+                            <strong>Database</strong>
+                            <span>PostgreSQL 14+ (bundled)</span>
+                        </div>
+                        <div class="spec">
+                            <strong>Network</strong>
+                            <span>None required (localhost only)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-airgapped" class="section section-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>See Air-Gapped AppSec in Action</h2>
+                <p>Schedule a demo to see how SecuNexus delivers full application security coverage in a completely disconnected environment. Our team will walk you through installation, scanning, updating, and reporting — all offline.</p>
+                <div class="cta-buttons">
+                    <a href="pricing.html" class="btn btn-primary btn-lg">Request a Demo</a>
+                    <a href="contact.html" class="btn btn-outline btn-lg">Talk to an Expert</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="devsecops.html">DevSecOps</a></li>
+                        <li><a href="enterprise.html">Enterprise Security</a></li>
+                        <li><a href="platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="compliance-sebi.html">SEBI</a></li>
+                        <li><a href="compliance-rbi.html">RBI</a></li>
+                        <li><a href="compliance-certin.html">CERT-In</a></li>
+                        <li><a href="compliance-gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

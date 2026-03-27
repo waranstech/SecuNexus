@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RBI Cyber Security Framework — Application Security Requirements Explained | SecuNexa</title>
+    <meta name="description" content="Detailed guide to RBI Cyber Security Framework application security requirements. Understand vulnerability management mandates, SBOM requirements, and how to automate compliance.">
+    <meta name="keywords" content="RBI cyber security framework application security, RBI CSF compliance, RBI vulnerability management">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../../index.html" class="logo">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>SecuNexa</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="../platform.html">Platform</a></li>
+                    <li class="dropdown">
+                        <a href="#">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                            <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                            <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                            <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                            <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                            <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                            <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+                            <li><a href="../solutions/government.html">Government</a></li>
+                            <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+                            <li><a href="../solutions/insurance.html">Insurance</a></li>
+                            <li><a href="../solutions/telecom.html">Telecom</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                            <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                            <li><a href="../compliance/certin.html">CERT-In</a></li>
+                            <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                            <li><a href="../compliance/iso27001.html">ISO 27001</a></li>
+                            <li><a href="../compliance/pci-dss.html">PCI DSS</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="index.html">Blog</a></li>
+                            <li><a href="../resources/docs.html">Documentation</a></li>
+                            <li><a href="../faq.html">FAQ</a></li>
+                            <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                            <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../about.html">About Us</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                </ul>
+                <a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+                <button class="mobile-toggle" aria-label="Toggle menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <section class="breadcrumb-section">
+        <div class="container">
+            <nav class="breadcrumb">
+                <a href="../../index.html">Home</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <a href="index.html">Blog</a>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>RBI Cyber Security Framework &mdash; Application Security Requirements Explained</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Blog Article -->
+    <section class="section section-light">
+        <div class="container">
+            <div class="blog-layout">
+                <article class="blog-article">
+                    <div class="blog-article-header">
+                        <span class="blog-category cat-compliance">Compliance</span>
+                        <span class="blog-date"><i class="fa-regular fa-calendar"></i> March 14, 2026</span>
+                        <span class="blog-read-time"><i class="fa-regular fa-clock"></i> 14 min read</span>
+                    </div>
+                    <h1>RBI Cyber Security Framework &mdash; Application Security Requirements Explained</h1>
+                    <div class="blog-author">
+                        <i class="fa-solid fa-user-shield"></i>
+                        <span>SecuNexa Team | Meteonic Innovation Pvt Ltd</span>
+                    </div>
+
+                    <div class="blog-share">
+                        <span>Share:</span>
+                        <a href="https://www.linkedin.com/sharing/share-offsite/?url=" class="share-btn share-linkedin" aria-label="Share on LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/intent/tweet?url=&text=" class="share-btn share-twitter" aria-label="Share on Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <button class="share-btn share-copy" aria-label="Copy link" onclick="navigator.clipboard.writeText(window.location.href)"><i class="fa-solid fa-link"></i></button>
+                    </div>
+
+                    <div class="blog-content">
+                        <p>The Reserve Bank of India (RBI) has established a comprehensive Cyber Security Framework (CSF) that mandates rigorous security controls for all regulated financial institutions. This framework applies to commercial banks, cooperative banks, NBFCs, payment system operators, and other RBI-regulated entities. For application security teams, the framework creates specific obligations around vulnerability assessment, secure development practices, software supply chain management, and continuous monitoring that must be demonstrably implemented and regularly audited.</p>
+
+                        <h2>Framework Overview and Applicability</h2>
+
+                        <p>The RBI CSF is structured around several key areas: governance, risk assessment, security operations, incident management, and resilience. Application security requirements are woven throughout these areas rather than consolidated in a single section. This means application security teams must address requirements from multiple framework sections to achieve comprehensive compliance.</p>
+
+                        <p>The framework applies proportionally based on the size and complexity of the regulated entity. Tier I banks (large commercial banks) face the most stringent requirements, while smaller entities may implement controls appropriate to their risk profile. However, all regulated entities must demonstrate a baseline level of application security regardless of their size.</p>
+
+                        <h2>Application Security Requirements</h2>
+
+                        <h3>Secure Software Development Lifecycle (SSDLC)</h3>
+                        <p>The RBI CSF mandates that regulated entities implement a formal SSDLC that integrates security considerations at every phase of application development. This includes security requirements definition during the design phase, threat modeling for critical applications, secure coding practices, code review processes, and security testing before deployment.</p>
+
+                        <p>Compliance requires documented evidence that these practices are followed consistently. Organizations must maintain records of threat models, security requirements, code review outcomes, and test results. The framework expects these activities to be part of standard development workflows rather than occasional exercises performed before audits.</p>
+
+                        <h3>Vulnerability Assessment and Penetration Testing (VAPT)</h3>
+                        <p>The framework requires regular VAPT for all critical applications and infrastructure. For internet-facing applications, this includes both automated vulnerability scanning and manual penetration testing. The frequency depends on the application's risk classification, but critical applications typically require quarterly assessments at minimum, with additional testing triggered by significant changes.</p>
+
+                        <p>Key VAPT requirements include:</p>
+                        <ul>
+                            <li>Automated SAST scanning integrated into the development pipeline</li>
+                            <li>DAST scanning of deployed applications in staging and production environments</li>
+                            <li>Manual penetration testing by qualified assessors for critical applications</li>
+                            <li>Remediation tracking with defined SLAs based on vulnerability severity</li>
+                            <li>Re-testing to verify that remediation actions are effective</li>
+                            <li>Retention of assessment reports and remediation evidence for audit purposes</li>
+                        </ul>
+
+                        <h3>Source Code Review</h3>
+                        <p>The RBI expects source code review for all applications that handle sensitive financial data or customer information. This includes both automated static analysis and manual code review by trained security reviewers. The scope covers not just the application code but also configuration files, infrastructure-as-code templates, and API specifications.</p>
+
+                        <p>Automated SAST tools must be configured to detect vulnerabilities relevant to financial applications, including injection flaws, authentication weaknesses, insecure cryptographic implementations, and sensitive data exposure. The tool configuration and rule sets should be documented and periodically reviewed to ensure they remain current with emerging threat patterns.</p>
+
+                        <h3>Third-Party and Open-Source Risk Management</h3>
+                        <p>The framework places significant emphasis on managing risks from third-party software and open-source components. Regulated entities must maintain an inventory of all third-party and open-source components used in their applications. This inventory must include version information, known vulnerabilities, license terms, and support status.</p>
+
+                        <p>Software Composition Analysis (SCA) tools fulfill this requirement by automatically identifying open-source components, mapping them to known vulnerabilities, and generating Software Bills of Materials (SBOMs). The framework expects that vulnerability information is acted upon promptly, with critical vulnerabilities in production applications addressed within defined SLA periods.</p>
+
+                        <h3>SBOM Requirements</h3>
+                        <p>In alignment with global trends toward software supply chain transparency, the RBI framework increasingly expects regulated entities to maintain comprehensive SBOMs for critical applications. An SBOM documents every component, library, and dependency used in an application, including both direct and transitive dependencies.</p>
+
+                        <p>SBOMs serve multiple compliance purposes: they enable rapid impact assessment when new vulnerabilities are disclosed, support license compliance verification, provide audit evidence of software inventory management, and facilitate vendor risk assessment. The framework expects SBOMs to be generated automatically as part of the build process and maintained in a centralized repository.</p>
+
+                        <h3>API Security</h3>
+                        <p>With the proliferation of Open Banking and UPI-based payment systems, API security has become a critical compliance area. The framework requires comprehensive security controls for all APIs, including authentication and authorization enforcement, input validation, rate limiting, encryption in transit, and logging of API access patterns.</p>
+
+                        <p>API security testing must cover the OWASP API Security Top 10, with particular attention to authorization vulnerabilities (BOLA/BFLA), authentication weaknesses, and data exposure. APIs that handle payment transactions or customer data require additional scrutiny, including business logic testing and abuse prevention measures.</p>
+
+                        <h2>Audit Evidence and Reporting</h2>
+
+                        <p>RBI audits require comprehensive evidence that application security controls are not just implemented but actively functioning. The following evidence categories are typically required during audits:</p>
+
+                        <div class="table-responsive">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Evidence Category</th>
+                                        <th>Required Artifacts</th>
+                                        <th>Retention Period</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>SAST Reports</strong></td>
+                                        <td>Scan results, severity distribution, trend analysis, false positive records</td>
+                                        <td>3-5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DAST Reports</strong></td>
+                                        <td>Scan results, exploitability assessment, configuration details</td>
+                                        <td>3-5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>SCA Reports</strong></td>
+                                        <td>Component inventory, vulnerability status, license compliance, SBOM</td>
+                                        <td>3-5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Remediation Records</strong></td>
+                                        <td>Finding assignment, SLA tracking, fix verification, exception approvals</td>
+                                        <td>5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Penetration Test Reports</strong></td>
+                                        <td>Scope, methodology, findings, risk ratings, remediation recommendations</td>
+                                        <td>5 years</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Policy Documents</strong></td>
+                                        <td>SSDLC policy, vulnerability management policy, third-party risk policy</td>
+                                        <td>Current + 2 versions</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <h2>Common Compliance Gaps</h2>
+
+                        <p>Based on industry observations, several compliance gaps are frequently identified during RBI audits of application security programs:</p>
+
+                        <ul>
+                            <li><strong>Inconsistent SAST coverage:</strong> Organizations scan some applications but not others, leaving gaps in the assessment portfolio. All applications handling financial data or customer PII should be in scope.</li>
+                            <li><strong>Stale SCA databases:</strong> Open-source vulnerability databases that are not regularly updated miss newly disclosed CVEs. Organizations using cloud-dependent SCA tools in restricted environments face particular challenges here.</li>
+                            <li><strong>Missing remediation evidence:</strong> Scan results exist but there is no documented trail showing that vulnerabilities were assigned, fixed, and verified. Without this trail, auditors cannot confirm that the security testing program drives actual improvements.</li>
+                            <li><strong>No SBOM program:</strong> Many organizations still cannot produce a comprehensive list of open-source components in their critical applications, let alone a structured SBOM document.</li>
+                            <li><strong>API security gaps:</strong> API-specific security testing is absent or limited to basic authentication checks, without coverage of authorization, business logic, or abuse prevention.</li>
+                            <li><strong>Data sovereignty concerns:</strong> Using cloud-based security tools that transmit source code or vulnerability data to external servers may conflict with data localization expectations.</li>
+                        </ul>
+
+                        <h2>How SecuNexa Automates RBI Compliance</h2>
+
+                        <p>SecuNexa addresses RBI CSF application security requirements through an integrated platform that operates entirely within the organization's infrastructure. The platform provides:</p>
+
+                        <ul>
+                            <li><strong>Automated SAST (SecuTrace):</strong> Continuous source code analysis integrated into CI/CD pipelines, with findings mapped to RBI CSF requirement categories. Supports 30+ languages covering the full technology stack of Indian banking applications.</li>
+                            <li><strong>Comprehensive SCA (SecuLens):</strong> Software composition analysis with forensic-level license detection, automated SBOM generation in CycloneDX and SPDX formats, and an offline vulnerability database updated through secure transfer mechanisms.</li>
+                            <li><strong>Dynamic Testing (SecuStrike):</strong> DAST and API security testing covering OWASP Top 10 and API Security Top 10, with authenticated scanning support for banking applications.</li>
+                            <li><strong>Runtime Protection (SecuShield):</strong> RASP capabilities providing continuous monitoring and protection for production applications.</li>
+                            <li><strong>Unified Compliance Dashboard:</strong> Pre-built RBI CSF compliance reports that aggregate evidence from all testing types, track remediation SLAs, and maintain the audit trail required by regulators.</li>
+                        </ul>
+
+                        <p>Because the entire platform operates on-premises with full air-gapped support, regulated entities maintain complete control over their source code, vulnerability data, and compliance records. No data leaves the organization's network, satisfying data sovereignty expectations without compromising on security testing capabilities.</p>
+                    </div>
+
+                    <div class="blog-cta">
+                        <h3>Achieve RBI CSF Compliance</h3>
+                        <p>See how SecuNexa maps to every RBI application security requirement with automated evidence generation.</p>
+                        <a href="../contact.html" class="btn btn-primary">Request a Demo <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="blog-sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Related Articles</h3>
+                        <ul class="related-posts">
+                            <li><a href="sebi-cscrf-compliance-guide.html">SEBI CSCRF Compliance Guide</a></li>
+                            <li><a href="certin-compliance-checklist.html">CERT-In Compliance Checklist</a></li>
+                            <li><a href="airgapped-appsec-indian-banks.html">Air-Gapped AppSec for Indian Banks</a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-widget sidebar-cta">
+                        <h3>RBI CSF Compliance Checklist</h3>
+                        <p>Download our comprehensive RBI compliance mapping document.</p>
+                        <a href="../lead-magnets/certin-checklist.html" class="btn btn-outline">Download</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul>
+                        <li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="../products/seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="../products/secushield.html">SecuShield (RASP)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul>
+                        <li><a href="../airgapped.html">Air-Gapped Security</a></li>
+                        <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+                        <li><a href="../solutions/enterprise.html">Enterprise Security</a></li>
+                        <li><a href="../platform.html">Platform Overview</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="index.html">Blog</a></li>
+                        <li><a href="../resources/docs.html">Documentation</a></li>
+                        <li><a href="../faq.html">FAQ</a></li>
+                        <li><a href="../resources/case-studies.html">Case Studies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul>
+                        <li><a href="../compliance/sebi.html">SEBI CSCRF</a></li>
+                        <li><a href="../compliance/rbi.html">RBI Framework</a></li>
+                        <li><a href="../compliance/certin.html">CERT-In</a></li>
+                        <li><a href="../compliance/gdpr.html">GDPR</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="../privacy.html">Privacy Policy</a>
+                    <a href="../terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../js/main.js"></script>
+</body>
+</html>

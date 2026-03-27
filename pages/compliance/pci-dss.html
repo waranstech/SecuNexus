@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PCI-DSS Requirement 6 Compliance — SecuNexa</title>
+  <meta name="description" content="Meet PCI-DSS Requirement 6 for secure application development with SecuNexa's automated SAST, DAST, SCA, and API security testing.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../../index.html" class="nav__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+        <ul class="nav__menu" id="navMenu">
+          <li class="nav__item"><a href="../platform.html" class="nav__link">Platform</a></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Products <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../products/secutrace.html">SecuTrace — SAST</a></li>
+              <li><a href="../products/seculens.html">SecuLens — SCA</a></li>
+              <li><a href="../products/secustrike.html">SecuStrike — DAST</a></li>
+              <li><a href="../products/secushield.html">SecuShield — API Security</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../solutions/banking.html">Banking &amp; Finance</a></li>
+              <li><a href="../solutions/government.html">Government &amp; Defense</a></li>
+              <li><a href="../solutions/insurance.html">Insurance &amp; NBFC</a></li>
+              <li><a href="../solutions/automotive.html">Automotive</a></li>
+              <li><a href="../solutions/healthcare.html">Healthcare</a></li>
+              <li><a href="../solutions/telecom.html">Telecom &amp; IT</a></li>
+              <li><a href="../solutions/ecommerce.html">E-Commerce</a></li>
+              <li><a href="../solutions/devsecops.html">DevSecOps</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="sebi.html">SEBI CSCRF</a></li>
+              <li><a href="rbi.html">RBI Framework</a></li>
+              <li><a href="certin.html">CERT-In</a></li>
+              <li><a href="dpdp.html">DPDP Act</a></li>
+              <li><a href="pci-dss.html">PCI-DSS</a></li>
+              <li><a href="iso27001.html">ISO 27001</a></li>
+            </ul></li>
+          <li class="nav__item nav__dropdown"><a href="#" class="nav__link">Resources <i class="fa-solid fa-chevron-down"></i></a>
+            <ul class="nav__dropdown-menu">
+              <li><a href="../blog/index.html">Blog</a></li>
+              <li><a href="../techpoint/index.html">TechPoint</a></li>
+              <li><a href="../resources/whitepapers.html">Whitepapers</a></li>
+              <li><a href="../resources/case-studies.html">Case Studies</a></li>
+              <li><a href="../faq.html">FAQ</a></li>
+            </ul></li>
+          <li class="nav__item"><a href="../about.html" class="nav__link">About Us</a></li>
+          <li class="nav__item"><a href="../contact.html" class="nav__link">Contact</a></li>
+        </ul>
+        <a href="../contact.html" class="btn btn--primary nav__cta">Request Demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero hero--compliance">
+      <div class="container">
+        <div class="hero__content">
+          <span class="hero__badge"><i class="fa-solid fa-credit-card"></i> Payment Security</span>
+          <h1>PCI-DSS Requirement 6 — Secure Application Development</h1>
+          <p>PCI-DSS v4.0 Requirement 6 mandates that organizations develop and maintain secure systems and software. SecuNexa automates the application security testing requirements of PCI-DSS, covering Requirements 6.2 through 6.5 with continuous SAST, DAST, SCA, and API security scanning integrated into your development lifecycle.</p>
+          <div class="hero__actions">
+            <a href="../contact.html" class="btn btn--primary">Request Compliance Demo</a>
+            <a href="#requirements" class="btn btn--outline">View PCI-DSS Mapping</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PCI-DSS Relevant Requirements -->
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="section__header">
+          <h2>PCI-DSS v4.0 Application Security Requirements</h2>
+          <p>Requirement 6 of PCI-DSS v4.0 focuses on developing and maintaining secure systems and software. These sub-requirements directly map to SecuNexa's capabilities.</p>
+        </div>
+        <div class="card-grid card-grid--2col">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-code-branch"></i></div>
+            <h3>Requirement 6.2 — Secure Development</h3>
+            <p>Bespoke and custom software must be developed securely. This requires training developers in secure coding practices, implementing code review processes, and integrating security testing into the software development lifecycle. SecuNexa's SAST engine (SecuTrace) integrates directly into IDEs and CI/CD pipelines, catching vulnerabilities as developers write code — not after deployment.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-bug"></i></div>
+            <h3>Requirement 6.3 — Vulnerability Management</h3>
+            <p>Security vulnerabilities must be identified and addressed. Organizations must maintain an inventory of bespoke and custom software, identify vulnerabilities using industry-recognized sources, and address them through patching or secure coding. SecuNexa's SCA engine (SecuLens) continuously monitors all dependencies against CVE databases and provides prioritized remediation guidance.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-globe"></i></div>
+            <h3>Requirement 6.4 — Public-Facing Web Application Protection</h3>
+            <p>Public-facing web applications must be protected against attacks. PCI-DSS requires either a web application firewall (WAF) or regular application security assessments (at least annually and after changes). SecuNexa's DAST engine (SecuStrike) provides continuous web application testing that exceeds the minimum annual assessment requirement, testing after every deployment.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Requirement 6.5 — Change Management</h3>
+            <p>Changes to all system components in the production environment must be managed securely. This includes separation of development and production environments, separation of duties, and review of custom code changes prior to release. SecuNexa enforces pre-deployment quality gates that block code changes with critical or high vulnerabilities from reaching production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Mapping Table -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <h2>Detailed PCI-DSS Requirement Mapping</h2>
+          <p>Granular mapping of PCI-DSS v4.0 sub-requirements to specific SecuNexa engines and capabilities.</p>
+        </div>
+        <div class="table-responsive">
+          <table class="compliance-table">
+            <thead>
+              <tr>
+                <th>PCI-DSS Requirement</th>
+                <th>Sub-Requirement</th>
+                <th>SecuNexa Engine</th>
+                <th>How SecuNexa Satisfies the Requirement</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><code>6.2.1</code></td>
+                <td>Secure development training and processes</td>
+                <td><strong>SecuTrace (SAST)</strong></td>
+                <td>In-IDE vulnerability feedback with educational remediation guidance. Developers learn secure coding patterns through real-time feedback on their own code, supplementing formal training programs.</td>
+              </tr>
+              <tr>
+                <td><code>6.2.2</code></td>
+                <td>Software development based on industry standards</td>
+                <td><strong>SecuTrace (SAST)</strong></td>
+                <td>Rule sets aligned with OWASP Secure Coding Practices, SANS Top 25, and CWE classifications. Enforces secure development standards automatically through static analysis policies.</td>
+              </tr>
+              <tr>
+                <td><code>6.2.3</code></td>
+                <td>Code review prior to release</td>
+                <td><strong>SecuTrace (SAST)</strong></td>
+                <td>Automated code review as part of CI/CD pipeline with mandatory quality gates. Every pull request and merge is scanned for security vulnerabilities before approval, providing objective code review evidence.</td>
+              </tr>
+              <tr>
+                <td><code>6.2.4</code></td>
+                <td>Protection against common software attacks</td>
+                <td><strong>SecuStrike (DAST)</strong> + <strong>SecuTrace (SAST)</strong></td>
+                <td>Combined static and dynamic testing covering injection attacks, buffer overflows, insecure cryptography, and all OWASP Top 10 categories applicable to cardholder data environments.</td>
+              </tr>
+              <tr>
+                <td><code>6.3.1</code></td>
+                <td>Vulnerability identification in bespoke software</td>
+                <td><strong>SecuTrace (SAST)</strong> + <strong>SecuLens (SCA)</strong></td>
+                <td>SAST identifies custom code vulnerabilities while SCA identifies known CVEs in third-party components. Together they provide complete vulnerability identification across the application stack.</td>
+              </tr>
+              <tr>
+                <td><code>6.3.2</code></td>
+                <td>Software inventory and vulnerability management</td>
+                <td><strong>SecuLens (SCA)</strong></td>
+                <td>Automated SBOM generation cataloging every open-source and third-party component. Continuous CVE monitoring with automated alerts when new vulnerabilities affect project dependencies.</td>
+              </tr>
+              <tr>
+                <td><code>6.3.3</code></td>
+                <td>Patch critical vulnerabilities within one month</td>
+                <td><strong>SecuLens (SCA)</strong> + <strong>SecuNexa Platform</strong></td>
+                <td>SLA tracking dashboards monitoring remediation timelines. Automated escalation alerts when critical or high vulnerabilities approach SLA deadlines. Evidence of patching within required timeframes.</td>
+              </tr>
+              <tr>
+                <td><code>6.4.1</code></td>
+                <td>Public-facing web application attack protection</td>
+                <td><strong>SecuStrike (DAST)</strong></td>
+                <td>Continuous DAST scanning of public-facing web applications covering OWASP Top 10, authentication flaws, session management, and business logic vulnerabilities. Exceeds annual assessment minimum.</td>
+              </tr>
+              <tr>
+                <td><code>6.4.2</code></td>
+                <td>Automated technical solution for web attacks</td>
+                <td><strong>SecuStrike (DAST)</strong> + <strong>SecuShield (API)</strong></td>
+                <td>Validates WAF effectiveness through evasion testing. Tests API gateway security controls. Identifies gaps in automated protection mechanisms that may miss attack variants.</td>
+              </tr>
+              <tr>
+                <td><code>6.4.3</code></td>
+                <td>Payment page script management</td>
+                <td><strong>SecuStrike (DAST)</strong></td>
+                <td>Scans payment pages for unauthorized scripts, third-party includes, and content security policy violations. Detects Magecart-style attacks and script injection on checkout flows.</td>
+              </tr>
+              <tr>
+                <td><code>6.5.1</code></td>
+                <td>Secure change management in production</td>
+                <td><strong>SecuNexa Platform</strong></td>
+                <td>Pre-deployment security gates integrated into release pipelines. Scan-on-commit and scan-on-deploy policies ensure every production change is security-validated with documented evidence.</td>
+              </tr>
+              <tr>
+                <td><code>6.5.2</code></td>
+                <td>Custom code review for vulnerabilities</td>
+                <td><strong>SecuTrace (SAST)</strong></td>
+                <td>Automated static analysis on every code change with detailed findings including CWE classification, CVSS scoring, and line-level remediation guidance. Serves as automated code review evidence.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Compliance Evidence -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2>PCI-DSS Compliance Evidence for QSA Assessors</h2>
+          <p>SecuNexa generates the technical evidence that Qualified Security Assessors (QSAs) require during PCI-DSS audits.</p>
+        </div>
+        <div class="card-grid card-grid--3col">
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-file-lines"></i></div>
+            <h3>Scan History Reports</h3>
+            <p>Complete history of all application security scans including dates, scope, findings, and resolution status. Demonstrates continuous testing rather than point-in-time assessments, exceeding PCI-DSS minimum requirements.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-list-ol"></i></div>
+            <h3>Vulnerability Remediation Logs</h3>
+            <p>End-to-end tracking of every vulnerability from discovery through remediation and verification. Includes timestamps, assigned developers, fix commits, and re-scan confirmations that QSAs require as evidence.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-diagram-project"></i></div>
+            <h3>SBOM and Dependency Reports</h3>
+            <p>CycloneDX and SPDX-format Software Bill of Materials documenting every software component in the cardholder data environment. Demonstrates compliance with software inventory and vulnerability management requirements.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Quality Gate Enforcement Records</h3>
+            <p>Logs of pre-deployment security gate decisions — which builds passed, which were blocked, and why. Proves that security testing is enforced as part of the development process, not an optional step.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-chart-pie"></i></div>
+            <h3>Trend Analysis Dashboards</h3>
+            <p>Historical trend data showing vulnerability counts, mean time to remediation, recurrence rates, and risk score evolution over time. Demonstrates continuous improvement in application security posture.</p>
+          </div>
+          <div class="card">
+            <div class="card__icon"><i class="fa-solid fa-map"></i></div>
+            <h3>Control Mapping Matrix</h3>
+            <p>Pre-built mapping of every PCI-DSS Requirement 6 sub-control to SecuNexa evidence artifacts. Streamlines QSA assessments by providing the exact documentation assessors need in the format they expect.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--cta">
+      <div class="container">
+        <div class="cta-block">
+          <h2>Simplify PCI-DSS Requirement 6 Compliance</h2>
+          <p>PCI-DSS v4.0 raises the bar for application security with new requirements for script management, automated protection, and continuous vulnerability identification. SecuNexa provides the automated testing and evidence generation that makes Requirement 6 compliance continuous rather than a once-a-year audit scramble.</p>
+          <div class="cta-block__actions">
+            <a href="../contact.html" class="btn btn--primary btn--lg">Talk to Our PCI-DSS Compliance Team</a>
+            <a href="../resources/whitepapers.html" class="btn btn--outline btn--lg">Download PCI-DSS Mapping Guide</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand"><a href="../../index.html" class="footer__logo"><i class="fa-solid fa-shield-halved"></i> SecuNexa</a><p>Unified Application Security Platform by Meteonic Innovation Pvt Ltd.</p><div class="footer__social"><a href="#"><i class="fa-brands fa-linkedin"></i></a><a href="#"><i class="fa-brands fa-x-twitter"></i></a><a href="#"><i class="fa-brands fa-youtube"></i></a></div></div>
+        <div class="footer__col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (API)</a></li></ul></div>
+        <div class="footer__col"><h4>Solutions</h4><ul><li><a href="../solutions/banking.html">Banking</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/automotive.html">Automotive</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li></ul></div>
+        <div class="footer__col"><h4>Resources</h4><ul><li><a href="../blog/index.html">Blog</a></li><li><a href="../techpoint/index.html">TechPoint</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li><li><a href="../faq.html">FAQ</a></li></ul></div>
+        <div class="footer__col"><h4>Compliance</h4><ul><li><a href="sebi.html">SEBI CSCRF</a></li><li><a href="rbi.html">RBI Framework</a></li><li><a href="certin.html">CERT-In</a></li><li><a href="dpdp.html">DPDP Act</a></li></ul></div>
+      </div>
+      <div class="footer__bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All Rights Reserved.</p><div class="footer__legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Security Policy</a></div></div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>
