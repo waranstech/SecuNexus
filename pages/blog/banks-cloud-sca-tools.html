@@ -12,7 +12,70 @@
     <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
-    <header class="header"><div class="container"><nav class="nav"><a href="../../index.html" class="logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><ul class="nav-links"><li><a href="../platform.html">Platform</a></li><li class="dropdown"><a href="#">Products <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></li><li class="dropdown"><a href="#">Solutions <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../solutions/banking.html">Banking &amp; Finance</a></li><li><a href="../solutions/government.html">Government</a></li><li><a href="../solutions/healthcare.html">Healthcare</a></li><li><a href="../solutions/insurance.html">Insurance</a></li><li><a href="../solutions/telecom.html">Telecom</a></li></ul></li><li class="dropdown"><a href="#">Compliance <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li><li><a href="../compliance/iso27001.html">ISO 27001</a></li><li><a href="../compliance/pci-dss.html">PCI DSS</a></li></ul></li><li class="dropdown"><a href="#">Resources <i class="fa-solid fa-chevron-down"></i></a><ul class="dropdown-menu"><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li><li><a href="../resources/whitepapers.html">Whitepapers</a></li></ul></li><li><a href="../about.html">About Us</a></li><li><a href="../contact.html">Contact</a></li></ul><a href="../contact.html" class="btn btn-primary nav-cta">Request Demo</a><button class="mobile-toggle" aria-label="Toggle menu"><i class="fa-solid fa-bars"></i></button></nav></div></header>
+        <header class="site-header" id="site-header">
+        <div class="container">
+            <a href="../../index.html" class="logo" aria-label="SecuNexa Home">
+                <i class="fa-solid fa-shield-halved logo-icon"></i>
+                <span class="logo-text">SecuNexa</span>
+            </a>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="main-nav" id="main-nav" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../pages/platform.html" class="nav-link">Platform</a></li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-trigger">Products <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../pages/products/secutrace.html"><i class="fa-solid fa-code"></i> SecuTrace (SAST)</a></li>
+                            <li><a href="../../pages/products/seculens.html"><i class="fa-solid fa-cubes"></i> SecuLens (SCA)</a></li>
+                            <li><a href="../../pages/products/secustrike.html"><i class="fa-solid fa-crosshairs"></i> SecuStrike (DAST)</a></li>
+                            <li><a href="../../pages/products/secushield.html"><i class="fa-solid fa-lock"></i> SecuShield (API Security)</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-trigger">Solutions <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../pages/solutions/banking.html"><i class="fa-solid fa-building-columns"></i> Banking &amp; Finance</a></li>
+                            <li><a href="../../pages/solutions/government.html"><i class="fa-solid fa-landmark"></i> Government &amp; Defense</a></li>
+                            <li><a href="../../pages/solutions/insurance.html"><i class="fa-solid fa-umbrella"></i> Insurance &amp; NBFC</a></li>
+                            <li><a href="../../pages/solutions/automotive.html"><i class="fa-solid fa-car"></i> Automotive</a></li>
+                            <li><a href="../../pages/solutions/healthcare.html"><i class="fa-solid fa-heart-pulse"></i> Healthcare</a></li>
+                            <li><a href="../../pages/solutions/telecom.html"><i class="fa-solid fa-tower-cell"></i> Telecom &amp; IT</a></li>
+                            <li><a href="../../pages/solutions/ecommerce.html"><i class="fa-solid fa-cart-shopping"></i> E-Commerce &amp; Fintech</a></li>
+                            <li><a href="../../pages/solutions/devsecops.html"><i class="fa-solid fa-gears"></i> Enterprise DevSecOps</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-trigger">Compliance <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../pages/compliance/sebi.html"><i class="fa-solid fa-scale-balanced"></i> SEBI CSCRF</a></li>
+                            <li><a href="../../pages/compliance/rbi.html"><i class="fa-solid fa-university"></i> RBI Framework</a></li>
+                            <li><a href="../../pages/compliance/certin.html"><i class="fa-solid fa-certificate"></i> CERT-In</a></li>
+                            <li><a href="../../pages/compliance/dpdp.html"><i class="fa-solid fa-user-shield"></i> DPDP Act</a></li>
+                            <li><a href="../../pages/compliance/pci-dss.html"><i class="fa-solid fa-credit-card"></i> PCI-DSS</a></li>
+                            <li><a href="../../pages/compliance/iso27001.html"><i class="fa-solid fa-file-shield"></i> ISO 27001</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#" class="nav-link dropdown-trigger">Resources <i class="fa-solid fa-chevron-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../pages/blog/index.html"><i class="fa-solid fa-pen-to-square"></i> Blog</a></li>
+                            <li><a href="../../pages/techpoint/index.html"><i class="fa-solid fa-code-compare"></i> TechPoint Comparisons</a></li>
+                            <li><a href="../../pages/resources/whitepapers.html"><i class="fa-solid fa-file-lines"></i> Whitepapers</a></li>
+                            <li><a href="../../pages/resources/case-studies.html"><i class="fa-solid fa-chart-line"></i> Case Studies</a></li>
+                            <li><a href="../../pages/faq.html"><i class="fa-solid fa-circle-question"></i> FAQ</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="../../pages/about.html" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="../../pages/contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="../../pages/contact.html" class="btn btn-primary nav-cta">Request Demo</a>
+        </div>
+    </header>
 
     <section class="breadcrumb-section"><div class="container"><nav class="breadcrumb"><a href="../../index.html">Home</a><i class="fa-solid fa-chevron-right"></i><a href="index.html">Blog</a><i class="fa-solid fa-chevron-right"></i><span>Why Banks Should Not Use Cloud-Based SCA Tools</span></nav></div></section>
 
@@ -106,7 +169,72 @@
         </div>
     </section>
 
-    <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-col footer-brand"><a href="../../index.html" class="footer-logo"><i class="fa-solid fa-shield-halved"></i><span>SecuNexa</span></a><p>Enterprise-grade application security platform built for on-premises and air-gapped environments.</p><div class="footer-social"><a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a><a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a><a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></div></div><div class="footer-col"><h4>Products</h4><ul><li><a href="../products/secutrace.html">SecuTrace (SAST)</a></li><li><a href="../products/seculens.html">SecuLens (SCA)</a></li><li><a href="../products/secustrike.html">SecuStrike (DAST)</a></li><li><a href="../products/secushield.html">SecuShield (RASP)</a></li></ul></div><div class="footer-col"><h4>Solutions</h4><ul><li><a href="../airgapped.html">Air-Gapped Security</a></li><li><a href="../solutions/devsecops.html">DevSecOps</a></li><li><a href="../solutions/enterprise.html">Enterprise Security</a></li><li><a href="../platform.html">Platform Overview</a></li></ul></div><div class="footer-col"><h4>Resources</h4><ul><li><a href="index.html">Blog</a></li><li><a href="../resources/docs.html">Documentation</a></li><li><a href="../faq.html">FAQ</a></li><li><a href="../resources/case-studies.html">Case Studies</a></li></ul></div><div class="footer-col"><h4>Compliance</h4><ul><li><a href="../compliance/sebi.html">SEBI CSCRF</a></li><li><a href="../compliance/rbi.html">RBI Framework</a></li><li><a href="../compliance/certin.html">CERT-In</a></li><li><a href="../compliance/gdpr.html">GDPR</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 Meteonic Innovation Pvt Ltd. All rights reserved.</p><div class="footer-links"><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms of Service</a></div></div></div></footer>
+        <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../../index.html" class="footer-logo">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>SecuNexa</span>
+                    </a>
+                    <p class="footer-description">Unified Application Security Platform by Meteonic Innovation Pvt Ltd. Secure your code, dependencies, APIs, and applications — even in air-gapped environments.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../pages/products/secutrace.html">SecuTrace (SAST)</a></li>
+                        <li><a href="../../pages/products/seculens.html">SecuLens (SCA)</a></li>
+                        <li><a href="../../pages/products/secustrike.html">SecuStrike (DAST)</a></li>
+                        <li><a href="../../pages/products/secushield.html">SecuShield (API)</a></li>
+                        <li><a href="../../pages/platform.html">SecuNexus Platform</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../pages/solutions/banking.html">Banking &amp; Finance</a></li>
+                        <li><a href="../../pages/solutions/government.html">Government &amp; Defense</a></li>
+                        <li><a href="../../pages/solutions/automotive.html">Automotive</a></li>
+                        <li><a href="../../pages/solutions/devsecops.html">Enterprise DevSecOps</a></li>
+                        <li><a href="../../pages/airgapped.html">Air-Gapped Security</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../pages/blog/index.html">Blog</a></li>
+                        <li><a href="../../pages/techpoint/index.html">TechPoint Comparisons</a></li>
+                        <li><a href="../../pages/resources/whitepapers.html">Whitepapers</a></li>
+                        <li><a href="../../pages/faq.html">FAQ</a></li>
+                        <li><a href="../../pages/pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Compliance</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../pages/compliance/sebi.html">SEBI CSCRF</a></li>
+                        <li><a href="../../pages/compliance/rbi.html">RBI Framework</a></li>
+                        <li><a href="../../pages/compliance/certin.html">CERT-In</a></li>
+                        <li><a href="../../pages/compliance/dpdp.html">DPDP Act</a></li>
+                        <li><a href="../../pages/compliance/pci-dss.html">PCI-DSS</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Meteonic Innovation Pvt Ltd. All Rights Reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Security Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="../../js/main.js"></script>
 </body>
 </html>

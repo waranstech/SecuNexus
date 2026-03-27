@@ -4211,6 +4211,118 @@ body {
 /* ============================================================
    55. PRINT STYLES
    ============================================================ */
+/* ============================================================
+   DARK SECTION FIX - Ensure all text in dark sections is visible
+   ============================================================ */
+.section-dark,
+.section-dark *,
+.section--cta,
+.section--cta *,
+.section--testimonial,
+.section--testimonial * {
+  color: #fff;
+}
+
+.section-dark .btn-primary,
+.section--cta .btn-primary {
+  background: var(--color-cta);
+  color: #fff;
+}
+
+.section-dark .btn-outline,
+.section-dark .btn--outline,
+.section--cta .btn-outline {
+  border-color: rgba(255,255,255,0.5);
+  color: #fff;
+}
+
+.section-dark .btn-outline:hover,
+.section--cta .btn-outline:hover {
+  background: rgba(255,255,255,0.15);
+}
+
+.section-dark .card,
+.section-dark .stat-card,
+.section-dark .mv-card,
+.section-dark .value-card,
+.section-dark .mission-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.section-dark .stat-number,
+.section-dark .number-value {
+  color: var(--color-accent);
+}
+
+.section-dark a:not(.btn) {
+  color: var(--color-accent);
+}
+
+/* Ensure hero text always visible */
+.hero h1, .hero h2, .hero h3, .hero p, .hero span,
+.hero-headline, .hero-subheadline, .hero-subtitle, .hero-badge,
+.hero__title, .hero__subtitle, .hero__badge,
+.product-hero h1, .product-hero p,
+.secutrace-hero h1, .secutrace-hero p,
+.techpoint-hero h1, .techpoint-hero p {
+  color: #fff !important;
+}
+
+.hero-badge, .hero__badge, .section-badge, .product-badge {
+  display: inline-block;
+  background: rgba(0,188,212,0.15);
+  color: var(--color-accent) !important;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0,188,212,0.3);
+}
+
+/* About page specific fixes */
+.about-intro, .about-text {
+  color: var(--color-text);
+}
+
+.about-stats .stat-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.mission-vision-grid .mv-card,
+.mission-vision-grid .mission-card,
+.mission-vision-grid .vision-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+/* Values grid fix */
+.values-grid .value-card {
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+}
+
+/* White section text must be dark */
+.section:not(.section-dark):not(.section--cta):not(.section--testimonial) h1,
+.section:not(.section-dark):not(.section--cta):not(.section--testimonial) h2,
+.section:not(.section-dark):not(.section--cta):not(.section--testimonial) h3,
+.section:not(.section-dark):not(.section--cta):not(.section--testimonial) h4 {
+  color: var(--color-primary);
+}
+
+.section:not(.section-dark):not(.section--cta):not(.section--testimonial) p {
+  color: var(--color-text);
+}
+
 @media print {
   .site-header,
   .header,
